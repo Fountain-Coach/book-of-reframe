@@ -1,6 +1,7 @@
 {
-  "canonicalBaseUrl": "https://fountain-coach.github.io/book-of-reframe",
-  "customDomain": null,
+  "canonicalBaseUrl": "https://book.fountain.coach",
+  "customDomain": "book.fountain.coach",
+  "customDomainStatus": "proposed; DNS and Caddy are not configured",
   "title": "The Book of Reframe",
   "socialImagePolicy": "Each command page uses its own live-drive GUI snapshot as og:image."
 }
