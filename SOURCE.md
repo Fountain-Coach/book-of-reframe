@@ -39,6 +39,24 @@ This book is published from the integration repository:
 The local temporary store path is provenance for the generating workspace only; it is not a public dependency. The
 sanitized catalog and screenshot in `evidence/2026-08-03/` are the publication evidence.
 
+## Snapshot: 2026-08-04 — `/threads` full-fidelity owned evidence
+
+- Owned source: Thepolyxsupershow 6th Draft Source, publisher-declared copyright/possession of Benedikt Eickhoff.
+- Scope: one read-only `/threads` GUI result, including the open uncertainty score/lane rack and Courier Copilot
+  result; no raw FountainStore documents or private runtime implementation are published.
+- Review: publisher declared no personal data, third-party material, credentials, or secrets in the captured scope.
+- Visual evidence: `evidence/2026-08-04/threads-live-polyx-courier-20260804.png`.
+- AX evidence: `story-uncertainty-band`, `uncertainty-lane-storifyStructure`,
+  `uncertainty-lane-storifyOpenQuestions`, `uncertainty-map-viewport`, `chat-row-message-*`, and
+  `copilot-capability-activity`.
+- Behavioral evidence: `evidence/2026-08-04/verified-threads.md`; lifecycle
+  `copilot:capability-event:fixture:e4125a02-2b1c-4b5b-a15c-9ba070574fb2`, requested → accepted → running →
+  succeeded.
+
+The 2026-08-04 image is intentionally full fidelity. The publication policy requires a rights/scope review, not
+automatic obfuscation, when the publisher owns the manuscript and the purpose is to illustrate the actual product.
+Publication commit: `04dcf14` (to be merged through the Book pull request).
+
 The command-page contract is snapshot-gated: each completed page begins with its own live-drive GUI image, with AX
 and FountainStore evidence recorded alongside it. The catalog screenshot is not reused as command proof.
 

@@ -1,6 +1,6 @@
 # Publication policy
 
-The Book of Reframe is a public, sanitized projection of Reframe's development truth. It is not a mirror of the
+The Book of Reframe is a public, reviewed projection of Reframe's development truth. It is not a mirror of the
 private runtime repository.
 
 ## What this publication may contain
@@ -8,12 +8,13 @@ private runtime repository.
 - reviewed command and capability descriptions;
 - sanitized release manifests and live-acceptance evidence;
 - AX/VRT screenshots and accessibility evidence;
+- publisher-owned manuscript evidence when its public scope and rights review are recorded;
 - provenance and links to public governance.
 
 ## What it must not contain
 
 - runtime source or private dependencies;
-- private fixtures, manuscript material, or FountainStore records;
+- private fixtures, private FountainStore records, or unowned manuscript material;
 - credentials, deployment details, or secrets;
 - claims that are not supported by the checked registry, live proof, or release manifest.
 
@@ -23,4 +24,7 @@ the boundary is [Reframe governance Chapter 44](https://github.com/Fountain-Coac
 
 The current Book snapshot records no released App surface. Development evidence is published only with that status.
 Making runtime implementation public would require a separate visibility, license, secret-scan, dependency,
-fixture/data, and maintainer review.
+fixture/data, and maintainer review. Owned manuscript screenshots are not automatically obfuscated: when the publisher
+declares the material theirs and the evidence is limited to the stated command result, the point of publication is to
+show the real reading surface. Each such asset must record the ownership declaration, scope, and review for personal
+data, third-party material, and secrets.

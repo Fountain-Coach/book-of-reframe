@@ -13,7 +13,9 @@ This repository contains reviewed documentation projections from Reframe's integ
 - FCIS-AX is the semantic authority; FCIS-VRT is the visual authority. A screenshot cannot substitute for AX or
   FountainStore proof, and AX cannot substitute for looking at the rendered image.
 - The book is a publication projection, not a runtime contract. It must not contain prompts, private store data,
-  secrets, or invented behavior.
+  secrets, or invented behavior. Publisher-owned manuscript evidence is permitted only with an explicit ownership,
+  scope, and personal-data/third-party/secrets review; it is not automatically obfuscated when the real GUI is the
+  subject of the illustration.
 
 ## FCIS routing
 
@@ -24,6 +26,7 @@ This repository contains reviewed documentation projections from Reframe's integ
 - The canonical web site is a static publication projection. Stable command URLs MUST carry Open Graph metadata whose
   `og:image` is that command's own live-drive GUI snapshot; GitHub remains source and provenance authority.
 - The runtime repository is authoritative for implementation; this repository is authoritative only for publication text.
-- This public repository is a sanitized projection. It must not publish runtime source, private store data, secrets,
-  manuscript material, deployment details, or an unaudited claim. The private runtime is named with an access note;
-  public governance Chapter 44 explains the boundary.
+- This public repository is a reviewed projection. It must not publish runtime source, private store data, secrets,
+  unowned manuscript material, deployment details, or an unaudited claim. Publisher-owned manuscript evidence may be
+  published only under the recorded rights-review gate. The private runtime is named with an access note; public
+  governance Chapter 44 explains the boundary.
