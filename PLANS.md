@@ -101,6 +101,13 @@ Completion requires the source runtime proof, sanitized evidence, and reciprocal
 - Built a reversible `/commands` Facebook package from its own live-accepted GUI snapshot; `externalPublish: false`.
 - Verified with a `facebookexternalhit/1.1` probe that homepage and command metadata, canonical URLs, preview image,
   logo asset, and HTTP 200 delivery are visible on the live host. No external post was created.
+
+## 2026-08-03 — iPhone sticker asset
+
+- Created a transparent 1254×1254 emoji-style Fountain Coach mark from the official logo, with transparent corners and
+  thick small-size strokes.
+- Added the downloadable `/sticker/` route and instructions for saving the PNG to Photos and choosing **Add Sticker**.
+- This is an iPhone keyboard sticker/Genmoji-adjacent asset, not a new Unicode character.
 # European publication compliance gate — 2026-08-03
 
 **Goal:** Require a documented European regulatory applicability decision before the Book can be called publishable.

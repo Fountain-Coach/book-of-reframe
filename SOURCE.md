@@ -25,6 +25,8 @@ This book is published from the integration repository:
 - Social preview: the official Fountain Coach organization avatar is vendored as `site/assets/fountain-coach-logo.png`
   from the public GitHub organization profile; homepage and command routes expose Facebook/Twitter metadata while
   command pages retain their own live-drive snapshot as the preview image.
+- iPhone sticker: `site/assets/fountain-coach-sticker.png` is a transparent, small-size emoji-style rendering of the
+  mark; `/sticker/` explains how to add it to the iPhone keyboard sticker drawer.
 - Canonical web projection: `site/`, published at `https://book.fountain.coach/` after DNS and HTTPS verification on
   2026-08-03. GitHub remains the source and provenance record; the custom host is the canonical reader destination.
 
