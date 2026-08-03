@@ -21,9 +21,8 @@ commands are orchestration, help, or compatibility surfaces rather than one IDL 
 ## How this inventory was verified
 
 The list was read from the live `app.commands.discover` result, whose source is
-`ReframeViewModel.slashCommandIndex`. The acceptance drive persisted the result in:
-
-the sanitized snapshot in `evidence/2026-08-03/verified-command-catalog.md` and its accompanying proof record.
+`ReframeViewModel.slashCommandIndex`. The acceptance drive's sanitized snapshot is in
+`evidence/2026-08-03/verified-command-catalog.md` with its accompanying proof record.
 
 The terminal FountainStore proof reports `command.catalog.entries=95` and
 `command.catalog.source=slashCommandIndex`. The catalog result was also inspected through AX as the
