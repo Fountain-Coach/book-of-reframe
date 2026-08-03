@@ -114,6 +114,9 @@ Completion requires the source runtime proof, sanitized evidence, and reciprocal
 - Replaced the first sticker rendering because the fountain/spring was not sufficiently readable.
 - Corrected asset preserves the open hand plus the central fountain jet and four curved side jets; RGBA corners remain
   transparent.
+- iOS subject detection still separated the floating spring from the hand. The final correction adds one contiguous
+  white sticker backing around the complete hand-and-fountain silhouette so Photos selects the entire mark as one
+  sticker subject.
 # European publication compliance gate — 2026-08-03
 
 **Goal:** Require a documented European regulatory applicability decision before the Book can be called publishable.
