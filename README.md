@@ -32,5 +32,9 @@ pending. FCIS status is tracked in [`FCIS_AUDIT.md`](FCIS_AUDIT.md) and
 The current publication records **no released App surface**. The 95-entry command atlas is a development/runtime
 inventory, not a shipped capability promise.
 
+For social promotion, the mirrored `book-of-reframe-social-publish` skill prepares a reviewable Facebook package from
+an individually verified command page. It uses that page's GUI snapshot as the post image and requires explicit
+confirmation before any external publication.
+
 Canonical standards: [FCIS-AX](https://github.com/Fountain-Coach/.github/blob/main/docs/FCIS-AX-Standard.md) and
 [FCIS-VRT](https://github.com/Fountain-Coach/.github/blob/main/docs/FCIS-VRT-Standard.md).

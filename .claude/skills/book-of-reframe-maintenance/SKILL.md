@@ -51,6 +51,10 @@ a second runtime contract.
 10. **Record.** Update the integration `PLANS.md` and the book's `SOURCE.md` with snapshot date, source commit, live
    store/evidence IDs, and publication commit.
 
+Optional: after publication, use the mirrored `book-of-reframe-social-publish` skill to prepare a Facebook post
+package from the command page. Social copy is a publication projection, never capability or release authority; actual
+external posting always requires separate explicit confirmation.
+
 ## Publication shape
 
 The public repository should contain:
