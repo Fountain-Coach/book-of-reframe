@@ -3,15 +3,18 @@
 The Book of Reframe is the public, human-readable guide to what Reframe can do: its commands, capabilities,
 preconditions, costs, evidence, and the reasoning behind its writer-facing surfaces.
 
-This repository is a publication, not the runtime contract. The application and governed capability registry live in
-[`Fountain-Coach/midi2-gpu-fabric`](https://github.com/Fountain-Coach/midi2-gpu-fabric). The governing architecture and
-agent practice live in [`Fountain-Coach/Reframe-Refactoring`](https://github.com/Fountain-Coach/Reframe-Refactoring).
+This repository is a public, sanitized publication, not the runtime contract or a source mirror. The application and
+governed capability registry live in the private `Fountain-Coach/midi2-gpu-fabric` repository; readers without access
+may see GitHub's 404. The public explanation of this boundary is
+[`PUBLICATION-POLICY.md`](PUBLICATION-POLICY.md) and
+[`Fountain-Coach/Reframe-Refactoring` governance Chapter 44](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/44-publication-and-source-policy.md).
 
 ## Start here
 
 - [`COMMAND-ATLAS.md`](COMMAND-ATLAS.md) — the first verified numbered command atlas, with writer-facing explanations;
 - [`CAPABILITY-ATLAS.md`](CAPABILITY-ATLAS.md) — the current Copilot boundary and closure status;
 - [`RELEASE-SURFACE.md`](RELEASE-SURFACE.md) — what a named App build is allowed to promise;
+- [`PUBLICATION-POLICY.md`](PUBLICATION-POLICY.md) — what the public Book may expose and what remains private;
 - [`HISTORICAL-COMMANDS.md`](HISTORICAL-COMMANDS.md) — why the development command inventory is broader than a release;
 - [`evidence/2026-08-03/verified-command-catalog.md`](evidence/2026-08-03/verified-command-catalog.md) — the
   machine-shaped catalog projection from the live app.

@@ -24,3 +24,6 @@ This repository contains reviewed documentation projections from Reframe's integ
 - The canonical web site is a static publication projection. Stable command URLs MUST carry Open Graph metadata whose
   `og:image` is that command's own live-drive GUI snapshot; GitHub remains source and provenance authority.
 - The runtime repository is authoritative for implementation; this repository is authoritative only for publication text.
+- This public repository is a sanitized projection. It must not publish runtime source, private store data, secrets,
+  manuscript material, deployment details, or an unaudited claim. The private runtime is named with an access note;
+  public governance Chapter 44 explains the boundary.
