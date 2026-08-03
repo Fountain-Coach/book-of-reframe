@@ -8,6 +8,12 @@
 - Validate public links, route metadata, FCIS-AX/VRT site acceptance, and `git diff --check`.
 - Review order: org FCIS PR #4, governance PR #7, runtime PR #21, then Book PR #9.
 
+## 2026-08-03 — technical introduction
+
+- Add a concise “What is Reframe?” overview to the public site without changing the evidence or release boundary.
+- Explain purpose, system boundary, and reader contract in corporate technical-document language.
+- Validate responsive navigation, AX semantics, fixed-viewport VRT, route delivery, and reload workflow.
+
 ## 2026-08-03 — first verified Book of Reframe snapshot
 
 - Import the live `/commands` catalog from `app.commands.discover`.
@@ -47,3 +53,66 @@ Completion requires the source runtime proof, sanitized evidence, and reciprocal
 - Give the `/commands` route the same publication shell, typography, metadata, and evidence/status vocabulary as the
   overview page.
 - Validate routes, metadata, FCIS-AX semantics, fixed desktop/mobile VRT, and local reload behavior.
+
+## 2026-08-03 — bilingual legal publication surface
+
+- Record the publisher, contact, purpose, ownership, AI-assistance, hosting, logging, privacy, and accessibility
+  facts supplied by Benedikt Eickhoff.
+- Publish bilingual legal, privacy, accessibility, copyright, and compliance routes inside the Book site, with the
+  compliance route exposing the current decision rather than hiding it.
+- Keep GDPR, AI Act transparency, and hosting/security as `requires_review` until qualified review and enforceable
+  evidence exist; do not convert a self-attestation into a legal clearance. This was resolved by the publisher review
+  wizard on 2026-08-03 and is recorded in the register with explicit scope limits.
+- Correct canonical-host and Open Graph metadata to use `https://book.fountain.coach/`.
+- Validate generated data, strict European compliance, strict prepublication scanning, internal routes, metadata,
+  FCIS-AX/VRT acceptance, and `git diff --check` before any deployment decision.
+
+## 2026-08-03 — no-go closure work
+
+- **Chapters read:** 07 planning discipline and validation behavior; 08 persisted/evidence authorities and acceptance;
+  43 rules 1–7 (named-build/release boundary); 44 rules 1–6 (reviewed public projection/private implementation).
+- **What they forbid here:** treating the command catalog, screenshots, or a green technical scan as a released App or
+  as legal clearance; publishing private runtime material; silently converting a declared policy into an observed fact.
+- **Conflicts:** none. The request to reach GO is bounded by the compliance skill's rule that `requires_review` is a
+  blocker and that automation is not legal certification.
+- **Excluded, and why:** qualified GDPR/AI Act classification and Member-State review are not invented here; raw server
+  logs, credentials, and unrestricted infrastructure configuration remain excluded by Chapter 44.
+- **Evidence update:** the live audit verified DNS/HTTPS/Caddy/root. The guarded retention operation now verifies
+  `MaxRetentionSec=3day`; applying it reduced journal usage from 3.7 GB to 91.5 MB. Hosting remains `requires_review`
+  for access, backup/rollback, incident ownership, and processor review.
+- **Current gate:** rerun the strict European compliance and prepublication scans after recording the publisher
+  decisions. Local legal routes and FCIS-AX/VRT acceptance pass; GO remains limited to the recorded scope.
+
+## 2026-08-03 — production publication
+
+- Prepublish scan: `GO`, 0 errors, 0 warnings; FCIS-AX/VRT acceptance passed through Chrome CDP.
+- Deployment: reviewed `site/` synchronized to the dedicated `/var/www/book-of-reframe` root on `book.fountain.coach`;
+  local-only `dev-server.py` and `open-local-preview.sh` were excluded.
+- Live verification: `/`, `/legal/`, `/privacy/`, `/accessibility/`, `/copyright/`, `/compliance/`, and
+  `/commands/commands/` returned HTTP 200; canonical host and scoped GO status were confirmed.
+- Production permissions: `caddy:caddy`, directories `755`, files `644`. Source and evidence remain in GitHub; no
+  named released App build is claimed.
+# European publication compliance gate — 2026-08-03
+
+**Goal:** Require a documented European regulatory applicability decision before the Book can be called publishable.
+
+**Result:** Added `COMPLIANCE.md` and `compliance/register.yaml`; unresolved GDPR, AI Act, accessibility, copyright,
+and hosting/security decisions intentionally produce `NO-GO` until reviewed.
+
+**Validation:** The integration prepublish scan invokes the European compliance gate; the standalone gate output is
+recorded below after execution.
+
+**Demo result:** `NO-GO` — 8 requirements registered, 5 require review: GDPR, AI Act transparency, accessibility,
+copyright, and hosting/security. Existing technical warnings remain: canonical host reachability and missing LICENSE.
+
+**Implementation pass:** Added `LEGAL-NOTICES.md`, `COPYRIGHT.md`, `ACCESSIBILITY.md`, `LICENSE`, visible site links,
+and explicit reduced-motion/high-contrast/44px control safeguards. Local Chrome CDP AX/VRT passed. Publication remains
+NO-GO until the five register decisions and the live canonical host are resolved.
+
+**Infrastructure and asset pass:** The read-only server audit found no active custom-domain DNS or Book deployment root.
+The command evidence image was sanitized to remove manuscript-reading content and its public caption/alt text now says
+so. AX/VRT was rerun successfully. DNS, deployment, production logging, and rights/legal decisions remain explicit
+release gates.
+
+**Deployment:** The isolated Book root and Caddy site block are now installed on the publishing server. HTTPS cannot
+complete until the `book.fountain.coach` DNS record exists; no public release claim is made before that verification.

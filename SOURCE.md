@@ -22,8 +22,8 @@ This book is published from the integration repository:
   `no-released-build` with an empty capability allow-list.
 - Social publication procedure: mirrored `book-of-reframe-social-publish` skill; packages are local review artifacts
   until an explicitly authorized Facebook post is returned by the platform.
-- Canonical web projection: `site/`, interim URL `https://fountain-coach.github.io/book-of-reframe/`; custom domain is
-  intentionally unset pending domain selection and DNS configuration.
+- Canonical web projection: `site/`, published at `https://book.fountain.coach/` after DNS and HTTPS verification on
+  2026-08-03. GitHub remains the source and provenance record; the custom host is the canonical reader destination.
 
 The local temporary store path is provenance for the generating workspace only; it is not a public dependency. The
 sanitized catalog and screenshot in `evidence/2026-08-03/` are the publication evidence.

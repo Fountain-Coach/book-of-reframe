@@ -1,0 +1,122 @@
+schema_version: 1
+publication: book-of-reframe
+jurisdiction_scope:
+  - European Union
+  - Germany (national implementation review required)
+review_owner: Fountain Coach publication maintainer
+review_date: 2026-08-03
+requirements:
+  - id: gdpr
+    instrument: Regulation (EU) 2016/679 (GDPR)
+    status: ready
+    official_source: https://eur-lex.europa.eu/eli/reg/2016/679/oj
+    trigger: Personal data may be processed by production hosting, server logs, screenshots, links, or future publication features.
+    rationale: Publisher review approved Benedikt Eickhoff as controller, Hetzner Cloud as infrastructure processor, three-day security/operations-only logs, no tracking, and the stated privacy contact.
+    evidence:
+      - COMPLIANCE.md
+      - PUBLICATION-POLICY.md
+      - site/README.md
+      - compliance/evidence/site-surface-2026-08-03.md
+      - compliance/evidence/hosting-scope-2026-08-03.md
+    owner: Fountain Coach publication maintainer
+    review_date: 2026-08-03
+    limits: This is the publisher's documented scope decision; changes to processing, hosting, or jurisdiction require a new review.
+    reviewer: Benedikt Eickhoff
+    review_decision: approved 2026-08-03 during the publication wizard
+  - id: eprivacy
+    instrument: Directive 2002/58/EC (ePrivacy)
+    status: not_applicable
+    official_source: https://commission.europa.eu/law/law-topic/data-protection/information-business-and-organisations/application-gdpr_en
+    trigger: Cookies, analytics, embedded third-party content, or terminal storage are added.
+    rationale: The current static projection declares no analytics, cookies, or embedded third-party widgets; this must be reclassified if the deployment changes.
+    evidence:
+      - site/README.md
+      - site/assets/site.js
+    owner: Fountain Coach publication maintainer
+    review_date: 2026-08-03
+    limits: The cited Commission page explains the ePrivacy relationship; national implementation remains relevant.
+  - id: ai-act-transparency
+    instrument: Regulation (EU) 2024/1689 (AI Act), transparency obligations
+    status: ready
+    official_source: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+    trigger: The publication describes or publishes AI-generated/manipulated text, images, or system output.
+    rationale: Publisher review classifies the Book as human-reviewed technical publication material, with no deepfakes, impersonation, synthetic media, or automated decisions about people. Extensive AI assistance is disclosed and human approval is stated.
+    evidence:
+      - COMPLIANCE.md
+      - CAPABILITY-ATLAS.md
+      - LEGAL-NOTICES.md
+      - PRIVACY.md
+      - site/index.html
+    owner: Fountain Coach publication maintainer
+    review_date: 2026-08-03
+    limits: The disclosure must be revisited if the publication adds synthetic media, public-interest informational AI text, or another AI system/output type.
+    reviewer: Benedikt Eickhoff
+    review_decision: approved 2026-08-03 during the publication wizard
+  - id: accessibility
+    instrument: Directive (EU) 2019/882 (European Accessibility Act)
+    status: not_applicable
+    official_source: https://eur-lex.europa.eu/eli/dir/2019/882/oj
+    trigger: The publication is offered as a covered consumer service, e-book, or e-commerce service, or another covered service.
+    rationale: The publisher classifies the current surface as a free technical publication, not a paid e-book, dedicated e-book software, or e-commerce service. FCIS-AX and VRT remain engineering controls.
+    evidence:
+      - site/evidence/vrt/local-cdp/home-desktop-light-1440x1000.png
+      - site/evidence/vrt/local-cdp/home-mobile-light-390x844.png
+      - FCIS_AUDIT.md
+      - ACCESSIBILITY.md
+    owner: Fountain Coach publication maintainer
+    review_date: 2026-08-03
+    limits: FCIS evidence is engineering evidence, not legal conformity assessment.
+  - id: dsa
+    instrument: Regulation (EU) 2022/2065 (Digital Services Act)
+    status: not_applicable
+    official_source: https://digital-strategy.ec.europa.eu/en/policies/digital-services-act
+    trigger: The Book becomes an intermediary, hosting service, online platform, marketplace, or user-content service.
+    rationale: The current site is a static technical publication with no user-content, moderation, marketplace, or platform function.
+    evidence:
+      - COMPLIANCE.md
+      - site/README.md
+    owner: Fountain Coach publication maintainer
+    review_date: 2026-08-03
+    limits: GitHub, Facebook, or a future paid/community lane may create separate platform obligations outside this site decision.
+  - id: copyright
+    instrument: Directive (EU) 2019/790 on copyright in the Digital Single Market
+    status: ready
+    official_source: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019L0790
+    trigger: Manuscript excerpts, screenshots, citations, logos, or generated assets are published.
+    rationale: The publisher declares that current publication text, design, screenshots, and original assets are owned by Benedikt Eickhoff and that no third-party material is intentionally included in this scope.
+    evidence:
+      - PUBLICATION-POLICY.md
+      - SOURCE.md
+      - site/commands/commands/index.html
+      - compliance/evidence/asset-review-2026-08-03.md
+    owner: Fountain Coach publication maintainer
+    review_date: 2026-08-03
+    limits: National copyright exceptions and rights-holder facts must be confirmed for each asset.
+  - id: consumer-ecommerce
+    instrument: EU consumer and e-commerce rules
+    status: not_applicable
+    official_source: https://commission.europa.eu/law/law-topic/consumer-protection-law/consumer-contract-law/consumer-rights-directive_en
+    trigger: The site sells access, subscriptions, downloads, or other consumer goods/services.
+    rationale: The current Book offers no checkout, subscription, account, or consumer contract.
+    evidence:
+      - COMPLIANCE.md
+      - site/index.html
+    owner: Fountain Coach publication maintainer
+    review_date: 2026-08-03
+    limits: Any paid lane requires a new consumer, VAT, tax, terms, refund, and payment-provider review.
+  - id: hosting-security
+    instrument: Publication security and incident controls
+    status: ready
+    official_source: https://commission.europa.eu/law/law-topic/data-protection/rules-business-and-organisations/overview-principles/what-data-can-we-process-and-under-which-conditions_en
+    trigger: Production hosting processes requests, logs, deployments, or personal data.
+    rationale: Publisher review approved the verified DNS/HTTPS/Caddy stack, dedicated root, SSH-key access, enforced three-day journald retention, repository-based recovery, and Benedikt Eickhoff as incident owner.
+    evidence:
+      - PUBLICATION-POLICY.md
+      - site/README.md
+      - compliance/evidence/hosting-scope-2026-08-03.md
+      - compliance/evidence/site-surface-2026-08-03.md
+    owner: Fountain Coach infrastructure maintainer
+    review_date: 2026-08-03
+    limits: This operational decision covers the documented static publication scope; material hosting, deployment, or incident changes require a new review.
+    reviewer: Benedikt Eickhoff
+    review_decision: approved 2026-08-03 during the publication wizard
