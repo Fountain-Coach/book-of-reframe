@@ -35,3 +35,25 @@ and metadata work, but DNS, Caddy, and deployment are not configured by this con
 separate secure-publishing operations requiring explicit confirmation and post-change DNS/TLS verification.
 
 The page states that it is development/template content and makes no released-App claim.
+
+## FCIS interface verification
+
+FCIS-AX and FCIS-VRT are both required for site acceptance. The browser accessibility tree is the machine-readable
+layer: landmarks, headings, links, buttons, accessible names, `aria-expanded` state, and keyboard actions are driven
+and asserted semantically. Screenshots are the independent human/visual layer and are not used to infer accessibility
+state.
+
+```text
+FCIS-AX Declaration
+- Surfaces: home page, responsive navigation, command atlas route
+- Custom-drawn views: none; HTML/CSS controls and content are used
+- AX identifiers: semantic HTML, ARIA labels/states, and stable hrefs/data attributes
+- AX-driven verification: integration `.codex/skills/book-of-reframe-site-acceptance`
+- Known gaps: browser-dependent drive pending when no supported browser is available
+
+FCIS-VRT:
+  modes: [VRT-Render]
+  baselines: site/evidence/vrt/ (manual/opt-in; first browser capture pending)
+  gate: manual
+  legacy-aliases: none
+```
