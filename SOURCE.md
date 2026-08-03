@@ -55,7 +55,7 @@ sanitized catalog and screenshot in `evidence/2026-08-03/` are the publication e
 
 The 2026-08-04 image is intentionally full fidelity. The publication policy requires a rights/scope review, not
 automatic obfuscation, when the publisher owns the manuscript and the purpose is to illustrate the actual product.
-Publication commit: `04dcf14` (to be merged through the Book pull request).
+Publication commit: `bfb3a2431e2f4556525efea1b3e85fa6a38bac8e` (merged PR #12).
 
 The command-page contract is snapshot-gated: each completed page begins with its own live-drive GUI image, with AX
 and FountainStore evidence recorded alongside it. The catalog screenshot is not reused as command proof.
