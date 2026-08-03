@@ -21,4 +21,6 @@ This repository contains reviewed documentation projections from Reframe's integ
 - `FCIS_COMPLIANCE_PLAN.md` records minimal remediation and acceptance criteria.
 - `.codex/skills/` and `.claude/skills/` contain identical publication procedures.
 - The canonical standards are published in [Fountain-Coach/.github](https://github.com/Fountain-Coach/.github/tree/main/docs).
+- The canonical web site is a static publication projection. Stable command URLs MUST carry Open Graph metadata whose
+  `og:image` is that command's own live-drive GUI snapshot; GitHub remains source and provenance authority.
 - The runtime repository is authoritative for implementation; this repository is authoritative only for publication text.
