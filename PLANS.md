@@ -6,6 +6,7 @@
 - Publish `PUBLICATION-POLICY.md` and link the public governance Chapter 44.
 - Keep the Book limited to sanitized command/capability projections, release boundaries, provenance, and AX/VRT proof.
 - Validate public links, route metadata, FCIS-AX/VRT site acceptance, and `git diff --check`.
+- Review order: org FCIS PR #4, governance PR #7, runtime PR #21, then Book PR #9.
 
 ## 2026-08-03 — first verified Book of Reframe snapshot
 
