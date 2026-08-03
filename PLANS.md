@@ -9,6 +9,13 @@
 
 Completion requires the source runtime proof, sanitized evidence, and reciprocal links to remain together.
 
+## 2026-08-03 — named release-surface boundary
+
+- Separate the development command inventory from governed capabilities, live acceptance, and a named-build release
+  allow-list.
+- Publish the sanitized release manifest and state explicitly that no released App surface is currently recorded.
+- Do not populate the allow-list from `/commands`, screenshots, `main`, or executable-but-unaccepted registry rows.
+
 ## 2026-08-03 — FCIS command pages and visual evidence
 
 - Add one writer-facing document per published command, with the GUI snapshot as its first non-empty line.

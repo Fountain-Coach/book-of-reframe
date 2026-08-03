@@ -1,9 +1,10 @@
-# The Book of Reframe — Command Atlas
+# The Book of Reframe — Development Command Atlas
 
 Status: first verified inventory, 2026-08-03
 
-This is the beginning of the human-facing documentation for Reframe: what a writer can ask the workspace to do,
-what each command means, and where a command is only an alias or a maintainer-facing tool.
+This is the human-facing inventory of what the current development runtime knows: command spellings, aliases,
+compatibility routes, conditional entries, and maintainer-facing tools. It is not the released App capability list.
+See [`RELEASE-SURFACE.md`](RELEASE-SURFACE.md) for the named-build boundary.
 
 ## What the number means
 
@@ -15,8 +16,12 @@ The current local command catalog contains **95 command entries**:
 
 These are command spellings, not independent product capabilities. Aliases and compatibility spellings count as
 separate entries. The governed Copilot capability registry is the other side of the map: it currently contains 53
-capability identities, 22 executable and 31 unavailable. One capability can have several commands, and some local
+capability identities, 22 executable, 2 live-accepted, and 31 unavailable. One capability can have several commands, and some local
 commands are orchestration, help, or compatibility surfaces rather than one IDL operation.
+
+The Book keeps four projections separate: this development command inventory, the governed capability atlas, the
+live-accepted evidence ledger, and the named-build release surface. A slash entry does not enter the released surface
+merely because it appears here.
 
 ## How this inventory was verified
 

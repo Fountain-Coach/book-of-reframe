@@ -13,6 +13,8 @@ This book is published from the integration repository:
 - Proof source: `copilot:capability:reframe-ulysses:c42a180c-7990-4f44-ae4b-373855daf323`
 - Runtime count: 95 command entries, 92 available, 3 unavailable, 3 `//`-only within the available count
 - Publication projection: `COMMAND-ATLAS.md` and `evidence/2026-08-03/verified-command-catalog.md`
+- Release boundary: `RELEASE-SURFACE.md` and `evidence/2026-08-03/reframe-release-surface.json`; current status is
+  `no-released-build` with an empty capability allow-list.
 
 The local temporary store path is provenance for the generating workspace only; it is not a public dependency. The
 sanitized catalog and screenshot in `evidence/2026-08-03/` are the publication evidence.
