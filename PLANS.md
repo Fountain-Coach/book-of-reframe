@@ -117,6 +117,27 @@ Completion requires the source runtime proof, sanitized evidence, and reciprocal
 - iOS subject detection still separated the floating spring from the hand. The final correction adds one contiguous
   white sticker backing around the complete hand-and-fountain silhouette so Photos selects the entire mark as one
   sticker subject.
+
+## 2026-08-03 — next command: `/pipeline status`
+
+- Goal: publish a writer-facing command page only after a fresh live drive reaches the pipeline-status result.
+- Scope: integration live drive, AX/window-ID/FountainStore evidence, sanitized command snapshot, `commands/pipeline-status.md`,
+  and the command-page index/projection if evidence passes.
+- Non-goals: no runtime change, no release-surface promotion, no claim that the development command is shipped.
+- Authority: capability `pipeline.status`, native operation `showPipelineStatus`, existing live-accepted evidence in
+  `evidence/2026-08-03/copilot-capability-closure.json`; this phase adds command-specific visual proof.
+- Validation: governed fresh-store drive, AX result inspection, `ReframeStoreDump` proof, window-ID screenshot review,
+  command-page verification, site acceptance, strict prepublish scan, and `git diff --check`.
+
+### Completion record
+
+- Live drive completed on a tiny managed fixture, not the local FountainStore library.
+- Three `/pipeline status` runs persisted as complete `requested → accepted → running → succeeded` lifecycles.
+- Added the command page, sanitized live evidence, own GUI snapshot, command index link, and stable site route
+  `/commands/pipeline-status/`.
+- No runtime or release-surface change was made; the page remains explicitly development evidence.
+- Local site acceptance: Google Chrome via CDP passed home and `/commands/commands/` AX/VRT checks; the new route and
+  image/metadata returned HTTP 200. Strict prepublish scan with `--check-external`: 0 errors, 0 warnings.
 # European publication compliance gate — 2026-08-03
 
 **Goal:** Require a documented European regulatory applicability decision before the Book can be called publishable.

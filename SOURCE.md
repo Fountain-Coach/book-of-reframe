@@ -18,6 +18,9 @@ This book is published from the integration repository:
 - Proof source: `copilot:capability:reframe-ulysses:c42a180c-7990-4f44-ae4b-373855daf323`
 - Runtime count: 95 command entries, 92 available, 3 unavailable, 3 `//`-only within the available count
 - Publication projection: `COMMAND-ATLAS.md` and `evidence/2026-08-03/verified-command-catalog.md`
+- Individually documented command: [`/pipeline status`](commands/pipeline-status.md), with three repeated fixture
+  runs, AX result semantics, CoreGraphics window-ID capture, and persisted FountainStore proof in
+  `evidence/2026-08-03/verified-pipeline-status.md`.
 - Release boundary: `RELEASE-SURFACE.md` and `evidence/2026-08-03/reframe-release-surface.json`; current status is
   `no-released-build` with an empty capability allow-list.
 - Social publication procedure: mirrored `book-of-reframe-social-publish` skill; packages are local review artifacts
@@ -35,3 +38,8 @@ sanitized catalog and screenshot in `evidence/2026-08-03/` are the publication e
 
 The command-page contract is snapshot-gated: each completed page begins with its own live-drive GUI image, with AX
 and FountainStore evidence recorded alongside it. The catalog screenshot is not reused as command proof.
+
+The local site acceptance pass for this update used Google Chrome via CDP at `http://127.0.0.1:4173/`: home and
+`/commands/commands/` AX/VRT checks passed, and `/commands/pipeline-status/` returned HTTP 200 with its canonical,
+Open Graph, alt-text, and evidence image metadata. The strict prepublish scan passed with `--check-external` (0 errors,
+0 warnings). The new route is not yet deployed to the canonical host.
