@@ -12,3 +12,10 @@ Live drive: [full catalog acceptance evidence](../evidence/2026-08-03/verified-c
 Behavioral proof: `app.commands.discover`, corpus `reframe-ulysses`; the sanitized evidence records 95 entries,
 92 available, and 3 unavailable. The original window was captured by CoreGraphics window ID after the result state
 was reached.
+
+## Individually documented commands
+
+- [`/pipeline status`](pipeline-status.md) — live-accepted read-only pipeline truth with AX, window-ID, and
+  FountainStore evidence.
+- [`/threads`](threads.md) — live-accepted uncertainty ledger inspection with AX, window-ID, and FountainStore
+  evidence.

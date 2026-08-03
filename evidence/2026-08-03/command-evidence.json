@@ -12,6 +12,22 @@
       "liveDrive": "../evidence/2026-08-03/verified-command-catalog.md",
       "behavior": "app.commands.discover; corpus reframe-ulysses",
       "ax": "command-results-all and command-result-* rows"
+    },
+    "/pipeline status": {
+      "status": "live-accepted",
+      "snapshot": "../evidence/2026-08-03/pipeline-status-live-20260803.png",
+      "liveDrive": "../evidence/2026-08-03/verified-pipeline-status.md",
+      "behavior": "pipeline.status; fresh fixture corpus; three persisted slash-command runs",
+      "ax": "studio-chat-input, studio-chat-send, chat-row-message-*, copilot-capability-activity",
+      "page": "../commands/pipeline-status.md"
+    },
+    "/threads": {
+      "status": "live-accepted",
+      "snapshot": "../evidence/2026-08-03/threads-live-20260803.png",
+      "liveDrive": "../evidence/2026-08-03/verified-threads.md",
+      "behavior": "manuscript.reading.inspect; fresh managed fixture; corpus fixture; lifecycle copilot:capability-event:fixture:ba0d7ce4-9b4b-4b18-acab-7dedafdf6f1b",
+      "ax": "studio-chat-input, studio-chat-send, chat-row-message-*, copilot-capability-activity",
+      "page": "../commands/threads.md"
     }
   },
   "pendingPolicy": "Do not create or publish a command page until its own execution/result snapshot, AX proof, and persisted proof exist."

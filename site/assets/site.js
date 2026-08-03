@@ -16,3 +16,16 @@
     }
   });
 })();
+
+(() => {
+  const applyData = (data) => {
+    document.querySelectorAll('[data-site-value]').forEach((node) => {
+      const value = data[node.dataset.siteValue];
+      if (value !== undefined) node.textContent = value;
+    });
+    document.querySelectorAll('[data-site-date]').forEach((node) => { node.textContent = data.snapshotDate; });
+    document.querySelectorAll('[data-site-status]').forEach((node) => { node.textContent = data.releaseStatus; });
+  };
+  const dataUrl = document.body.dataset.siteData || 'site-data.json';
+  fetch(dataUrl, { cache: 'no-store' }).then((response) => response.json()).then(applyData).catch(() => {});
+})();

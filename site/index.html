@@ -5,24 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Book of Reframe — public technical publication</title>
   <meta name="description" content="A reviewed, evidence-backed projection of Reframe's development commands, capabilities, and release boundary.">
-  <meta name="theme-color" content="#f6f3ec">
+  <meta name="theme-color" content="#f6f8fa">
   <link rel="canonical" href="https://book.fountain.coach/">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Book of Reframe · Fountain Coach">
   <meta property="og:title" content="The Book of Reframe — public technical publication">
   <meta property="og:description" content="A reviewed projection of Reframe's development commands, capabilities, and evidence.">
   <meta property="og:url" content="https://book.fountain.coach/">
-  <meta property="og:image" content="https://fountain-coach.github.io/book-of-reframe/assets/commands-live-fullcatalog-20260803.png">
+  <meta property="og:image" content="https://book.fountain.coach/assets/commands-live-fullcatalog-20260803.png">
   <meta property="og:image:alt" content="Reframe showing the live command catalog">
+  <meta property="og:image:width" content="1672">
+  <meta property="og:image:height" content="941">
+  <meta property="og:locale" content="en_GB">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Book of Reframe — public technical publication">
+  <meta name="twitter:description" content="A reviewed projection of Reframe's development commands, capabilities, and evidence.">
+  <meta name="twitter:image" content="https://book.fountain.coach/assets/commands-live-fullcatalog-20260803.png">
+  <link rel="icon" type="image/png" href="assets/fountain-coach-logo.png">
+  <link rel="apple-touch-icon" href="assets/fountain-coach-logo.png">
   <link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
+<body data-site-data="site-data.json">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="nav-shell">
-      <a class="brand" href="./">The Book of Reframe<small>Fountain Coach · public technical publication</small></a>
+      <a class="brand" href="./"><img class="brand-logo" src="assets/fountain-coach-logo.png" alt="Fountain Coach logo"><span>The Book of Reframe<small>Fountain Coach · public technical publication</small></span></a>
       <button class="menu-button" type="button" data-menu-button aria-controls="site-nav" aria-expanded="false">Menu</button>
       <nav class="site-nav" id="site-nav" data-site-nav data-open="false" aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
         <a href="#scope">Scope</a>
         <a href="#evidence">Evidence</a>
         <a href="commands/commands/">Commands</a>
@@ -47,17 +57,47 @@
       </aside>
     </section>
 
+    <section id="overview" class="section intro-section" aria-labelledby="overview-title">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">System overview</div>
+          <h2 id="overview-title">What is Reframe?</h2>
+        </div>
+        <p>Reframe is a writer-facing studio for turning a manuscript into a structured, inspectable working space. It helps a writer read, question, reshape, and compose from source material while keeping decisions, uncertainty, and system effects visible.</p>
+      </div>
+      <div class="overview-grid">
+        <article><div class="eyebrow">Purpose</div><h3>A writing system with evidence</h3><p>Reframe is not a generic chat assistant or an autonomous publishing system. It provides governed operations around a writer's work and explains what each operation can establish.</p></article>
+        <article><div class="eyebrow">System boundary</div><h3>Source, reasoning, action</h3><p>The runtime reads source material, reasons over the current working state, and dispatches owned capabilities. Persistent project state and operational proof remain separate from conversational wording.</p></article>
+        <article><div class="eyebrow">Reader contract</div><h3>Inspect before you trust</h3><p>The Book documents the development surface as a set of checked projections: command inventory, capability registry, live acceptance, and named-build release status.</p></article>
+      </div>
+    </section>
+
+    <section id="operating-model" class="section" aria-labelledby="operating-model-title">
+      <div class="section-heading">
+        <div><div class="eyebrow">Operating model</div><h2 id="operating-model-title">From source to checked result.</h2></div>
+        <p>Reframe separates the writer's material, the reasoning that interprets the current state, the operation that acts, and the evidence that makes the result reviewable.</p>
+      </div>
+      <ol class="model-steps">
+        <li><strong>01 · Source</strong><span>A manuscript and its confirmed working context.</span></li>
+        <li><strong>02 · Reading</strong><span>Structure, questions, and uncertainty are made inspectable.</span></li>
+        <li><strong>03 · Capability</strong><span>A governed operation is selected with its policy and preconditions.</span></li>
+        <li><strong>04 · Result</strong><span>The action produces a visible, persisted application result.</span></li>
+        <li><strong>05 · Evidence</strong><span>AX, visual, telemetry, and store proof establish what happened.</span></li>
+      </ol>
+    </section>
+
     <section id="scope" class="section" aria-labelledby="scope-title">
       <div class="section-heading">
         <div class="eyebrow">At a glance</div>
-        <h2 id="scope-title">Four projections, kept separate.</h2>
+        <h2 id="scope-title">Four projections, four questions.</h2>
         <p>The command inventory, capability registry, live-accepted evidence, and named-build release surface answer different questions. This site keeps those questions distinct.</p>
       </div>
       <div class="stat-grid">
-        <article class="stat"><strong>95</strong><span>command entries in the verified development catalog</span><a href="https://github.com/Fountain-Coach/book-of-reframe/blob/main/COMMAND-ATLAS.md">Command atlas →</a></article>
-        <article class="stat"><strong>53</strong><span>governed capability identities in the registry</span><a href="https://github.com/Fountain-Coach/book-of-reframe/blob/main/CAPABILITY-ATLAS.md">Capability atlas →</a></article>
-        <article class="stat"><strong>2</strong><span>capabilities with live-accepted evidence</span><a href="https://github.com/Fountain-Coach/book-of-reframe/tree/main/evidence/2026-08-03">Evidence snapshot →</a></article>
+        <article class="stat"><strong data-site-value="commandEntries">95</strong><span>command entries in the verified development catalog · <b data-site-value="commandEntriesAvailable">92</b> available / <b data-site-value="commandEntriesUnavailable">3</b> unavailable</span><a href="https://github.com/Fountain-Coach/book-of-reframe/blob/main/COMMAND-ATLAS.md">Command atlas →</a></article>
+        <article class="stat"><strong data-site-value="capabilityIdentities">53</strong><span>governed capability identities · <b data-site-value="capabilitiesExecutable">22</b> executable / <b data-site-value="capabilitiesUnavailable">31</b> unavailable</span><a href="https://github.com/Fountain-Coach/book-of-reframe/blob/main/CAPABILITY-ATLAS.md">Capability atlas →</a></article>
+        <article class="stat"><strong data-site-value="capabilitiesLiveAccepted">2</strong><span>capabilities with live-accepted evidence · snapshot <b data-site-date>2026-08-03</b></span><a href="https://github.com/Fountain-Coach/book-of-reframe/tree/main/evidence/2026-08-03">Evidence snapshot →</a></article>
       </div>
+      <p class="provenance-line">Values are generated from the checked release projection for <span data-site-status>no-released-build</span>, not from runtime UI text.</p>
     </section>
 
     <section id="evidence" class="section section-rule" aria-labelledby="evidence-title">
@@ -75,9 +115,11 @@
 
     <footer class="footer">
       <p><strong>The Book of Reframe</strong> · publication projection · <a href="https://github.com/Fountain-Coach/book-of-reframe">source on GitHub</a></p>
+      <p><a href="legal/">Legal notices</a> · <a href="privacy/">Privacy</a> · <a href="accessibility/">Accessibility</a> · <a href="copyright/">Copyright</a> · <a href="compliance/">EU compliance scope</a> · <a href="sticker/">Fountain Coach sticker</a></p>
       <p>Snapshot: 2026-08-03 · <a href="https://github.com/Fountain-Coach/book-of-reframe/blob/main/SOURCE.md">provenance</a> · no released App surface recorded</p>
     </footer>
   </main>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","name":"The Book of Reframe","url":"https://book.fountain.coach/","publisher":{"@type":"Organization","name":"Fountain Coach","url":"https://github.com/Fountain-Coach","logo":"https://book.fountain.coach/assets/fountain-coach-logo.png"}}</script>
   <script src="assets/site.js" defer></script>
 </body>
 </html>

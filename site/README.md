@@ -12,9 +12,17 @@ Each command URL MUST have:
 - the same honest release status as `RELEASE-SURFACE.md`;
 - a link back to the evidence-backed Markdown page.
 
+Facebook/Twitter preview contract:
+
+- `og:url`, `og:title`, `og:description`, `og:site_name`, and `og:image` are absolute HTTPS values;
+- `og:image:width` and `og:image:height` match the published PNG;
+- the Fountain Coach organization logo is available as the local favicon, Apple touch icon, and structured publisher
+  logo;
+- command previews use the command's own evidence snapshot, never the generic homepage brand image.
+
 The current home page is a responsive repository-derived projection of the publication README, command atlas,
-capability atlas, release surface, and provenance. It keeps the development snapshot visible without presenting it as
-a released App.
+capability atlas, release surface, provenance, and legal publication boundary. It keeps the development snapshot
+visible without presenting it as a released App.
 
 ## Local rinse-and-wash
 
@@ -30,11 +38,21 @@ focus, the skip link, and the Menu/Close navigation. Edit HTML, CSS, JavaScript,
 preview reloads itself within roughly one second. The existing `/commands/commands/` route must remain reachable.
 The reload script is injected only by `dev-server.py`; it is not part of the published HTML.
 
+Before publication, regenerate the numeric/status projection from the checked release evidence:
+
+```sh
+python3 build-site-data.py
+```
+
+This writes `site-data.json`, which supplies the command, capability, live-acceptance, snapshot-date, and release-status
+values used by the overview and command pages. The HTML keeps reviewed fallback values so the page remains legible if
+JavaScript is unavailable.
+
 ## Publication target
 
-The fitting production hostname is proposed as `book.fountain.coach`. It is recorded in `site-config.json` for design
-and metadata work, but DNS, Caddy, and deployment are not configured by this content repository change. Those are
-separate secure-publishing operations requiring explicit confirmation and post-change DNS/TLS verification.
+The production hostname is `book.fountain.coach`. DNS, Caddy, and HTTPS have been verified by the secure-publishing
+workflow. Legal publication remains separately gated by `compliance/register.yaml`; infrastructure verification does
+not by itself constitute legal clearance.
 
 The page states that it is a development snapshot and makes no released-App claim.
 

@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import io
 import json
 import mimetypes
 import threading
@@ -94,14 +95,10 @@ class PreviewHandler(SimpleHTTPRequestHandler):
             self.send_header("Content-Type", "text/html; charset=utf-8")
             self.send_header("Content-Length", str(len(body)))
             self.end_headers()
-            return body
+            # `SimpleHTTPRequestHandler.do_GET` closes the object returned by
+            # `send_head`; keep the reload-injected response file-like.
+            return io.BytesIO(body)
         return super().send_head()
-
-    def copyfile(self, source, outputfile):  # type: ignore[no-untyped-def]
-        if isinstance(source, bytes):
-            outputfile.write(source)
-            return
-        super().copyfile(source, outputfile)
 
     def log_message(self, format: str, *args) -> None:
         print(f"{self.address_string()} - {format % args}", flush=True)
