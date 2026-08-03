@@ -92,6 +92,15 @@ Completion requires the source runtime proof, sanitized evidence, and reciprocal
   `/commands/commands/` returned HTTP 200; canonical host and scoped GO status were confirmed.
 - Production permissions: `caddy:caddy`, directories `755`, files `644`. Source and evidence remain in GitHub; no
   named released App build is claimed.
+
+## 2026-08-03 — Facebook preview optimization
+
+- Added the official public Fountain Coach organization avatar as a local brand asset and structured publisher logo.
+- Added Facebook/Twitter metadata, accurate preview-image dimensions, favicon/touch icon links, and a typed homepage
+  publisher record.
+- Built a reversible `/commands` Facebook package from its own live-accepted GUI snapshot; `externalPublish: false`.
+- Verified with a `facebookexternalhit/1.1` probe that homepage and command metadata, canonical URLs, preview image,
+  logo asset, and HTTP 200 delivery are visible on the live host. No external post was created.
 # European publication compliance gate — 2026-08-03
 
 **Goal:** Require a documented European regulatory applicability decision before the Book can be called publishable.

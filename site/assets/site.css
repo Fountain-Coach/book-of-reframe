@@ -23,7 +23,8 @@ code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size
 .skip-link:focus { top: 1rem; }
 .site-header { border-bottom: 1px solid var(--line); background: rgba(255, 255, 255, .96); position: sticky; top: 0; z-index: 5; }
 .nav-shell { max-width: 76rem; margin: auto; padding: .8rem clamp(1rem, 4vw, 3rem); display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
-.brand { color: var(--ink); text-decoration: none; font-weight: 650; letter-spacing: -.02em; }
+.brand { color: var(--ink); text-decoration: none; font-weight: 650; letter-spacing: -.02em; display: inline-flex; align-items: center; gap: .65rem; }
+.brand-logo { width: 2rem; height: 2rem; object-fit: cover; border-radius: 50%; border: 1px solid var(--line); background: #fff; }
 .brand small { display: block; color: var(--muted); font-size: .7rem; font-weight: 500; letter-spacing: .04em; }
 .menu-button { display: none; min-height: 2.75rem; min-width: 2.75rem; border: 1px solid var(--line); border-radius: .45rem; padding: .45rem .75rem; background: var(--paper); color: var(--ink); font: inherit; }
 .site-nav { display: flex; gap: 1.1rem; align-items: center; }

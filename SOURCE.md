@@ -22,6 +22,9 @@ This book is published from the integration repository:
   `no-released-build` with an empty capability allow-list.
 - Social publication procedure: mirrored `book-of-reframe-social-publish` skill; packages are local review artifacts
   until an explicitly authorized Facebook post is returned by the platform.
+- Social preview: the official Fountain Coach organization avatar is vendored as `site/assets/fountain-coach-logo.png`
+  from the public GitHub organization profile; homepage and command routes expose Facebook/Twitter metadata while
+  command pages retain their own live-drive snapshot as the preview image.
 - Canonical web projection: `site/`, published at `https://book.fountain.coach/` after DNS and HTTPS verification on
   2026-08-03. GitHub remains the source and provenance record; the custom host is the canonical reader destination.
 

@@ -12,6 +12,14 @@ Each command URL MUST have:
 - the same honest release status as `RELEASE-SURFACE.md`;
 - a link back to the evidence-backed Markdown page.
 
+Facebook/Twitter preview contract:
+
+- `og:url`, `og:title`, `og:description`, `og:site_name`, and `og:image` are absolute HTTPS values;
+- `og:image:width` and `og:image:height` match the published PNG;
+- the Fountain Coach organization logo is available as the local favicon, Apple touch icon, and structured publisher
+  logo;
+- command previews use the command's own evidence snapshot, never the generic homepage brand image.
+
 The current home page is a responsive repository-derived projection of the publication README, command atlas,
 capability atlas, release surface, provenance, and legal publication boundary. It keeps the development snapshot
 visible without presenting it as a released App.
