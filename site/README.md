@@ -19,11 +19,13 @@ and navigation can be tested before real command stories are projected.
 From this directory:
 
 ```sh
-python3 -m http.server 4173 --bind 127.0.0.1
+python3 dev-server.py --port 4173
 ```
 
 Open `http://127.0.0.1:4173/` and test the wide layout, a narrow mobile viewport, keyboard focus, the skip link, and
-the Menu/Close navigation. The existing `/commands/commands/` route must remain reachable.
+the Menu/Close navigation. Edit HTML, CSS, JavaScript, JSON, or image files and the local preview reloads itself
+within roughly one second. The existing `/commands/commands/` route must remain reachable. The reload script is
+injected only by `dev-server.py`; it is not part of the published HTML.
 
 ## Publication target
 
