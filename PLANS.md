@@ -4,7 +4,7 @@
 
 - Replace misleading public-facing runtime links with an explicit private-runtime access note.
 - Publish `PUBLICATION-POLICY.md` and link the public governance Chapter 44.
-- Keep the Book limited to sanitized command/capability projections, release boundaries, provenance, and AX/VRT proof.
+- Keep the Book limited to reviewed command/capability projections, release boundaries, provenance, and AX/VRT proof.
 - Validate public links, route metadata, FCIS-AX/VRT site acceptance, and `git diff --check`.
 - Review order: org FCIS PR #4, governance PR #7, runtime PR #21, then Book PR #9.
 
@@ -141,6 +141,20 @@ Completion requires the source runtime proof, sanitized evidence, and reciprocal
 - Publication: commit `5b0d155` synchronized to `/var/www/book-of-reframe`; HTTPS route and image verified `200`,
   local preview launchers verified absent (`404`), and deployed permissions verified as `caddy:caddy`, directories
   `755`, files `644`.
+
+# Full-fidelity owned `/threads` evidence and Courier reading hierarchy — 2026-08-04
+
+- Re-run `/threads` against the Polyxsupershow sixth-draft managed store after the Copilot typography change.
+- Make Copilot Courier prose smaller than atoms, keep interface labels system-font, add bullets/space to listings, and
+  disclose the uncertainty score/lane rack by default.
+- Publish the actual window-ID capture only after recording the publisher's ownership, exact public scope, and review
+  for personal data, third-party material, credentials, and secrets. Do not obfuscate owned manuscript evidence when
+  the purpose is to illustrate the real product surface.
+- Visual proof: `evidence/2026-08-04/threads-live-polyx-courier-20260804.png`; AX proof includes the uncertainty band,
+  both producer lanes, shared map viewport, result row, and terminal activity. Behavioral proof is the persisted
+  `requested → accepted → running → succeeded` lifecycle in `evidence/2026-08-04/verified-threads.md`.
+- Prepublish: site data regenerated; strict scan completed with 0 errors. The compliance register review date was
+  refreshed to 2026-08-04; canonical-host reachability remains the deployment gate.
 # European publication compliance gate — 2026-08-03
 
 **Goal:** Require a documented European regulatory applicability decision before the Book can be called publishable.

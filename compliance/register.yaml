@@ -4,7 +4,7 @@ jurisdiction_scope:
   - European Union
   - Germany (national implementation review required)
 review_owner: Fountain Coach publication maintainer
-review_date: 2026-08-03
+review_date: 2026-08-04
 requirements:
   - id: gdpr
     instrument: Regulation (EU) 2016/679 (GDPR)
@@ -19,7 +19,7 @@ requirements:
       - compliance/evidence/site-surface-2026-08-03.md
       - compliance/evidence/hosting-scope-2026-08-03.md
     owner: Fountain Coach publication maintainer
-    review_date: 2026-08-03
+    review_date: 2026-08-04
     limits: This is the publisher's documented scope decision; changes to processing, hosting, or jurisdiction require a new review.
     reviewer: Benedikt Eickhoff
     review_decision: approved 2026-08-03 during the publication wizard
@@ -33,7 +33,7 @@ requirements:
       - site/README.md
       - site/assets/site.js
     owner: Fountain Coach publication maintainer
-    review_date: 2026-08-03
+    review_date: 2026-08-04
     limits: The cited Commission page explains the ePrivacy relationship; national implementation remains relevant.
   - id: ai-act-transparency
     instrument: Regulation (EU) 2024/1689 (AI Act), transparency obligations
@@ -48,7 +48,7 @@ requirements:
       - PRIVACY.md
       - site/index.html
     owner: Fountain Coach publication maintainer
-    review_date: 2026-08-03
+    review_date: 2026-08-04
     limits: The disclosure must be revisited if the publication adds synthetic media, public-interest informational AI text, or another AI system/output type.
     reviewer: Benedikt Eickhoff
     review_decision: approved 2026-08-03 during the publication wizard
@@ -64,7 +64,7 @@ requirements:
       - FCIS_AUDIT.md
       - ACCESSIBILITY.md
     owner: Fountain Coach publication maintainer
-    review_date: 2026-08-03
+    review_date: 2026-08-04
     limits: FCIS evidence is engineering evidence, not legal conformity assessment.
   - id: dsa
     instrument: Regulation (EU) 2022/2065 (Digital Services Act)
@@ -76,7 +76,7 @@ requirements:
       - COMPLIANCE.md
       - site/README.md
     owner: Fountain Coach publication maintainer
-    review_date: 2026-08-03
+    review_date: 2026-08-04
     limits: GitHub, Facebook, or a future paid/community lane may create separate platform obligations outside this site decision.
   - id: copyright
     instrument: Directive (EU) 2019/790 on copyright in the Digital Single Market
@@ -90,7 +90,7 @@ requirements:
       - site/commands/commands/index.html
       - compliance/evidence/asset-review-2026-08-03.md
     owner: Fountain Coach publication maintainer
-    review_date: 2026-08-03
+    review_date: 2026-08-04
     limits: National copyright exceptions and rights-holder facts must be confirmed for each asset.
   - id: consumer-ecommerce
     instrument: EU consumer and e-commerce rules
@@ -102,7 +102,7 @@ requirements:
       - COMPLIANCE.md
       - site/index.html
     owner: Fountain Coach publication maintainer
-    review_date: 2026-08-03
+    review_date: 2026-08-04
     limits: Any paid lane requires a new consumer, VAT, tax, terms, refund, and payment-provider review.
   - id: hosting-security
     instrument: Publication security and incident controls
@@ -116,7 +116,7 @@ requirements:
       - compliance/evidence/hosting-scope-2026-08-03.md
       - compliance/evidence/site-surface-2026-08-03.md
     owner: Fountain Coach infrastructure maintainer
-    review_date: 2026-08-03
+    review_date: 2026-08-04
     limits: This operational decision covers the documented static publication scope; material hosting, deployment, or incident changes require a new review.
     reviewer: Benedikt Eickhoff
     review_decision: approved 2026-08-03 during the publication wizard

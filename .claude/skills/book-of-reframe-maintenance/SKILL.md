@@ -18,7 +18,10 @@ a second runtime contract.
   them as aliases; never present them as independent powers.
 - Distinguish `available` from live-accepted. A readiness label is not proof that every argument or workflow succeeds.
 - Do not document a capability as executable because a prompt, title, slash entry, or historical screenshot mentions it.
-- Never copy prompts or private store data into the public book. Store only sanitized catalog/proof projections.
+- Never copy prompts, private store data, or unowned manuscript material into the public book. Publisher-owned
+  manuscript evidence may be included only when the page records the ownership declaration, exact public scope, and
+  review for personal data, third-party material, and secrets. Do not apply obfuscation to owned material merely to
+  make a screenshot look sanitized; the evidence must show the command's actual reading surface.
 
 ## Workflow
 
@@ -67,7 +70,7 @@ The public repository should contain:
 - `commands/<slug>.md` — one writer-facing command document per command, each beginning with its own live-drive GUI
   snapshot;
 - `site/` — canonical static web projection with stable command URLs and Open Graph metadata;
-- `evidence/` — sanitized generated catalog and acceptance metadata only;
+- `evidence/` — generated catalog, acceptance metadata, and explicitly rights-reviewed owned evidence only;
 - `SOURCE.md` — reciprocal source links and provenance.
 
 The page exporter and validator must fail closed when a command lacks a matching window-ID screenshot, AX/result

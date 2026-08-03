@@ -16,7 +16,8 @@ command-page directory, and evidence inventory needed to prevent unsupported pub
 
 - Preserve the runtime repository as authority.
 - Keep prompts, private store data, secrets, and local filesystem paths out of the book.
-- Acceptance: `SOURCE.md` identifies sanitized, reciprocal provenance.
+- Acceptance: `SOURCE.md` identifies reciprocal provenance and, for owned manuscript evidence, the explicit ownership,
+  public-scope, and personal-data/third-party/secrets review.
 
 ### Phase 1: Required structure
 

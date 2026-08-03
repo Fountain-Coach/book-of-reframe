@@ -27,7 +27,7 @@ individual live-drive evidence is complete for `/commands` and remains pending f
 | FCIS-VRT-01/04 | PARTIAL | `evidence/` stores versioned window-ID snapshots; gate is manual/opt-in. | Add a snapshot for each command before marking complete. |
 | RELEASE-SURFACE-01 | PASS | Release manifest says `no-released-build` and has an empty allow-list. | Populate only from a named accepted build. |
 | FCIS-PROVENANCE-1 | PASS | `SOURCE.md` links runtime, governance, snapshot, and publication provenance. | Update reciprocal commits/PRs. |
-| FCIS-CONTENT-1 | PASS | Evidence is sanitized and contains no prompts or private store data. | Keep publication projections sanitized. |
+| FCIS-CONTENT-1 | PASS | Evidence contains no runtime source, private store export, credentials, or secrets. The 2026-08-04 `/threads` image is full fidelity under the recorded publisher ownership/scope review for the Polyxsupershow source. | Repeat the ownership, personal-data, third-party, and secret review for every owned manuscript asset. |
 
 ## Orthogonality violations
 
