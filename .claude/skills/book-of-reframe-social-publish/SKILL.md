@@ -27,6 +27,8 @@ external post only after a separate explicit confirmation naming the Facebook de
 1. Resolve the command page and its evidence manifest. Confirm the first non-empty page line is the command's own
    alt-texted image and that the referenced file exists.
 2. Run `scripts/build_facebook_post.py <book-root> <command-page> --teaser "..." --book-url "..."`.
+   Use the canonical site URL from `site/site-config.json` (the interim GitHub Pages URL until a custom domain is
+   selected), not a raw GitHub file URL.
 3. Inspect the generated `facebook-post.json` and the image visually. The package must contain `image`, `caption`,
    `command`, `evidence`, `releaseStatus`, and `externalPublish: false`.
 4. Edit the teaser only from verified facts. A good caption has: a hook about the writer's problem, the command's

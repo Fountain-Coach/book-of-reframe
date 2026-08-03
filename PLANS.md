@@ -16,6 +16,12 @@ Completion requires the source runtime proof, sanitized evidence, and reciprocal
 - Publish the sanitized release manifest and state explicitly that no released App surface is currently recorded.
 - Do not populate the allow-list from `/commands`, screenshots, `main`, or executable-but-unaccepted registry rows.
 
+## 2026-08-03 — canonical web publishing
+
+- Provide stable command URLs with Facebook/Open Graph metadata and the command snapshot as the social image.
+- Deploy the static `site/` projection through GitHub Pages; keep a custom `CNAME` unset until the domain is chosen.
+- Keep Facebook posting as a separate explicit action that shares the canonical site URL.
+
 ## 2026-08-03 — FCIS command pages and visual evidence
 
 - Add one writer-facing document per published command, with the GUI snapshot as its first non-empty line.

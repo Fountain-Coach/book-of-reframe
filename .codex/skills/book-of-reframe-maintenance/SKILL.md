@@ -66,6 +66,7 @@ The public repository should contain:
 - `HISTORICAL-COMMANDS.md` — commands retained for development, compatibility, aliases, help, or maintainer use;
 - `commands/<slug>.md` — one writer-facing command document per command, each beginning with its own live-drive GUI
   snapshot;
+- `site/` — canonical static web projection with stable command URLs and Open Graph metadata;
 - `evidence/` — sanitized generated catalog and acceptance metadata only;
 - `SOURCE.md` — reciprocal source links and provenance.
 
@@ -75,6 +76,10 @@ published as completed documentation.
 
 The publication must never derive `RELEASE-SURFACE.md` from the command atlas. It is generated from the release
 manifest and may contain an empty allow-list when no named distribution build exists.
+
+The site is the canonical social destination. Build each command URL with an absolute HTTPS canonical URL and
+`og:image` pointing to that command's own snapshot. Keep custom-domain configuration separate from content; do not
+invent or register a domain during routine maintenance.
 
 Keep the book useful to writers: explain intent and outcomes before implementation terms. Keep it useful to
 maintainers: every claim must be traceable to a registry row, runtime owner, persisted proof, or explicitly marked
