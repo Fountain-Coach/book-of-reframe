@@ -15,6 +15,8 @@ This book is published from the integration repository:
 - Publication projection: `COMMAND-ATLAS.md` and `evidence/2026-08-03/verified-command-catalog.md`
 - Release boundary: `RELEASE-SURFACE.md` and `evidence/2026-08-03/reframe-release-surface.json`; current status is
   `no-released-build` with an empty capability allow-list.
+- Social publication procedure: mirrored `book-of-reframe-social-publish` skill; packages are local review artifacts
+  until an explicitly authorized Facebook post is returned by the platform.
 
 The local temporary store path is provenance for the generating workspace only; it is not a public dependency. The
 sanitized catalog and screenshot in `evidence/2026-08-03/` are the publication evidence.
