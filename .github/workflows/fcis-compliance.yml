@@ -1,0 +1,32 @@
+name: FCIS compliance
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  publication-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate command pages
+        run: |
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          pages = sorted(page for page in Path('commands').glob('*.md') if page.name != 'README.md')
+          assert pages, 'no command pages found'
+          for page in pages:
+              lines = [line.strip() for line in page.read_text().splitlines() if line.strip()]
+              assert lines and lines[0].startswith('!['), page
+              ref = re.search(r'\]\(([^)]+)\)', lines[0]).group(1)
+              assert (page.parent / ref).is_file(), (page, ref)
+              assert 'Live drive:' in page.read_text(), page
+          print(f'validated {len(pages)} command page(s)')
+          PY
+      - name: Check markdown whitespace
+        run: git diff --check

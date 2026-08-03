@@ -21,3 +21,11 @@ not new powers; “available” is not the same as live-accepted; and a feature 
 because a prompt or UI title mentions it.
 
 The integration repository's `book-of-reframe-maintenance` skill defines the maintenance workflow.
+
+Each completed command page begins with the GUI snapshot of that command executing and showing its result. The
+snapshot is paired with AX evidence and persisted FountainStore proof; commands not yet driven remain explicitly
+pending. FCIS status is tracked in [`FCIS_AUDIT.md`](FCIS_AUDIT.md) and
+[`FCIS_COMPLIANCE_PLAN.md`](FCIS_COMPLIANCE_PLAN.md).
+
+Canonical standards: [FCIS-AX](https://github.com/Fountain-Coach/.github/blob/main/docs/FCIS-AX-Standard.md) and
+[FCIS-VRT](https://github.com/Fountain-Coach/.github/blob/main/docs/FCIS-VRT-Standard.md).

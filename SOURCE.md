@@ -16,3 +16,6 @@ This book is published from the integration repository:
 
 The local temporary store path is provenance for the generating workspace only; it is not a public dependency. The
 sanitized catalog and screenshot in `evidence/2026-08-03/` are the publication evidence.
+
+The command-page contract is snapshot-gated: each completed page begins with its own live-drive GUI image, with AX
+and FountainStore evidence recorded alongside it. The catalog screenshot is not reused as command proof.

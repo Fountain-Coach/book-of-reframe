@@ -1,0 +1,18 @@
+{
+  "snapshotDate": "2026-08-03",
+  "authorities": {
+    "semantic": "AX tree",
+    "visual": "CoreGraphics window-ID screenshot",
+    "behavioral": "FountainStore ReframeStoreDump"
+  },
+  "commands": {
+    "/commands": {
+      "status": "live-accepted",
+      "snapshot": "../evidence/2026-08-03/commands-live-fullcatalog-20260803.png",
+      "liveDrive": "../evidence/2026-08-03/verified-command-catalog.md",
+      "behavior": "app.commands.discover; corpus reframe-ulysses",
+      "ax": "command-results-all and command-result-* rows"
+    }
+  },
+  "pendingPolicy": "Do not create or publish a command page until its own execution/result snapshot, AX proof, and persisted proof exist."
+}
