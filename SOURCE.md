@@ -2,8 +2,9 @@
 
 This book is published from the integration repository:
 
-- Runtime and registry: https://github.com/Fountain-Coach/midi2-gpu-fabric
+- Runtime and registry: private `Fountain-Coach/midi2-gpu-fabric` (access required; not a public source link)
 - Governance and agent practice: https://github.com/Fountain-Coach/Reframe-Refactoring
+- Publication boundary: [PUBLICATION-POLICY.md](PUBLICATION-POLICY.md) and [governance Chapter 44](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/44-publication-and-source-policy.md)
 - Maintenance skill: `midi2-gpu-fabric/.codex/skills/book-of-reframe-maintenance`
 
 ## Snapshot: 2026-08-03

@@ -1,5 +1,12 @@
 # Publication plan
 
+## 2026-08-03 — public/private publication policy
+
+- Replace misleading public-facing runtime links with an explicit private-runtime access note.
+- Publish `PUBLICATION-POLICY.md` and link the public governance Chapter 44.
+- Keep the Book limited to sanitized command/capability projections, release boundaries, provenance, and AX/VRT proof.
+- Validate public links, route metadata, FCIS-AX/VRT site acceptance, and `git diff --check`.
+
 ## 2026-08-03 — first verified Book of Reframe snapshot
 
 - Import the live `/commands` catalog from `app.commands.discover`.
@@ -30,3 +37,12 @@ Completion requires the source runtime proof, sanitized evidence, and reciprocal
 - Add FCIS RFC 0001 audit/plan files and keep the Codex/Claude maintenance skill copies identical.
 - Publish only commands with evidence; retain the complete catalog and a pending inventory for commands not yet
   driven. Never use the existing catalog screenshot as proof for another command.
+
+## 2026-08-03 — repository-derived web projection
+
+- Replace the lorem-ipsum responsive specimen with a neutral, GitHub-like projection of `README.md`,
+  `COMMAND-ATLAS.md`, `CAPABILITY-ATLAS.md`, `RELEASE-SURFACE.md`, and `SOURCE.md`.
+- Keep command inventory, governed capability status, live evidence, and release status visibly separate.
+- Give the `/commands` route the same publication shell, typography, metadata, and evidence/status vocabulary as the
+  overview page.
+- Validate routes, metadata, FCIS-AX semantics, fixed desktop/mobile VRT, and local reload behavior.

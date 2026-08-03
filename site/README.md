@@ -1,7 +1,8 @@
 # Canonical Book site
 
 This static site is the canonical public destination for social sharing. GitHub remains the source and provenance
-record; the site provides stable URLs and Facebook/Open Graph metadata.
+record; the site provides stable URLs and Facebook/Open Graph metadata. The public/private boundary is defined in
+[`../PUBLICATION-POLICY.md`](../PUBLICATION-POLICY.md) and governance Chapter 44.
 
 Each command URL MUST have:
 
@@ -11,8 +12,9 @@ Each command URL MUST have:
 - the same honest release status as `RELEASE-SURFACE.md`;
 - a link back to the evidence-backed Markdown page.
 
-The current home page is a responsive development/template specimen using lorem ipsum content so its reading rhythm
-and navigation can be tested before real command stories are projected.
+The current home page is a responsive repository-derived projection of the publication README, command atlas,
+capability atlas, release surface, and provenance. It keeps the development snapshot visible without presenting it as
+a released App.
 
 ## Local rinse-and-wash
 
@@ -34,7 +36,7 @@ The fitting production hostname is proposed as `book.fountain.coach`. It is reco
 and metadata work, but DNS, Caddy, and deployment are not configured by this content repository change. Those are
 separate secure-publishing operations requiring explicit confirmation and post-change DNS/TLS verification.
 
-The page states that it is development/template content and makes no released-App claim.
+The page states that it is a development snapshot and makes no released-App claim.
 
 ## FCIS interface verification
 
@@ -43,17 +45,26 @@ layer: landmarks, headings, links, buttons, accessible names, `aria-expanded` st
 and asserted semantically. Screenshots are the independent human/visual layer and are not used to infer accessibility
 state.
 
+When the ChatGPT Browser connector is not exposed, acceptance uses the repository's deterministic Chrome CDP runner
+instead. It launches an isolated Chrome profile, reads `Accessibility.getFullAXTree`, performs semantic DOM actions,
+and captures fixed-viewport PNGs; it does not require a ChatGPT extension or a signed-in browser session:
+
+```sh
+python3 /path/to/midi2-gpu-fabric/.codex/skills/book-of-reframe-site-acceptance/scripts/cdp_site_acceptance.py \
+  --site-root "$PWD"
+```
+
 ```text
 FCIS-AX Declaration
 - Surfaces: home page, responsive navigation, command atlas route
 - Custom-drawn views: none; HTML/CSS controls and content are used
 - AX identifiers: semantic HTML, ARIA labels/states, and stable hrefs/data attributes
 - AX-driven verification: integration `.codex/skills/book-of-reframe-site-acceptance`
-- Known gaps: browser-dependent drive pending when no supported browser is available
+- Known gaps: requires a locally installed Chromium-family browser; the ChatGPT Browser connector is optional
 
 FCIS-VRT:
   modes: [VRT-Render]
-  baselines: site/evidence/vrt/ (manual/opt-in; first browser capture pending)
+  baselines: site/evidence/vrt/ (manual/opt-in; CDP captures under local-cdp/)
   gate: manual
   legacy-aliases: none
 ```
