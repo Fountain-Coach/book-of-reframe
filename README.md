@@ -11,6 +11,8 @@ agent practice live in [`Fountain-Coach/Reframe-Refactoring`](https://github.com
 
 - [`COMMAND-ATLAS.md`](COMMAND-ATLAS.md) — the first verified numbered command atlas, with writer-facing explanations;
 - [`CAPABILITY-ATLAS.md`](CAPABILITY-ATLAS.md) — the current Copilot boundary and closure status;
+- [`RELEASE-SURFACE.md`](RELEASE-SURFACE.md) — what a named App build is allowed to promise;
+- [`HISTORICAL-COMMANDS.md`](HISTORICAL-COMMANDS.md) — why the development command inventory is broader than a release;
 - [`evidence/2026-08-03/verified-command-catalog.md`](evidence/2026-08-03/verified-command-catalog.md) — the
   machine-shaped catalog projection from the live app.
 
@@ -26,6 +28,9 @@ Each completed command page begins with the GUI snapshot of that command executi
 snapshot is paired with AX evidence and persisted FountainStore proof; commands not yet driven remain explicitly
 pending. FCIS status is tracked in [`FCIS_AUDIT.md`](FCIS_AUDIT.md) and
 [`FCIS_COMPLIANCE_PLAN.md`](FCIS_COMPLIANCE_PLAN.md).
+
+The current publication records **no released App surface**. The 95-entry command atlas is a development/runtime
+inventory, not a shipped capability promise.
 
 Canonical standards: [FCIS-AX](https://github.com/Fountain-Coach/.github/blob/main/docs/FCIS-AX-Standard.md) and
 [FCIS-VRT](https://github.com/Fountain-Coach/.github/blob/main/docs/FCIS-VRT-Standard.md).

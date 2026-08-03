@@ -2,7 +2,8 @@
 
 ## Executive summary
 
-Status: PARTIAL — the publication now has the required FCIS layering and a snapshot-gated command-page contract;
+Status: PARTIAL — the publication now has the required FCIS layering, snapshot-gated command-page contract, and an
+explicit no-release boundary;
 individual live-drive evidence is complete for `/commands` and remains pending for the other catalog entries.
 
 ## Repository inventory
@@ -11,6 +12,7 @@ individual live-drive evidence is complete for `/commands` and remains pending f
 - Long-task intent: `PLANS.md`
 - Publication projection: `README.md`, `COMMAND-ATLAS.md`, `CAPABILITY-ATLAS.md`, `commands/`
 - Evidence and provenance: `evidence/`, `SOURCE.md`
+- Release boundary: `RELEASE-SURFACE.md`, `evidence/2026-08-03/reframe-release-surface.json`
 - Org standards: Fountain-Coach `.github` FCIS-AX and FCIS-VRT
 
 ## Compliance matrix
@@ -23,6 +25,7 @@ individual live-drive evidence is complete for `/commands` and remains pending f
 | FCIS-LAYERS-1 | PASS | Law, intent, procedure, and publication evidence are separated. | Reject duplicated procedures. |
 | FCIS-AX-01/04/05 | PASS | Pages link AX/result proof; publication does not claim from pixels alone. | Preserve AX identifiers in evidence. |
 | FCIS-VRT-01/04 | PARTIAL | `evidence/` stores versioned window-ID snapshots; gate is manual/opt-in. | Add a snapshot for each command before marking complete. |
+| RELEASE-SURFACE-01 | PASS | Release manifest says `no-released-build` and has an empty allow-list. | Populate only from a named accepted build. |
 | FCIS-PROVENANCE-1 | PASS | `SOURCE.md` links runtime, governance, snapshot, and publication provenance. | Update reciprocal commits/PRs. |
 | FCIS-CONTENT-1 | PASS | Evidence is sanitized and contains no prompts or private store data. | Keep publication projections sanitized. |
 
