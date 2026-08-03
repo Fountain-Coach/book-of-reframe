@@ -8,7 +8,7 @@ This book is published from the integration repository:
 
 ## Snapshot: 2026-08-03
 
-- Source runtime store: `/tmp/commands-live-fullcatalog-20260803.fountainstore`
+- Source runtime store: fresh managed integration store; sanitized projection is retained in `evidence/2026-08-03/`
 - Capability: `app.commands.discover`
 - Proof source: `copilot:capability:reframe-ulysses:c42a180c-7990-4f44-ae4b-373855daf323`
 - Runtime count: 95 command entries, 92 available, 3 unavailable, 3 `//`-only within the available count

@@ -81,13 +81,13 @@ Prioritize available-but-unaccepted capabilities first, then implement unavailab
 ### `app.commands.discover`
 
 - **fullCatalogAX**: Fresh `/commands` drive exposes command-results-all as a scrollable AXScrollArea with the complete catalog; AX enumerated available entries beyond the previous six-row audit subset.
-- **fullCatalogWindowCapture**: /tmp/commands-live-fullcatalog-20260803.png
+- **fullCatalogWindowCapture**: evidence/2026-08-03/commands-live-fullcatalog-20260803.png
 - **naturalLanguageAX**: Fresh-store natural-language request rendered command-results with 92 available and 3 unavailable entries; copilot-capability-activity reports Phase succeeded.
-- **naturalLanguageFountainStore**: /tmp/commands-live-20260803-nl-fixed.fountainstore — app.commands.discover naturalLanguage lifecycle requested → accepted → running → succeeded; execution 41821923-3655-4f87-81d6-fb20533352c2
+- **naturalLanguageFountainStore**: sanitized live proof recorded in evidence/2026-08-03/copilot-capability-closure.json — app.commands.discover naturalLanguage lifecycle requested → accepted → running → succeeded; execution 41821923-3655-4f87-81d6-fb20533352c2
 - **naturalLanguageProof**: Aggregate copilot:capability:reframe-ulysses:41821923-3655-4f87-81d6-fb20533352c2 records command.catalog.entries and command.catalog.source=slashCommandIndex.
-- **naturalLanguageWindowCapture**: /tmp/commands-live-natural-20260803.png
+- **naturalLanguageWindowCapture**: the full-catalog visual capture is in evidence/2026-08-03/commands-live-fullcatalog-20260803.png
 - **slashAX**: AX command-results exposes 92 available and 3 unavailable entries with reasons; copilot-capability-activity reports Phase succeeded.
-- **slashFountainStore**: /tmp/commands-live-20260803-2.fountainstore — app.commands.discover slash lifecycle requested → accepted → running → succeeded; execution b0781a46-eaba-4ec3-8b8b-2a6602eb2175
+- **slashFountainStore**: sanitized live proof recorded in evidence/2026-08-03/copilot-capability-closure.json — app.commands.discover slash lifecycle requested → accepted → running → succeeded; execution b0781a46-eaba-4ec3-8b8b-2a6602eb2175
 - **slashProof**: Aggregate copilot:capability:reframe-ulysses:b0781a46-eaba-4ec3-8b8b-2a6602eb2175 records command.catalog.entries and command.catalog.source=slashCommandIndex.
 
 ### `pipeline.status`
@@ -97,5 +97,5 @@ Prioritize available-but-unaccepted capabilities first, then implement unavailab
 - **proof**: the store-backed chat round contains the proof-bearing pipeline result
 - **response**: writer-facing response was `PIPELINE STATUS`, with no legacy `STORIFY SYNOPSIS` surface
 - **scenario**: Reframe moved to the secondary 1920x1080 display at {127,-1080}, full-screen, “Show pipeline status” submitted through AX
-- **screenshot**: CoreGraphics window-ID capture at `/tmp/secondary-governed-drive.png`
-- **store**: fresh managed store `/tmp/secondary-governed-drive.1PYA6y`, Romeo and Juliet imported from DraCor
+- **screenshot**: CoreGraphics window-ID capture from the integration live-drive evidence
+- **store**: fresh managed store used by the integration live drive, Romeo and Juliet imported from DraCor
