@@ -42,4 +42,5 @@ and FountainStore evidence recorded alongside it. The catalog screenshot is not 
 The local site acceptance pass for this update used Google Chrome via CDP at `http://127.0.0.1:4173/`: home and
 `/commands/commands/` AX/VRT checks passed, and `/commands/pipeline-status/` returned HTTP 200 with its canonical,
 Open Graph, alt-text, and evidence image metadata. The strict prepublish scan passed with `--check-external` (0 errors,
-0 warnings). The new route is not yet deployed to the canonical host.
+0 warnings). Publication commit `5b0d155` was synchronized to `/var/www/book-of-reframe`; the new route and image
+now return HTTPS `200` from the canonical host. Local-only preview launchers remain excluded.

@@ -138,6 +138,9 @@ Completion requires the source runtime proof, sanitized evidence, and reciprocal
 - No runtime or release-surface change was made; the page remains explicitly development evidence.
 - Local site acceptance: Google Chrome via CDP passed home and `/commands/commands/` AX/VRT checks; the new route and
   image/metadata returned HTTP 200. Strict prepublish scan with `--check-external`: 0 errors, 0 warnings.
+- Publication: commit `5b0d155` synchronized to `/var/www/book-of-reframe`; HTTPS route and image verified `200`,
+  local preview launchers verified absent (`404`), and deployed permissions verified as `caddy:caddy`, directories
+  `755`, files `644`.
 # European publication compliance gate — 2026-08-03
 
 **Goal:** Require a documented European regulatory applicability decision before the Book can be called publishable.
