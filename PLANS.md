@@ -108,6 +108,12 @@ Completion requires the source runtime proof, sanitized evidence, and reciprocal
   thick small-size strokes.
 - Added the downloadable `/sticker/` route and instructions for saving the PNG to Photos and choosing **Add Sticker**.
 - This is an iPhone keyboard sticker/Genmoji-adjacent asset, not a new Unicode character.
+
+## 2026-08-03 — sticker correction
+
+- Replaced the first sticker rendering because the fountain/spring was not sufficiently readable.
+- Corrected asset preserves the open hand plus the central fountain jet and four curved side jets; RGBA corners remain
+  transparent.
 # European publication compliance gate — 2026-08-03
 
 **Goal:** Require a documented European regulatory applicability decision before the Book can be called publishable.
