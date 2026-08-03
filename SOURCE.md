@@ -21,6 +21,9 @@ This book is published from the integration repository:
 - Individually documented command: [`/pipeline status`](commands/pipeline-status.md), with three repeated fixture
   runs, AX result semantics, CoreGraphics window-ID capture, and persisted FountainStore proof in
   `evidence/2026-08-03/verified-pipeline-status.md`.
+- Individually documented command: [`/threads`](commands/threads.md), with a fresh fixture run, AX result semantics,
+  CoreGraphics window-ID capture, and persisted FountainStore proof in `evidence/2026-08-03/verified-threads.md`.
+  This proves the slash-command origin only; the broader capability closure remains pending origin-parity acceptance.
 - Release boundary: `RELEASE-SURFACE.md` and `evidence/2026-08-03/reframe-release-surface.json`; current status is
   `no-released-build` with an empty capability allow-list.
 - Social publication procedure: mirrored `book-of-reframe-social-publish` skill; packages are local review artifacts
@@ -39,7 +42,7 @@ sanitized catalog and screenshot in `evidence/2026-08-03/` are the publication e
 The command-page contract is snapshot-gated: each completed page begins with its own live-drive GUI image, with AX
 and FountainStore evidence recorded alongside it. The catalog screenshot is not reused as command proof.
 
-The local site acceptance pass for this update used Google Chrome via CDP at `http://127.0.0.1:4173/`: home and
+The local site acceptance pass for the preceding publication used Google Chrome via CDP at `http://127.0.0.1:4173/`: home and
 `/commands/commands/` AX/VRT checks passed, and `/commands/pipeline-status/` returned HTTP 200 with its canonical,
 Open Graph, alt-text, and evidence image metadata. The strict prepublish scan passed with `--check-external` (0 errors,
 0 warnings). Publication commit `5b0d155` was synchronized to `/var/www/book-of-reframe`; the new route and image

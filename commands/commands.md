@@ -17,3 +17,5 @@ was reached.
 
 - [`/pipeline status`](pipeline-status.md) — live-accepted read-only pipeline truth with AX, window-ID, and
   FountainStore evidence.
+- [`/threads`](threads.md) — live-accepted uncertainty ledger inspection with AX, window-ID, and FountainStore
+  evidence.
