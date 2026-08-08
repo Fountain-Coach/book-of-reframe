@@ -1,8 +1,8 @@
 # Copilot Capability Audit
 
-Generated: 2026-08-03
+Generated: 2026-08-08
 
-The v2 registry contains **53** identities: **22** executable, **31** unavailable, **2** live-accepted, and **0** contract-drift findings.
+The v2 registry contains **49** identities: **18** executable, **31** unavailable, **2** live-accepted, and **0** contract-drift findings.
 
 A capability is fully empowered only when its adapter, policy, focused tests, persisted proof, telemetry, AX result, and required live acceptance are recorded.
 
@@ -37,11 +37,7 @@ Prioritize available-but-unaccepted capabilities first, then implement unavailab
 | `pipeline.sla` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |
 | `pipeline.status` | available | live-accepted | `showPipelineStatus` | natural language, /pipeline status | maintain acceptance evidence |
 | `prep.frame.switch` | available | executable-not-live-accepted | `switchPrepFrame` | natural language | record live acceptance |
-| `prep.grounding.confirm` | available | executable-not-live-accepted | `confirmGrounding` | natural language | record live acceptance |
-| `prep.guide.adopt` | available | executable-not-live-accepted | `adoptPrepGuide` | natural language | record live acceptance |
-| `prep.guide.generate` | available | executable-not-live-accepted | `generatePrepGuide` | natural language | record live acceptance |
-| `prep.guide.publish` | available | executable-not-live-accepted | `publishPrepGuide` | natural language | record live acceptance |
-| `prep.guide.review` | available | executable-not-live-accepted | `reviewPrepGuide` | natural language | record live acceptance |
+| `prep.grounding.propose` | available | executable-not-live-accepted | `confirmGrounding` | natural language, /ground | record live acceptance |
 | `screenplay.beat.read` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |
 | `screenplay.beat.write` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |
 | `screenplay.note` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |

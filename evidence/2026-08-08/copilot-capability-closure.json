@@ -1,0 +1,1357 @@
+{
+  "capabilities": {
+    "analytics.local": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "analytics.local",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Inspect local analytics and media aids",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "app.commands.discover": {
+      "auditStatus": "live-accepted",
+      "buttonIdentifiers": [],
+      "capabilityId": "app.commands.discover",
+      "confirmationPolicy": "none",
+      "evidence": {
+        "fullCatalogAX": "Fresh `/commands` drive exposes command-results-all as a scrollable AXScrollArea with the complete catalog; AX enumerated available entries beyond the previous six-row audit subset.",
+        "fullCatalogWindowCapture": "evidence/2026-08-03/commands-live-fullcatalog-20260803.png",
+        "naturalLanguageAX": "Fresh-store natural-language request rendered command-results with 92 available and 3 unavailable entries; copilot-capability-activity reports Phase succeeded.",
+        "naturalLanguageFountainStore": "sanitized live proof in evidence/2026-08-03/copilot-capability-closure.json \u2014 app.commands.discover naturalLanguage lifecycle requested \u2192 accepted \u2192 running \u2192 succeeded; execution 41821923-3655-4f87-81d6-fb20533352c2",
+        "naturalLanguageProof": "Aggregate copilot:capability:reframe-ulysses:41821923-3655-4f87-81d6-fb20533352c2 records command.catalog.entries and command.catalog.source=slashCommandIndex.",
+        "naturalLanguageWindowCapture": "evidence/2026-08-03/commands-live-fullcatalog-20260803.png",
+        "slashAX": "AX command-results exposes 92 available and 3 unavailable entries with reasons; copilot-capability-activity reports Phase succeeded.",
+        "slashFountainStore": "sanitized live proof in evidence/2026-08-03/copilot-capability-closure.json \u2014 app.commands.discover slash lifecycle requested \u2192 accepted \u2192 running \u2192 succeeded; execution b0781a46-eaba-4ec3-8b8b-2a6602eb2175",
+        "slashProof": "Aggregate copilot:capability:reframe-ulysses:b0781a46-eaba-4ec3-8b8b-2a6602eb2175 records command.catalog.entries and command.catalog.source=slashCommandIndex."
+      },
+      "nativeOperation": "discoverCommands",
+      "naturalLanguage": true,
+      "nextStep": "Maintain acceptance evidence; future command capabilities require their own adapter, policy, and live matrix.",
+      "owner": "",
+      "proofAuthorities": [
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "none",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.slashCommandIndex",
+        "ReframeSlashCommandCatalogCodec"
+      ],
+      "slashAliases": [
+        "/commands"
+      ],
+      "testIds": [
+        "CommandDiscoveryCapabilityTests.testCommandDiscoveryIsFreeAndAvailable",
+        "CommandDiscoveryCapabilityTests.testCommandDiscoveryReturnsCurrentAvailability",
+        "CommandDiscoveryCapabilityTests.testCommandDiscoveryOriginsShareOneAdapter"
+      ],
+      "title": "Discover local commands",
+      "unavailableReason": ""
+    },
+    "continuity.audit": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "continuity.audit",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Run continuity audit",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "continuity.status": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "continuity.status",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Continue or inspect continuity run",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "fountain.fix": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "fountain.fix",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Fix Fountain draft or cut script",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "fountain.lint": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "fountain.lint",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Lint Fountain draft or cut script",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "fountainstore.document.read": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "fountainstore.document.read",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Read FountainStore documents",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "fountainstore.document.write": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "fountainstore.document.write",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Write FountainStore documents",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "launcher.library.open": {
+      "auditStatus": "executable-not-live-accepted",
+      "buttonIdentifiers": [],
+      "capabilityId": "launcher.library.open",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "openLibrary",
+      "naturalLanguage": true,
+      "nextStep": "",
+      "owner": "",
+      "proofAuthorities": [
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "none",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.executeCopilotCapabilityRequest"
+      ],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testOpenLibraryIsFree"
+      ],
+      "title": "Open the library",
+      "unavailableReason": ""
+    },
+    "launcher.project.create": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "launcher.project.create",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Create empty launcher project",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "launcher.project.import": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "launcher.project.import",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Open launcher import flow",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "launcher.project.open": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "launcher.project.open",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Open launcher project",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "launcher.shelf.read": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "launcher.shelf.read",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Read launcher shelf",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "lora.dataset.prepare": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "lora.dataset.prepare",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Prepare LoRA dataset",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "lora.eval": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "lora.eval",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Evaluate LoRA adapter",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "lora.promote": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "lora.promote",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Promote LoRA adapter",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "lora.train": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "lora.train",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Train LoRA adapter",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "manuscript.reading.inspect": {
+      "auditStatus": "executable-not-live-accepted",
+      "buttonIdentifiers": [],
+      "capabilityId": "manuscript.reading.inspect",
+      "confirmationPolicy": "none",
+      "evidence": {
+        "adapter": "CopilotCapabilityNativeOperation.inspectReading -> ReframeViewModel.executeCopilotCapabilityRequest",
+        "behaviour": "ReframeViewModel.storifyQuestionThreadsReport, derived from the typed ReframeViewModel.storifyQuestionLedgerState",
+        "failureModes": "missing_state (no manuscript open) and ledger_unavailable (never read) are distinct; an unbuilt ledger is never reported as a reading holding nothing open",
+        "implementedOn": "2026-08-01",
+        "liveAcceptance": "NOT YET DRIVEN \u2014 no AX, screenshot or store proof recorded, so this row stays executable-not-live-accepted",
+        "originParity": "/threads (ReframeViewModel+BodyB.swift) and natural-language inspectUncertainty (ReframeViewModel+BodyE.swift) both dispatch the same capability request and render through readingInspectResponse",
+        "tests": "CopilotCapabilityPolicyTests.testReadingInspectIsFreeAndAvailable, .testReadingInspectRequiresReadingState, ReadingInspectCapabilityTests.testBothOriginsResolveToOneCapability, .testAnUnavailableLedgerIsNotAnEmptyReading \u2014 25 focused tests green",
+        "validator": "npm run reasoning:capability-governance \u2014 43 identities, 11 available, generated artifacts byte-identical"
+      },
+      "nativeOperation": "inspectReading",
+      "naturalLanguage": true,
+      "nextStep": "live-drive both origins on a fresh managed store: /threads and a natural-language \"what does this reading still doubt?\", plus the never-read case, then record AX + FountainStore proof and promote to live-accepted",
+      "owner": "Modernization Studio",
+      "proofAuthorities": [
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "none",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.executeCopilotCapabilityRequest",
+        "ReframeViewModel.storifyQuestionThreadsReport"
+      ],
+      "slashAliases": [
+        "/threads"
+      ],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testReadingInspectIsFreeAndAvailable",
+        "CopilotCapabilityPolicyTests.testReadingInspectRequiresReadingState",
+        "ReadingInspectCapabilityTests.testBothOriginsResolveToOneCapability",
+        "ReadingInspectCapabilityTests.testAnUnavailableLedgerIsNotAnEmptyReading"
+      ],
+      "title": "Inspect reading doubts, wants, and learning",
+      "unavailableReason": ""
+    },
+    "pipeline.readiness": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "pipeline.readiness",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Read pipeline readiness",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "pipeline.rerun": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "pipeline.rerun",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Rerun pipeline stage",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "pipeline.sla": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "pipeline.sla",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Show pipeline SLA",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "pipeline.status": {
+      "auditStatus": "live-accepted",
+      "buttonIdentifiers": [],
+      "capabilityId": "pipeline.status",
+      "confirmationPolicy": "none",
+      "evidence": {
+        "acceptedOn": "2026-08-01",
+        "ax": "projection `copilot-capability-activity` reported phase `succeeded`",
+        "proof": "the store-backed chat round contains the proof-bearing pipeline result",
+        "response": "writer-facing response was `PIPELINE STATUS`, with no legacy `STORIFY SYNOPSIS` surface",
+        "scenario": "Reframe moved to the secondary 1920x1080 display at {127,-1080}, full-screen, \u201cShow pipeline status\u201d submitted through AX",
+        "screenshot": "CoreGraphics window-ID capture from the integration live-drive evidence",
+        "store": "fresh managed store used by the integration live drive, Romeo and Juliet imported from DraCor"
+      },
+      "nativeOperation": "showPipelineStatus",
+      "naturalLanguage": true,
+      "nextStep": "maintain acceptance evidence",
+      "owner": "Modernization Studio",
+      "proofAuthorities": [
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "none",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.executeCopilotCapabilityRequest",
+        "ReframeViewModel.factoryPipelineSnapshot"
+      ],
+      "slashAliases": [
+        "/pipeline status"
+      ],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testPipelineStatusIsFreeAndAvailable"
+      ],
+      "title": "Show pipeline status",
+      "unavailableReason": ""
+    },
+    "prep.frame.switch": {
+      "auditStatus": "executable-not-live-accepted",
+      "buttonIdentifiers": [],
+      "capabilityId": "prep.frame.switch",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "switchPrepFrame",
+      "naturalLanguage": true,
+      "nextStep": "",
+      "owner": "",
+      "proofAuthorities": [
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "none",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.executeCopilotCapabilityRequest"
+      ],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testSwitchPrepFrame"
+      ],
+      "title": "Change the visible Prep view",
+      "unavailableReason": ""
+    },
+    "prep.grounding.propose": {
+      "auditStatus": "executable-not-live-accepted",
+      "buttonIdentifiers": [],
+      "capabilityId": "prep.grounding.propose",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "confirmGrounding",
+      "naturalLanguage": true,
+      "nextStep": "",
+      "owner": "",
+      "proofAuthorities": [
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "none",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.executeCopilotCapabilityRequest"
+      ],
+      "slashAliases": [
+        "/ground"
+      ],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testGroundingProposalRequiresConfirmedProfile"
+      ],
+      "title": "Propose a reading lens",
+      "unavailableReason": ""
+    },
+    "screenplay.beat.read": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "screenplay.beat.read",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Read beat structure",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "screenplay.beat.write": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "screenplay.beat.write",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Write beat and cut-script structure",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "screenplay.note": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "screenplay.note",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Add screenplay note",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "screenplay.patch": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "screenplay.patch",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Patch screenplay draft",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "screenplay.read": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "screenplay.read",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Read screenplay source or draft",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "screenplay.source.import": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "screenplay.source.import",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testSourceImportIsUnavailableUntilEffectProofAdapterExists"
+      ],
+      "title": "Import or replace the source",
+      "unavailableReason": "Source import has no proof-gated adapter that observes the persisted replacement after the file picker completes."
+    },
+    "screenplay.write.draft": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "screenplay.write.draft",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Write mutable draft/view screenplay",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "semantic_memory.read": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "semantic_memory.read",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Read semantic memory",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "semantic_memory.write": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "semantic_memory.write",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Write semantic memory",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "storify.assign": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "storify.assign",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Assign Storify units",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "storify.draft.start": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "storify.draft.start",
+      "confirmationPolicy": "paidLane",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "workingLane",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Read the draft into Storify beats",
+      "unavailableReason": "No proof-gated draft Storify adapter is registered."
+    },
+    "storify.guide": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "storify.guide",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Run Storify guide host",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "storify.run.stop": {
+      "auditStatus": "executable-not-live-accepted",
+      "buttonIdentifiers": [
+        "storify-stop"
+      ],
+      "capabilityId": "storify.run.stop",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "stopStorifyRun",
+      "naturalLanguage": true,
+      "nextStep": "",
+      "owner": "",
+      "proofAuthorities": [
+        "fountainStore",
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "none",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.executeCopilotCapabilityRequest"
+      ],
+      "slashAliases": [
+        "/storify! stop"
+      ],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testStopStorifyRun"
+      ],
+      "title": "Stop the active Storify run",
+      "unavailableReason": ""
+    },
+    "storify.source.start": {
+      "auditStatus": "executable-not-live-accepted",
+      "buttonIdentifiers": [
+        "storify-source-start"
+      ],
+      "capabilityId": "storify.source.start",
+      "confirmationPolicy": "paidLane",
+      "evidence": {},
+      "nativeOperation": "startStorifySource",
+      "naturalLanguage": true,
+      "nextStep": "",
+      "owner": "",
+      "proofAuthorities": [
+        "fountainStore",
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "workingLane",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.executeCopilotCapabilityRequest"
+      ],
+      "slashAliases": [
+        "/storify! source auto",
+        "/storify! source auto restart",
+        "/beats start",
+        "/beats refresh"
+      ],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testStorifySourcePaidLaneConfirmation"
+      ],
+      "title": "Read the open chapter into Storify beats",
+      "unavailableReason": ""
+    },
+    "storify.synopsis": {
+      "auditStatus": "unavailable-adapter-proof",
+      "buttonIdentifiers": [],
+      "capabilityId": "storify.synopsis",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "unavailable",
+      "naturalLanguage": false,
+      "nextStep": "build adapter and proof",
+      "owner": "",
+      "proofAuthorities": [],
+      "providerPolicy": "none",
+      "registryStatus": "unavailable",
+      "runtimeOwners": [],
+      "slashAliases": [],
+      "testIds": [
+        "CopilotCapabilityPolicyTests.testUnavailableCapabilitiesAreBlocked"
+      ],
+      "title": "Run Storify synopsis passes",
+      "unavailableReason": "No unified capability adapter and proof-gated focused test are registered yet."
+    },
+    "work.citation.add": {
+      "auditStatus": "executable-not-live-accepted",
+      "buttonIdentifiers": [],
+      "capabilityId": "work.citation.add",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "addCitation",
+      "naturalLanguage": true,
+      "nextStep": "",
+      "owner": "",
+      "proofAuthorities": [
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "none",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.executeCopilotCapabilityRequest"
+      ],
+      "slashAliases": [
+        "/cite"
+      ],
+      "testIds": [
+        "CitationCapabilityTests.testAddingACitationStartsItUnchecked",
+        "CitationCapabilityTests.testVerifyingIsAnActThatRecordsWhatHappened"
+      ],
+      "title": "Cite a source for a claim",
+      "unavailableReason": ""
+    },
+    "work.citation.verify": {
+      "auditStatus": "executable-not-live-accepted",
+      "buttonIdentifiers": [],
+      "capabilityId": "work.citation.verify",
+      "confirmationPolicy": "none",
+      "evidence": {},
+      "nativeOperation": "verifyCitations",
+      "naturalLanguage": true,
+      "nextStep": "",
+      "owner": "",
+      "proofAuthorities": [
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "none",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.executeCopilotCapabilityRequest"
+      ],
+      "slashAliases": [
+        "/cite verify"
+      ],
+      "testIds": [
+        "CitationCapabilityTests.testAddingACitationStartsItUnchecked",
+        "CitationCapabilityTests.testVerifyingIsAnActThatRecordsWhatHappened"
+      ],
+      "title": "Check a citation against its source",
+      "unavailableReason": ""
+    },
+    "world.identity.escalate": {
+      "auditStatus": "executable-not-live-accepted",
+      "buttonIdentifiers": [],
+      "capabilityId": "world.identity.escalate",
+      "confirmationPolicy": "always",
+      "evidence": {
+        "act": "PAID \u2014 escalates unresolved names to the cloud; confirms first",
+        "adapter": "ReframeViewModel.executeCopilotCapabilityRequest -> escalateUnresolvedIdentities",
+        "axProof": "studio-chat-command-palette present once the composer matches; every world verb exposed as slash-command-world-* AXButton with description",
+        "consent": "reached through requestCapabilityWithConsent, which passes consent .notRequired so the policy can ask; /confirm and /cancel answer it",
+        "defectsFoundByTheDrive": "1) every world act declared runtime proof and produced none, so all failed \"required proof is incomplete\"; 2) confirmationPolicy paidLane never fired because it tests the CURRENT answering lane while these acts always reach for the paid one \u2014 /world widen ran unprompted; 3) the answer appeared only in the transient activity banner, never in the transcript",
+        "driveSetup": "fresh managed store ~/world-drive.fountainstore, Romeo and Juliet imported from DraCor, ReframeApp on the secondary 1920x1080 display at {127,-1080} full-screen, driven via Scripts/axprobe.swift, evidence by window-ID screenshot",
+        "implementedOn": "2026-08-01",
+        "liveAcceptance": "SLASH ORIGIN PROVEN end-to-end incl. both confirmation outcomes. NOT live-accepted: the natural-language origin these rows declare is undriven, and only the free on-device lane was exercised.",
+        "liveDrive2026-08-01": "DRIVEN on the secondary display; store-verified phases: requested->awaitingConfirmation, then /confirm: requested->accepted->running->succeeded",
+        "storeProof": "read back with ReframeStoreDump lifecycle from the drive store \u2014 28+ ordered copilot:capability-event documents under corpus romeo-and-juliet",
+        "tests": "WorldCapabilityTests.testEveryWorldVerbResolvesToOneCapability, .testPaidWorldActsRequireConfirmation, .testDestructiveClearAlwaysConfirms \u2014 28 focused tests green",
+        "validator": "npm run reasoning:capability-governance \u2014 51 identities, 19 available, artifacts byte-identical",
+        "verbMap": "ReframeViewModel.worldVerbs \u2014 every synonym resolves to exactly one identity"
+      },
+      "nativeOperation": "escalateUnresolvedIdentities",
+      "naturalLanguage": true,
+      "nextStep": "drive the natural-language origin for each verb, and one session on a paid answering lane",
+      "owner": "Modernization Studio",
+      "proofAuthorities": [
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "answeringLane",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.executeCopilotCapabilityRequest"
+      ],
+      "slashAliases": [
+        "/world ask"
+      ],
+      "testIds": [
+        "WorldCapabilityTests.testEveryWorldVerbResolvesToOneCapability",
+        "WorldCapabilityTests.testPaidWorldActsRequireConfirmation",
+        "WorldCapabilityTests.testDestructiveClearAlwaysConfirms"
+      ],
+      "title": "Ask the cloud about unresolved names",
+      "unavailableReason": ""
+    },
+    "world.ledger.clear": {
+      "auditStatus": "executable-not-live-accepted",
+      "buttonIdentifiers": [],
+      "capabilityId": "world.ledger.clear",
+      "confirmationPolicy": "always",
+      "evidence": {
+        "act": "DESTRUCTIVE \u2014 always confirms, on any lane",
+        "adapter": "ReframeViewModel.executeCopilotCapabilityRequest -> clearWorldLedger",
+        "axProof": "studio-chat-command-palette present once the composer matches; every world verb exposed as slash-command-world-* AXButton with description",
+        "consent": "reached through requestCapabilityWithConsent, which passes consent .notRequired so the policy can ask; /confirm and /cancel answer it",
+        "defectsFoundByTheDrive": "1) every world act declared runtime proof and produced none, so all failed \"required proof is incomplete\"; 2) confirmationPolicy paidLane never fired because it tests the CURRENT answering lane while these acts always reach for the paid one \u2014 /world widen ran unprompted; 3) the answer appeared only in the transient activity banner, never in the transcript",
+        "driveSetup": "fresh managed store ~/world-drive.fountainstore, Romeo and Juliet imported from DraCor, ReframeApp on the secondary 1920x1080 display at {127,-1080} full-screen, driven via Scripts/axprobe.swift, evidence by window-ID screenshot",
+        "implementedOn": "2026-08-01",
+        "liveAcceptance": "SLASH ORIGIN PROVEN end-to-end incl. both confirmation outcomes. NOT live-accepted: the natural-language origin these rows declare is undriven, and only the free on-device lane was exercised.",
+        "liveDrive2026-08-01": "DRIVEN on the secondary display; store-verified phases: requested->awaitingConfirmation, then /confirm: requested->accepted->running->succeeded",
+        "storeProof": "read back with ReframeStoreDump lifecycle from the drive store \u2014 28+ ordered copilot:capability-event documents under corpus romeo-and-juliet",
+        "tests": "WorldCapabilityTests.testEveryWorldVerbResolvesToOneCapability, .testPaidWorldActsRequireConfirmation, .testDestructiveClearAlwaysConfirms \u2014 28 focused tests green",
+        "validator": "npm run reasoning:capability-governance \u2014 51 identities, 19 available, artifacts byte-identical",
+        "verbMap": "ReframeViewModel.worldVerbs \u2014 every synonym resolves to exactly one identity"
+      },
+      "nativeOperation": "clearWorldLedger",
+      "naturalLanguage": true,
+      "nextStep": "drive the natural-language origin for each verb, and one session on a paid answering lane",
+      "owner": "Modernization Studio",
+      "proofAuthorities": [
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "none",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.executeCopilotCapabilityRequest"
+      ],
+      "slashAliases": [
+        "/world clear"
+      ],
+      "testIds": [
+        "WorldCapabilityTests.testEveryWorldVerbResolvesToOneCapability",
+        "WorldCapabilityTests.testPaidWorldActsRequireConfirmation",
+        "WorldCapabilityTests.testDestructiveClearAlwaysConfirms"
+      ],
+      "title": "Clear the manuscript world ledger",
+      "unavailableReason": ""
+    },
+    "world.ledger.read": {
+      "auditStatus": "executable-not-live-accepted",
+      "buttonIdentifiers": [],
+      "capabilityId": "world.ledger.read",
+      "confirmationPolicy": "none",
+      "evidence": {
+        "act": "free read of the world ledger",
+        "adapter": "ReframeViewModel.executeCopilotCapabilityRequest -> readWorldLedger",
+        "axProof": "studio-chat-command-palette present once the composer matches; every world verb exposed as slash-command-world-* AXButton with description",
+        "consent": "reached through requestCapabilityWithConsent, which passes consent .notRequired so the policy can ask; /confirm and /cancel answer it",
+        "defectsFoundByTheDrive": "1) every world act declared runtime proof and produced none, so all failed \"required proof is incomplete\"; 2) confirmationPolicy paidLane never fired because it tests the CURRENT answering lane while these acts always reach for the paid one \u2014 /world widen ran unprompted; 3) the answer appeared only in the transient activity banner, never in the transcript",
+        "driveSetup": "fresh managed store ~/world-drive.fountainstore, Romeo and Juliet imported from DraCor, ReframeApp on the secondary 1920x1080 display at {127,-1080} full-screen, driven via Scripts/axprobe.swift, evidence by window-ID screenshot",
+        "implementedOn": "2026-08-01",
+        "liveAcceptance": "SLASH ORIGIN PROVEN end-to-end incl. both confirmation outcomes. NOT live-accepted: the natural-language origin these rows declare is undriven, and only the free on-device lane was exercised.",
+        "liveDrive2026-08-01": "DRIVEN on the secondary display; store-verified phases: requested->accepted->running->succeeded",
+        "storeProof": "read back with ReframeStoreDump lifecycle from the drive store \u2014 28+ ordered copilot:capability-event documents under corpus romeo-and-juliet",
+        "tests": "WorldCapabilityTests.testEveryWorldVerbResolvesToOneCapability, .testPaidWorldActsRequireConfirmation, .testDestructiveClearAlwaysConfirms \u2014 28 focused tests green",
+        "validator": "npm run reasoning:capability-governance \u2014 51 identities, 19 available, artifacts byte-identical",
+        "verbMap": "ReframeViewModel.worldVerbs \u2014 every synonym resolves to exactly one identity"
+      },
+      "nativeOperation": "readWorldLedger",
+      "naturalLanguage": true,
+      "nextStep": "drive the natural-language origin for each verb, and one session on a paid answering lane",
+      "owner": "Modernization Studio",
+      "proofAuthorities": [
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "none",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.executeCopilotCapabilityRequest"
+      ],
+      "slashAliases": [
+        "/world"
+      ],
+      "testIds": [
+        "WorldCapabilityTests.testEveryWorldVerbResolvesToOneCapability",
+        "WorldCapabilityTests.testPaidWorldActsRequireConfirmation",
+        "WorldCapabilityTests.testDestructiveClearAlwaysConfirms"
+      ],
+      "title": "Show the manuscript world ledger",
+      "unavailableReason": ""
+    },
+    "world.reference.accept": {
+      "auditStatus": "executable-not-live-accepted",
+      "buttonIdentifiers": [],
+      "capabilityId": "world.reference.accept",
+      "confirmationPolicy": "none",
+      "evidence": {
+        "act": "performs the proposed retrieval on the lane the card named",
+        "adapter": "ReframeViewModel.executeCopilotCapabilityRequest -> acceptReferenceStep",
+        "axProof": "studio-chat-command-palette present once the composer matches; every world verb exposed as slash-command-world-* AXButton with description",
+        "consent": "reached through requestCapabilityWithConsent, which passes consent .notRequired so the policy can ask; /confirm and /cancel answer it",
+        "defectsFoundByTheDrive": "1) every world act declared runtime proof and produced none, so all failed \"required proof is incomplete\"; 2) confirmationPolicy paidLane never fired because it tests the CURRENT answering lane while these acts always reach for the paid one \u2014 /world widen ran unprompted; 3) the answer appeared only in the transient activity banner, never in the transcript",
+        "driveSetup": "fresh managed store ~/world-drive.fountainstore, Romeo and Juliet imported from DraCor, ReframeApp on the secondary 1920x1080 display at {127,-1080} full-screen, driven via Scripts/axprobe.swift, evidence by window-ID screenshot",
+        "implementedOn": "2026-08-01",
+        "liveAcceptance": "SLASH ORIGIN PROVEN end-to-end incl. both confirmation outcomes. NOT live-accepted: the natural-language origin these rows declare is undriven, and only the free on-device lane was exercised.",
+        "liveDrive2026-08-01": "DRIVEN on the secondary display; store-verified phases: requested->accepted->running->succeeded (nothing pending)",
+        "storeProof": "read back with ReframeStoreDump lifecycle from the drive store \u2014 28+ ordered copilot:capability-event documents under corpus romeo-and-juliet",
+        "tests": "WorldCapabilityTests.testEveryWorldVerbResolvesToOneCapability, .testPaidWorldActsRequireConfirmation, .testDestructiveClearAlwaysConfirms \u2014 28 focused tests green",
+        "validator": "npm run reasoning:capability-governance \u2014 51 identities, 19 available, artifacts byte-identical",
+        "verbMap": "ReframeViewModel.worldVerbs \u2014 every synonym resolves to exactly one identity"
+      },
+      "nativeOperation": "acceptReferenceStep",
+      "naturalLanguage": true,
+      "nextStep": "drive the natural-language origin for each verb, and one session on a paid answering lane",
+      "owner": "Modernization Studio",
+      "proofAuthorities": [
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "answeringLane",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.executeCopilotCapabilityRequest"
+      ],
+      "slashAliases": [
+        "/world yes"
+      ],
+      "testIds": [
+        "WorldCapabilityTests.testEveryWorldVerbResolvesToOneCapability",
+        "WorldCapabilityTests.testPaidWorldActsRequireConfirmation",
+        "WorldCapabilityTests.testDestructiveClearAlwaysConfirms"
+      ],
+      "title": "Authorise the proposed lookup",
+      "unavailableReason": ""
+    },
+    "world.reference.decline": {
+      "auditStatus": "executable-not-live-accepted",
+      "buttonIdentifiers": [],
+      "capabilityId": "world.reference.decline",
+      "confirmationPolicy": "none",
+      "evidence": {
+        "act": "records the refusal; contacts nothing",
+        "adapter": "ReframeViewModel.executeCopilotCapabilityRequest -> declineReferenceStep",
+        "axProof": "studio-chat-command-palette present once the composer matches; every world verb exposed as slash-command-world-* AXButton with description",
+        "consent": "reached through requestCapabilityWithConsent, which passes consent .notRequired so the policy can ask; /confirm and /cancel answer it",
+        "defectsFoundByTheDrive": "1) every world act declared runtime proof and produced none, so all failed \"required proof is incomplete\"; 2) confirmationPolicy paidLane never fired because it tests the CURRENT answering lane while these acts always reach for the paid one \u2014 /world widen ran unprompted; 3) the answer appeared only in the transient activity banner, never in the transcript",
+        "driveSetup": "fresh managed store ~/world-drive.fountainstore, Romeo and Juliet imported from DraCor, ReframeApp on the secondary 1920x1080 display at {127,-1080} full-screen, driven via Scripts/axprobe.swift, evidence by window-ID screenshot",
+        "implementedOn": "2026-08-01",
+        "liveAcceptance": "SLASH ORIGIN PROVEN end-to-end incl. both confirmation outcomes. NOT live-accepted: the natural-language origin these rows declare is undriven, and only the free on-device lane was exercised.",
+        "liveDrive2026-08-01": "DRIVEN on the secondary display; store-verified phases: requested->accepted->running->succeeded (nothing pending)",
+        "storeProof": "read back with ReframeStoreDump lifecycle from the drive store \u2014 28+ ordered copilot:capability-event documents under corpus romeo-and-juliet",
+        "tests": "WorldCapabilityTests.testEveryWorldVerbResolvesToOneCapability, .testPaidWorldActsRequireConfirmation, .testDestructiveClearAlwaysConfirms \u2014 28 focused tests green",
+        "validator": "npm run reasoning:capability-governance \u2014 51 identities, 19 available, artifacts byte-identical",
+        "verbMap": "ReframeViewModel.worldVerbs \u2014 every synonym resolves to exactly one identity"
+      },
+      "nativeOperation": "declineReferenceStep",
+      "naturalLanguage": true,
+      "nextStep": "drive the natural-language origin for each verb, and one session on a paid answering lane",
+      "owner": "Modernization Studio",
+      "proofAuthorities": [
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "none",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.executeCopilotCapabilityRequest"
+      ],
+      "slashAliases": [
+        "/world no"
+      ],
+      "testIds": [
+        "WorldCapabilityTests.testEveryWorldVerbResolvesToOneCapability",
+        "WorldCapabilityTests.testPaidWorldActsRequireConfirmation",
+        "WorldCapabilityTests.testDestructiveClearAlwaysConfirms"
+      ],
+      "title": "Decline the proposed lookup",
+      "unavailableReason": ""
+    },
+    "world.reference.log": {
+      "auditStatus": "executable-not-live-accepted",
+      "buttonIdentifiers": [],
+      "capabilityId": "world.reference.log",
+      "confirmationPolicy": "none",
+      "evidence": {
+        "act": "free read of the retrieval receipts",
+        "adapter": "ReframeViewModel.executeCopilotCapabilityRequest -> readReferenceLog",
+        "axProof": "studio-chat-command-palette present once the composer matches; every world verb exposed as slash-command-world-* AXButton with description",
+        "consent": "reached through requestCapabilityWithConsent, which passes consent .notRequired so the policy can ask; /confirm and /cancel answer it",
+        "defectsFoundByTheDrive": "1) every world act declared runtime proof and produced none, so all failed \"required proof is incomplete\"; 2) confirmationPolicy paidLane never fired because it tests the CURRENT answering lane while these acts always reach for the paid one \u2014 /world widen ran unprompted; 3) the answer appeared only in the transient activity banner, never in the transcript",
+        "driveSetup": "fresh managed store ~/world-drive.fountainstore, Romeo and Juliet imported from DraCor, ReframeApp on the secondary 1920x1080 display at {127,-1080} full-screen, driven via Scripts/axprobe.swift, evidence by window-ID screenshot",
+        "implementedOn": "2026-08-01",
+        "liveAcceptance": "SLASH ORIGIN PROVEN end-to-end incl. both confirmation outcomes. NOT live-accepted: the natural-language origin these rows declare is undriven, and only the free on-device lane was exercised.",
+        "liveDrive2026-08-01": "DRIVEN on the secondary display; store-verified phases: requested->accepted->running->succeeded",
+        "storeProof": "read back with ReframeStoreDump lifecycle from the drive store \u2014 28+ ordered copilot:capability-event documents under corpus romeo-and-juliet",
+        "tests": "WorldCapabilityTests.testEveryWorldVerbResolvesToOneCapability, .testPaidWorldActsRequireConfirmation, .testDestructiveClearAlwaysConfirms \u2014 28 focused tests green",
+        "validator": "npm run reasoning:capability-governance \u2014 51 identities, 19 available, artifacts byte-identical",
+        "verbMap": "ReframeViewModel.worldVerbs \u2014 every synonym resolves to exactly one identity"
+      },
+      "nativeOperation": "readReferenceLog",
+      "naturalLanguage": true,
+      "nextStep": "drive the natural-language origin for each verb, and one session on a paid answering lane",
+      "owner": "Modernization Studio",
+      "proofAuthorities": [
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "none",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.executeCopilotCapabilityRequest"
+      ],
+      "slashAliases": [
+        "/world references"
+      ],
+      "testIds": [
+        "WorldCapabilityTests.testEveryWorldVerbResolvesToOneCapability",
+        "WorldCapabilityTests.testPaidWorldActsRequireConfirmation",
+        "WorldCapabilityTests.testDestructiveClearAlwaysConfirms"
+      ],
+      "title": "Show the reference retrieval log",
+      "unavailableReason": ""
+    },
+    "world.reference.research": {
+      "auditStatus": "executable-not-live-accepted",
+      "buttonIdentifiers": [],
+      "capabilityId": "world.reference.research",
+      "confirmationPolicy": "none",
+      "evidence": {
+        "act": "proposes a lookup and shows the exact outbound question; retrieves nothing",
+        "adapter": "ReframeViewModel.executeCopilotCapabilityRequest -> proposeReferenceResearch",
+        "axProof": "studio-chat-command-palette present once the composer matches; every world verb exposed as slash-command-world-* AXButton with description",
+        "consent": "reached through requestCapabilityWithConsent, which passes consent .notRequired so the policy can ask; /confirm and /cancel answer it",
+        "defectsFoundByTheDrive": "1) every world act declared runtime proof and produced none, so all failed \"required proof is incomplete\"; 2) confirmationPolicy paidLane never fired because it tests the CURRENT answering lane while these acts always reach for the paid one \u2014 /world widen ran unprompted; 3) the answer appeared only in the transient activity banner, never in the transcript",
+        "driveSetup": "fresh managed store ~/world-drive.fountainstore, Romeo and Juliet imported from DraCor, ReframeApp on the secondary 1920x1080 display at {127,-1080} full-screen, driven via Scripts/axprobe.swift, evidence by window-ID screenshot",
+        "implementedOn": "2026-08-01",
+        "liveAcceptance": "SLASH ORIGIN PROVEN end-to-end incl. both confirmation outcomes. NOT live-accepted: the natural-language origin these rows declare is undriven, and only the free on-device lane was exercised.",
+        "liveDrive2026-08-01": "DRIVEN on the secondary display; store-verified phases: requested->accepted->running->succeeded (refused honestly: no want yet, ch.33)",
+        "storeProof": "read back with ReframeStoreDump lifecycle from the drive store \u2014 28+ ordered copilot:capability-event documents under corpus romeo-and-juliet",
+        "tests": "WorldCapabilityTests.testEveryWorldVerbResolvesToOneCapability, .testPaidWorldActsRequireConfirmation, .testDestructiveClearAlwaysConfirms \u2014 28 focused tests green",
+        "validator": "npm run reasoning:capability-governance \u2014 51 identities, 19 available, artifacts byte-identical",
+        "verbMap": "ReframeViewModel.worldVerbs \u2014 every synonym resolves to exactly one identity"
+      },
+      "nativeOperation": "proposeReferenceResearch",
+      "naturalLanguage": true,
+      "nextStep": "drive the natural-language origin for each verb, and one session on a paid answering lane",
+      "owner": "Modernization Studio",
+      "proofAuthorities": [
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "none",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.executeCopilotCapabilityRequest"
+      ],
+      "slashAliases": [
+        "/world research"
+      ],
+      "testIds": [
+        "WorldCapabilityTests.testEveryWorldVerbResolvesToOneCapability",
+        "WorldCapabilityTests.testPaidWorldActsRequireConfirmation",
+        "WorldCapabilityTests.testDestructiveClearAlwaysConfirms"
+      ],
+      "title": "Propose looking a name up",
+      "unavailableReason": ""
+    },
+    "world.reference.widen": {
+      "auditStatus": "executable-not-live-accepted",
+      "buttonIdentifiers": [],
+      "capabilityId": "world.reference.widen",
+      "confirmationPolicy": "always",
+      "evidence": {
+        "act": "PAID \u2014 re-asks the same question on a wider lane; confirms first",
+        "adapter": "ReframeViewModel.executeCopilotCapabilityRequest -> widenReferenceToPaidLane",
+        "axProof": "studio-chat-command-palette present once the composer matches; every world verb exposed as slash-command-world-* AXButton with description",
+        "consent": "reached through requestCapabilityWithConsent, which passes consent .notRequired so the policy can ask; /confirm and /cancel answer it",
+        "defectsFoundByTheDrive": "1) every world act declared runtime proof and produced none, so all failed \"required proof is incomplete\"; 2) confirmationPolicy paidLane never fired because it tests the CURRENT answering lane while these acts always reach for the paid one \u2014 /world widen ran unprompted; 3) the answer appeared only in the transient activity banner, never in the transcript",
+        "driveSetup": "fresh managed store ~/world-drive.fountainstore, Romeo and Juliet imported from DraCor, ReframeApp on the secondary 1920x1080 display at {127,-1080} full-screen, driven via Scripts/axprobe.swift, evidence by window-ID screenshot",
+        "implementedOn": "2026-08-01",
+        "liveAcceptance": "SLASH ORIGIN PROVEN end-to-end incl. both confirmation outcomes. NOT live-accepted: the natural-language origin these rows declare is undriven, and only the free on-device lane was exercised.",
+        "liveDrive2026-08-01": "DRIVEN on the secondary display; store-verified phases: requested->awaitingConfirmation->BLOCKED via /cancel \u2014 never ran, nothing spent",
+        "storeProof": "read back with ReframeStoreDump lifecycle from the drive store \u2014 28+ ordered copilot:capability-event documents under corpus romeo-and-juliet",
+        "tests": "WorldCapabilityTests.testEveryWorldVerbResolvesToOneCapability, .testPaidWorldActsRequireConfirmation, .testDestructiveClearAlwaysConfirms \u2014 28 focused tests green",
+        "validator": "npm run reasoning:capability-governance \u2014 51 identities, 19 available, artifacts byte-identical",
+        "verbMap": "ReframeViewModel.worldVerbs \u2014 every synonym resolves to exactly one identity"
+      },
+      "nativeOperation": "widenReferenceToPaidLane",
+      "naturalLanguage": true,
+      "nextStep": "drive the natural-language origin for each verb, and one session on a paid answering lane",
+      "owner": "Modernization Studio",
+      "proofAuthorities": [
+        "runtime",
+        "telemetry",
+        "ax"
+      ],
+      "providerPolicy": "answeringLane",
+      "registryStatus": "available",
+      "runtimeOwners": [
+        "ReframeViewModel.executeCopilotCapabilityRequest"
+      ],
+      "slashAliases": [
+        "/world widen"
+      ],
+      "testIds": [
+        "WorldCapabilityTests.testEveryWorldVerbResolvesToOneCapability",
+        "WorldCapabilityTests.testPaidWorldActsRequireConfirmation",
+        "WorldCapabilityTests.testDestructiveClearAlwaysConfirms"
+      ],
+      "title": "Ask a wider paid lane the same question",
+      "unavailableReason": ""
+    }
+  },
+  "counts": {
+    "drift": 0,
+    "executable": 18,
+    "liveAccepted": 2,
+    "total": 49,
+    "unavailable": 31
+  },
+  "generatedOn": "2026-08-08",
+  "registry": "schema/modernization-studio-capabilities.json",
+  "schemaVersion": 1
+}
