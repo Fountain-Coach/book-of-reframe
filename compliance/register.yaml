@@ -47,9 +47,10 @@ requirements:
       - LEGAL-NOTICES.md
       - PRIVACY.md
       - site/index.html
+      - compliance/evidence/asset-review-2026-08-09.md
     owner: Fountain Coach publication maintainer
     review_date: 2026-08-04
-    limits: The disclosure must be revisited if the publication adds synthetic media, public-interest informational AI text, or another AI system/output type.
+    limits: The disclosure must be revisited if the publication adds synthetic media, public-interest informational AI text, or another AI system/output type. Command pages publish Reframe's own generated output (Copilot replies, reading questions, uncertainty lanes) as system-output evidence; each page and SOURCE.md state that origin, and none of it is presented as human-authored editorial prose.
     reviewer: Benedikt Eickhoff
     review_decision: approved 2026-08-03 during the publication wizard
   - id: accessibility
@@ -83,15 +84,17 @@ requirements:
     status: ready
     official_source: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019L0790
     trigger: Manuscript excerpts, screenshots, citations, logos, or generated assets are published.
-    rationale: The publisher declares that current publication text, design, screenshots, and original assets are owned by Benedikt Eickhoff and that no third-party material is intentionally included in this scope.
+    rationale: The publisher declares that current publication text, design, and original assets are owned by Benedikt Eickhoff. Two classes of non-publisher material are now published as evidence and are recorded per asset - publisher-owned manuscript material (Thepolyxsupershow, 2026-08-04) and public-domain third-party text (James Joyce, Ulysses, EU term expired 2012, served by Reframe's own corpus API, 2026-08-09). No in-copyright third-party material is included in this scope.
     evidence:
       - PUBLICATION-POLICY.md
       - SOURCE.md
       - site/commands/commands/index.html
       - compliance/evidence/asset-review-2026-08-03.md
+      - compliance/evidence/asset-review-2026-08-04.md
+      - compliance/evidence/asset-review-2026-08-09.md
     owner: Fountain Coach publication maintainer
     review_date: 2026-08-04
-    limits: National copyright exceptions and rights-holder facts must be confirmed for each asset.
+    limits: National copyright exceptions and rights-holder facts must be confirmed for each asset. The public-domain determination for Ulysses is made on the EU life-plus-seventy term; another jurisdiction's term, or substituting an annotated or edited edition for the corpus-API text, requires a new review.
   - id: consumer-ecommerce
     instrument: EU consumer and e-commerce rules
     status: not_applicable
