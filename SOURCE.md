@@ -118,5 +118,16 @@ live. That instruction is recorded as the decision basis on the affected rows, a
 2026-09-09. The gate now returns **GO** within the documented scope; it remains a scope-consistency check, not a
 legal certification, and the limits recorded on each row still stand.
 
-Published as pull request [#14](https://github.com/Fountain-Coach/book-of-reframe/pull/14) and deployed to the
-canonical host `https://book.fountain.coach/`.
+### Publication and deployment
+
+- Pull request [#14](https://github.com/Fountain-Coach/book-of-reframe/pull/14), merged to `main` as `e3c7d1e`.
+- Deployed to `/var/www/book-of-reframe` on the publishing host (`book.fountain.coach` → `65.109.14.71`, Caddy,
+  root owned `caddy:caddy`) with `secure-publishing/scripts/deploy_book_site.sh --apply --confirm-deploy`. The
+  helper is scoped to that one publication tuple, plans by default, excludes the local-only preview tooling
+  (`dev-server.py`, `open-local-preview.sh`), and deleted nothing. DNS, Caddy, and permissions were not changed.
+- Live verification from the canonical host: `/`, `/commands/commands/`, `/commands/ground/`, and
+  `/commands/readings/` return HTTPS `200`; both evidence images return `200 image/png`; canonical and `og:image`
+  resolve to `book.fountain.coach`. The two new routes were driven again against the live host through Chrome CDP —
+  landmarks, `h1`, breadcrumb, skip link, image alt text, and no horizontal overflow — with captures under
+  `site/evidence/vrt/live-check/`.
+- Pre-publication scan with `--check-external --strict`: **0 errors, 0 warnings**.
