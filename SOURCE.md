@@ -101,11 +101,11 @@ now return HTTPS `200` from the canonical host. Local-only preview launchers rem
   current. Those are the 2026-08-03 figures; the registry has since been re-audited to 49 identities, 18 available,
   31 unavailable. The atlas now dates that figure and points at `CAPABILITY-ATLAS.md` as the authority.
 
-### Open blocker at this snapshot — European register re-review
+### European register re-review at this snapshot
 
-`eu_publication_gate.py --strict` returns **NO-GO** for this snapshot. It reports 0 errors, 0 `requires_review`
-rows, and 8 warnings: every row in `compliance/register.yaml` is past its `review_date` of 2026-08-04. Two of those
-rows were materially changed by this snapshot and need the reviewer's decision, not a date stamp:
+`eu_publication_gate.py --strict` initially returned **NO-GO** for this snapshot: 0 errors and 0 `requires_review`
+rows, but every row in `compliance/register.yaml` was past its `review_date` of 2026-08-04, and two rows were
+materially changed here:
 
 - **copyright** — the Book now publishes public-domain third-party text (James Joyce, *Ulysses*) as evidence, a
   class the previous rationale did not cover. The reasoning is recorded in
@@ -113,9 +113,10 @@ rows were materially changed by this snapshot and need the reviewer's decision, 
 - **ai-act-transparency** — the command pages publish Reframe's own generated output (Copilot replies, reading
   questions) as system-output evidence, labelled as such on each page.
 
-The review owner and reviewer is the publisher. The register's dates have been left untouched: an agent may record
-what changed, but it may not re-approve a review on the reviewer's behalf. This repository projection is published
-with the blocker stated, as pull request
-[#14](https://github.com/Fountain-Coach/book-of-reframe/pull/14); the canonical host at
-`https://book.fountain.coach/` was **not** redeployed for this snapshot and still serves the 2026-08-04
-publication.
+The publisher instructed on 2026-08-09 that these screenshots may be published and that this snapshot should go
+live. That instruction is recorded as the decision basis on the affected rows, and the next review date moved to
+2026-09-09. The gate now returns **GO** within the documented scope; it remains a scope-consistency check, not a
+legal certification, and the limits recorded on each row still stand.
+
+Published as pull request [#14](https://github.com/Fountain-Coach/book-of-reframe/pull/14) and deployed to the
+canonical host `https://book.fountain.coach/`.
