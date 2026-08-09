@@ -65,3 +65,58 @@ The local site acceptance pass for the preceding publication used Google Chrome 
 Open Graph, alt-text, and evidence image metadata. The strict prepublish scan passed with `--check-external` (0 errors,
 0 warnings). Publication commit `5b0d155` was synchronized to `/var/www/book-of-reframe`; the new route and image
 now return HTTPS `200` from the canonical host. Local-only preview launchers remain excluded.
+
+## Snapshot: 2026-08-09 — `/ground` and `/readings` on Ulysses, episode 15 (Circe)
+
+- Source runtime: private `Fountain-Coach/midi2-gpu-fabric`, source commit `7fb9f794`, SPM debug build
+  `ReframeApp` (no distribution artifact).
+- Drive store: `~/circe-book-drive.fountainstore`, a working copy of the writer's Circe drive store
+  (`~/circe-flagship.fountainstore`, corpus `reframe-ulysses`), copied so the original keeps its pristine
+  two-reading state as the reproducible baseline. Neither is the writer's managed library, which was not touched.
+- Manuscript: James Joyce, *Ulysses*, episode 15 (Circe), lines 20051–25573. Public domain, assembled by Reframe's
+  own corpus API. The publisher directed that screenshots may be published; the captured scope was reviewed and
+  contains no personal data, third-party licensed material, credentials, or secrets. Images are full fidelity.
+- Window: CoreGraphics window ID `42036`, bounds `127,-1080 1920x1080`, native full screen on the attached
+  external display; AX-verified before capture.
+- Lane: the writer's key was turned to on-device before either command ran. Only two `telemetry:llm` records and
+  two `llm-cache` entries were written in the whole session, all belonging to that `stay on device` instruction.
+  Neither `/ground` nor `/readings` recorded a paid model call.
+- Individually documented command: [`/ground`](commands/ground.md) — capability `prep.grounding.propose`, origin
+  `slash`, terminal aggregate `copilot:capability:reframe-ulysses:41e02fb6-aed9-45f7-a891-67fc9737a60c`
+  (`phase=succeeded`, `grounding.proposal=false`, `grounding.changed=false`,
+  `grounding.blockedBy=readingHasHoles`), AX projection `copilot-capability-activity`, persisted rounds
+  `chat:reframe-ulysses:round:19` and `:21`. Evidence: `evidence/2026-08-09/verified-ground.md`. This records the
+  slash origin only; the natural-language origin and the accepted-lens path remain unproven, so the capability
+  stays `executable-not-live-accepted`.
+- Individually documented command: [`/readings`](commands/readings.md) — local orchestration with no capability
+  identity; computed from `storify:run:reframe-ulysses:stf-9512cc87` and `:stf-66e626a2` (same span, same grounding
+  identity `83651a50…e008ec0a`), persisted rounds `chat:reframe-ulysses:round:20` and `:22`. Evidence:
+  `evidence/2026-08-09/verified-readings.md`.
+- Repetition: both commands were driven twice, on two separate launches of the same store. `/ground` reproduced
+  identically; `/readings` reproduced its structural report byte-for-byte and re-reasoned its closing paragraph to
+  the same conclusion.
+- Release boundary unchanged: `RELEASE-SURFACE.md` remains `no-released-build` with an empty capability allow-list.
+  Nothing in this snapshot enters a released surface.
+- Correction recorded in this change: `COMMAND-ATLAS.md` stated the capability registry counts (53/22/2/31) as
+  current. Those are the 2026-08-03 figures; the registry has since been re-audited to 49 identities, 18 available,
+  31 unavailable. The atlas now dates that figure and points at `CAPABILITY-ATLAS.md` as the authority.
+
+### European register re-review at this snapshot
+
+`eu_publication_gate.py --strict` initially returned **NO-GO** for this snapshot: 0 errors and 0 `requires_review`
+rows, but every row in `compliance/register.yaml` was past its `review_date` of 2026-08-04, and two rows were
+materially changed here:
+
+- **copyright** — the Book now publishes public-domain third-party text (James Joyce, *Ulysses*) as evidence, a
+  class the previous rationale did not cover. The reasoning is recorded in
+  `compliance/evidence/asset-review-2026-08-09.md`.
+- **ai-act-transparency** — the command pages publish Reframe's own generated output (Copilot replies, reading
+  questions) as system-output evidence, labelled as such on each page.
+
+The publisher instructed on 2026-08-09 that these screenshots may be published and that this snapshot should go
+live. That instruction is recorded as the decision basis on the affected rows, and the next review date moved to
+2026-09-09. The gate now returns **GO** within the documented scope; it remains a scope-consistency check, not a
+legal certification, and the limits recorded on each row still stand.
+
+Published as pull request [#14](https://github.com/Fountain-Coach/book-of-reframe/pull/14) and deployed to the
+canonical host `https://book.fountain.coach/`.

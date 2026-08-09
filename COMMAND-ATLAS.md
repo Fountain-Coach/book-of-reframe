@@ -15,9 +15,11 @@ The current local command catalog contains **95 command entries**:
 - **3 available but `//`-only**, so they are not shown in the normal writer-facing palette.
 
 These are command spellings, not independent product capabilities. Aliases and compatibility spellings count as
-separate entries. The governed Copilot capability registry is the other side of the map: it currently contains 53
-capability identities, 22 executable, 2 live-accepted, and 31 unavailable. One capability can have several commands, and some local
-commands are orchestration, help, or compatibility surfaces rather than one IDL operation.
+separate entries. The governed Copilot capability registry is the other side of the map; on the 2026-08-03 snapshot
+date it contained 53 capability identities, 22 executable, 2 live-accepted, and 31 unavailable. That figure is dated:
+[`CAPABILITY-ATLAS.md`](CAPABILITY-ATLAS.md) carries the current re-audited registry and is the authority for
+capability counts. One capability can have several commands, and some local commands are orchestration, help, or
+compatibility surfaces rather than one IDL operation.
 
 The Book keeps four projections separate: this development command inventory, the governed capability atlas, the
 live-accepted evidence ledger, and the named-build release surface. A slash entry does not enter the released surface
@@ -57,8 +59,8 @@ it is documented because writers may encounter it, but it is not a new capabilit
 | # | Command | What it does |
 |---:|---|---|
 | 10 | `/world` | Show established identities, unresolved names, references, and current wants in the manuscript world ledger. |
-| 11 | `/threads` | Show the open question threads held by the current reading and what could close them. |
-| 12 | `/readings` | Compare manuscript readings: what stayed open and what the next reading should look for. |
+| 11 | [`/threads`](commands/threads.md) | Show the open question threads held by the current reading and what could close them. |
+| 12 | [`/readings`](commands/readings.md) | Compare manuscript readings: what stayed open and what the next reading should look for. |
 | 13 | `/noodles` | Explain the visible beat-to-composer citation-wire connections. |
 | 77 | `/diff` | Show diff queries for draft, source, and beat history. |
 | 80 | `/ask` | Ask a character a question using `NAME: question`. |
@@ -74,7 +76,7 @@ it is documented because writers may encounter it, but it is not a new capabilit
 | 9 | `/about` | Compatibility alias for `/version`. |
 | 14 | `/status` | Print source, pipeline, cost diagnostics, and active gateway notices. |
 | 15 | `/context` | Compatibility alias for `/status`. |
-| 16 | `/pipeline status` | Show terse pipeline truth: state, stage, blocker, current activity, and next action. |
+| 16 | [`/pipeline status`](commands/pipeline-status.md) | Show terse pipeline truth: state, stage, blocker, current activity, and next action. |
 | 17 | `/pipeline status verbose` | Show full stage details, flags, cohort eligibility, and dirty scope. |
 | 18 | `/pipeline sla` | Show recent p50/p90 stage timings against chain budgets. |
 | 19 | `/pipeline rerun` | Rerun a pipeline stage; usage is `/pipeline rerun <semantic\|storify\|continuity\|compose\|lora> [scope]`. |

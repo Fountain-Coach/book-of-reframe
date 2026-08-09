@@ -37,7 +37,7 @@ Prioritize available-but-unaccepted capabilities first, then implement unavailab
 | `pipeline.sla` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |
 | `pipeline.status` | available | live-accepted | `showPipelineStatus` | natural language, /pipeline status | maintain acceptance evidence |
 | `prep.frame.switch` | available | executable-not-live-accepted | `switchPrepFrame` | natural language | record live acceptance |
-| `prep.grounding.propose` | available | executable-not-live-accepted | `confirmGrounding` | natural language, /ground | record live acceptance |
+| `prep.grounding.propose` | available | executable-not-live-accepted | `confirmGrounding` | natural language, /ground | slash origin recorded 2026-08-09 ([`/ground`](commands/ground.md): terminal aggregate, AX, FountainStore, repeated); still needed: the natural-language origin, and the accepted-lens path on a reading without holes |
 | `screenplay.beat.read` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |
 | `screenplay.beat.write` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |
 | `screenplay.note` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |
