@@ -115,5 +115,7 @@ rows were materially changed by this snapshot and need the reviewer's decision, 
 
 The review owner and reviewer is the publisher. The register's dates have been left untouched: an agent may record
 what changed, but it may not re-approve a review on the reviewer's behalf. This repository projection is published
-with the blocker stated; the canonical host at `https://book.fountain.coach/` was **not** redeployed for this
-snapshot and still serves the 2026-08-04 publication.
+with the blocker stated, as pull request
+[#14](https://github.com/Fountain-Coach/book-of-reframe/pull/14); the canonical host at
+`https://book.fountain.coach/` was **not** redeployed for this snapshot and still serves the 2026-08-04
+publication.
