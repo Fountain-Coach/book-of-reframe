@@ -25,8 +25,9 @@ Snapshot date: 2026-08-09
 4. Opened the chapter by identity, not by pressing the manuscript: `library-chapters-toggle-reframe-ulysses` →
    `library-chapter-group-reframe-ulysses-odyssey` → `library-chapter-reframe-ulysses-15`
    (AX description: *Ulysses, chapter 15, Circe*).
-5. Turned the writer's key before anything could spend: sent `stay on device`, and the Copilot answered
-   *"I'll keep this work on your device."*
+5. Asked for the free lane before anything could spend: sent `stay on device`, and the Copilot answered
+   *"I'll keep this work on your device."* What the store shows is the reply and the absence of any paid call
+   afterwards; the provider state itself was not read back, so this record does not claim the lane was switched.
 6. Sent `/ground` through `studio-chat-input` and `studio-chat-send`.
 
 ## Authorities
@@ -81,8 +82,8 @@ with the same refusal text persisted as `chat:reframe-ulysses:round:21`.
 
 No paid model call was recorded for this turn. The two `telemetry:llm` records written during the session
 (`091b66c9-…`, `525ce2be-…`, purposes `staged-studio-intent` and `chat`) both belong to the preceding
-`stay on device` instruction at 17:58 UTC, before the key was turned. `/ground` at 17:59:55 added none: the stance is
-derived from the persisted UncertaintyScore, not from a new reading.
+`stay on device` instruction at 17:58 UTC. `/ground` at 17:59:55 added none: the stance is derived from the
+persisted UncertaintyScore, not from a new reading.
 
 ## Boundary
 

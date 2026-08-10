@@ -37,7 +37,7 @@ Run a second time, the same comparison ended: *"…the readings agree too closel
 | **When it helps** | Once the same span has been read twice — ideally through two different lenses. Then the difference means something. |
 | **What it will refuse to say** | Whose the uncertainty is — the work's or the reader's — on the strength of one pair. Two passes through one lens measure the instrument, and the report says so. |
 | **When there is nothing to compare** | It says so plainly rather than reasoning about what would have changed. |
-| **What it costs** | Nothing recorded on a paid lane in this drive: the comparison is arithmetic over readings already persisted, and the closing paragraph was reasoned on the on-device lane. |
+| **What it costs** | No paid model call was recorded in this drive. The comparison is arithmetic over readings already persisted; the closing paragraph is model prose whose lane was not read back. |
 | **What it changes** | Nothing. It reports; it never reverts a lens or edits the manuscript. |
 
 ## Evidence authorities

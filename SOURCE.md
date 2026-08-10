@@ -78,9 +78,11 @@ now return HTTPS `200` from the canonical host. Local-only preview launchers rem
   contains no personal data, third-party licensed material, credentials, or secrets. Images are full fidelity.
 - Window: CoreGraphics window ID `42036`, bounds `127,-1080 1920x1080`, native full screen on the attached
   external display; AX-verified before capture.
-- Lane: the writer's key was turned to on-device before either command ran. Only two `telemetry:llm` records and
-  two `llm-cache` entries were written in the whole session, all belonging to that `stay on device` instruction.
-  Neither `/ground` nor `/readings` recorded a paid model call.
+- Lane: `stay on device` was sent before either command ran and the Copilot answered *"I'll keep this work on
+  your device."* Only two `telemetry:llm` records and two `llm-cache` entries were written in the whole session,
+  all belonging to that instruction; neither `/ground` nor `/readings` recorded a paid model call. That is a
+  measured absence of paid calls, not a reading of provider state: the stored lane grant was never opened, so no
+  claim is made here that the lane was switched.
 - Individually documented command: [`/ground`](commands/ground.md) — capability `prep.grounding.propose`, origin
   `slash`, terminal aggregate `copilot:capability:reframe-ulysses:41e02fb6-aed9-45f7-a891-67fc9737a60c`
   (`phase=succeeded`, `grounding.proposal=false`, `grounding.changed=false`,
@@ -100,6 +102,23 @@ now return HTTPS `200` from the canonical host. Local-only preview launchers rem
 - Correction recorded in this change: `COMMAND-ATLAS.md` stated the capability registry counts (53/22/2/31) as
   current. Those are the 2026-08-03 figures; the registry has since been re-audited to 49 identities, 18 available,
   31 unavailable. The atlas now dates that figure and points at `CAPABILITY-ATLAS.md` as the authority.
+
+### Correction: 2026-08-10 — a lane claim narrowed to what was measured
+
+This snapshot originally stated that the writer's key was turned to on-device before `/ground` and `/readings`
+ran, and that the closing paragraph of the `/readings` report was reasoned on the on-device lane. Neither was
+established. Both were inferred from the ABSENCE of a paid-lane telemetry record; the stored lane grant was never
+read back, so the provider state at that moment is unknown.
+
+What the store does show is unchanged and stands: `stay on device` was sent, the Copilot answered *"I'll keep this
+work on your device."*, and only two `telemetry:llm` records and two `llm-cache` entries were written in the whole
+session — all four belonging to that instruction, none to `/ground` or `/readings`. No paid model call was
+recorded for either command.
+
+The affected wording in `evidence/2026-08-09/verified-ground.md`,
+`evidence/2026-08-09/verified-readings.md`, `commands/readings.md` and the lane line above has been narrowed to
+that measured absence. No other claim in this snapshot is affected: the capability aggregate, the persisted
+rounds, the AX projections and the window-ID captures were each read back from their own artifact.
 
 ### European register re-review at this snapshot
 

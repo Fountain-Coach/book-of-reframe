@@ -76,8 +76,9 @@ including the third honest outcome in the writer's terms:
 
 No paid model call was recorded for either `/readings` turn. Across the whole session only two `telemetry:llm`
 records and two `llm-cache` entries were written, all four at 17:58–17:59 UTC and all belonging to the preceding
-`stay on device` instruction. The comparison itself is arithmetic over persisted readings; the closing paragraph was
-reasoned on the on-device lane the writer had just elected.
+`stay on device` instruction. The comparison itself is arithmetic over persisted readings. The closing paragraph
+is model prose for which no paid call was recorded; which lane produced it was not read back, and this record does
+not claim one.
 
 ## Boundary
 
