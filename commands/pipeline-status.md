@@ -1,4 +1,4 @@
-![Pipeline status result in Reframe](../evidence/2026-08-03/pipeline-status-live-20260803.png)
+![Pipeline status result in Reframe](../evidence/2026-08-15/pipeline-status-live-20260815.png)
 
 # `/pipeline status`
 
@@ -8,32 +8,29 @@ diagnostic command: it does not write the draft and does not ask for confirmatio
 
 ## Live result
 
-The fresh fixture drive returned `PIPELINE STATUS` with the pipeline truth:
+The governed external-display drive returned `PIPELINE STATUS` with the pipeline truth:
 
-> ✓ Ingestion → ✓ Parse + Convert → ✓ Translate → ○ Baselines → ○ Reading (full) → ○ Storify Annotation →
-> ○ Continuity Audit (advisory) → ✓ Editor Unlock
+> Source missing. Import or restore source text.
 
-The fixture was intentionally small and development-only. The observed run was still in the `baselines` stage and
-reported that an author baseline and reader lens were required. That is a truthful pipeline state, not a claim that
-the manuscript was ready for a release surface.
+The observed empty active-manuscript state is truthful: the command reports that the source must be imported or
+restored and points to `Storify Source Auto` as the next action. This is a read-only diagnostic, not a claim that the
+manuscript is ready for a release surface.
 
 ## Evidence authorities
 
-Live drive: [pipeline-status live acceptance evidence](../evidence/2026-08-03/verified-pipeline-status.md)
+Live drive: [pipeline-status live acceptance evidence](../evidence/2026-08-15/verified-pipeline-status.md)
 
 - **AX semantics:** the interaction used `studio-chat-input` and `studio-chat-send`; the result exposed the
-  `chat-row-message-*` response and `copilot-capability-activity` with description `Show pipeline status. Phase
-  succeeded.`
+  `chat-row-message-*` response containing `PIPELINE STATUS`.
 - **Visual:** the image above is a CoreGraphics window-ID capture after Reframe was moved to the attached 1920×1080
-  display and entered full screen.
-- **Behavioral:** `ReframeStoreDump` recorded three fixture runs, each with `pipeline.status` lifecycle phases
-  `requested → accepted → running → succeeded`, and three persisted `chat:fixture:round:*` documents. No draft write
-  was recorded.
+  display.
+- **Behavioral:** `ReframeStoreDump` recorded three runs, each with `pipeline.status` lifecycle phases
+  `requested → accepted → running → succeeded`. The command remained read-only; no draft mutation was observed.
 
-Detailed sanitized drive notes: [pipeline-status live acceptance evidence](../evidence/2026-08-03/verified-pipeline-status.md).
+Detailed sanitized drive notes: [pipeline-status live acceptance evidence](../evidence/2026-08-15/verified-pipeline-status.md).
 
-Scenario: `pipeline-status` · [coverage record](../scenarios/coverage.json) · draft; legacy evidence requires a new
-scenario run.
+Scenario: `pipeline-status` · [coverage record](../scenarios/coverage.json) · live-accepted; three-run AX, Store, and
+window proof.
 
 ## Boundary
 

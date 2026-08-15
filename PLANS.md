@@ -291,3 +291,14 @@ publication gate.
   the home, commands, and scenarios routes; screenshots were captured under `/tmp/book-e2e-acceptance-final.JZCUJA/`.
 - No scenario has yet been promoted to `live-accepted` by the new runner; the next tranche must execute the inventory
   and replace each `draft` row only after same-run AX/Store/window-ID proof.
+
+### `/pipeline status` reconciliation — 2026-08-15
+
+- Promoted `pipeline-status` to `live-accepted` after three governed runner repetitions on source revision
+  `55461f0f`.
+- AX, FountainStore, and the external-display window-ID capture agreed: `PIPELINE STATUS` appeared and each run
+  persisted `requested → accepted → running → succeeded` for `pipeline.status` without a draft mutation.
+- The public page and sanitized evidence were refreshed with the honest empty-active-manuscript result; the prior
+  2026-08-03 evidence remains historical legacy evidence.
+- Scenario validation passed (6/6); site AX/VRT passed; strict prepublish with external checks passed with 0 errors
+  and 0 warnings after the transient GitHub timeout cleared.

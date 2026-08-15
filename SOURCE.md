@@ -245,3 +245,12 @@ legal certification, and the limits recorded on each row still stand.
   landmarks, `h1`, breadcrumb, skip link, image alt text, and no horizontal overflow — with captures under
   `site/evidence/vrt/live-check/`.
 - Pre-publication scan with `--check-external --strict`: **0 errors, 0 warnings**.
+
+### `/pipeline status` scenario reconciliation — 2026-08-15
+
+The `/pipeline status` Book projection is now live-accepted from the reusable `pipeline-status` scenario. Three
+repetitions on integration source revision `55461f0f` agreed across AX, FountainStore, and one external-display
+window-ID capture. The command remained read-only and honestly reported the empty active-manuscript state. The
+sanitized record is `evidence/2026-08-15/verified-pipeline-status.md`; no private Store path or raw runtime identifiers
+are published. Scenario validation passed 6/6, site AX/VRT passed, and the strict prepublish scan with external checks
+passed with 0 errors and 0 warnings.
