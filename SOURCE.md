@@ -1,5 +1,17 @@
 # Publication provenance
 
+## Snapshot: `/commands` scenario reconciliation — 2026-08-15
+
+- Scenario: `commands-discover`; capability: `app.commands.discover`; status: `live-accepted`.
+- Runtime source commit: `Fountain-Coach/midi2-gpu-fabric@cefee09c`.
+- Three isolated slash-origin runs reached terminal `succeeded` in one fresh managed Store; private receipt IDs and
+  process identifiers remain outside this public projection.
+- Independent witness: AX result surface plus CoreGraphics window-ID capture at 1920×1050; public snapshot is
+  `evidence/2026-08-15/commands-scenario-live-20260815.png`.
+- Current result projection: 82 available, 5 unavailable, and 3 compatibility-only entries; the older 95-entry
+  Ulysses inventory remains historical evidence, not proof for this scenario.
+- Resolver classification: `consistent`; no Book/runtime/capability status drift remains for this scenario.
+
 ## Snapshot: scenario work session — 2026-08-15
 
 - Development entry point: `reframe-scenario-work-session`.

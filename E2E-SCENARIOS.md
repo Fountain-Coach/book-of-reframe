@@ -44,13 +44,12 @@ operations.
 
 ## Coverage
 
-The current published command pages are pinned in [`scenarios/coverage.json`](scenarios/coverage.json). The first
-records are deliberately marked `draft`: their older evidence remains linked as legacy evidence, but it has not been
-re-executed through the new scenario contract yet.
+The current published command pages are pinned in [`scenarios/coverage.json`](scenarios/coverage.json). Older evidence
+remains linked as history; current status is promoted only after the scenario contract and independent witness agree.
 
 | Command | Scenario | Current status |
 | --- | --- | --- |
-| `/commands` | `commands-discover` | Draft; legacy evidence requires scenario run |
+| `/commands` | `commands-discover` | Live-accepted; three-run scenario evidence |
 | `/pipeline status` | `pipeline-status` | Draft; legacy evidence requires scenario run |
 | `/threads` | `threads` | Draft; legacy evidence requires scenario run |
 | `/ground` | `ground-after-reading` | Draft; legacy evidence requires scenario run |

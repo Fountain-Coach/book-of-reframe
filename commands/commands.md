@@ -1,4 +1,4 @@
-![Command catalog execution and result in Reframe](../evidence/2026-08-03/commands-live-fullcatalog-20260803.png)
+![Command catalog execution and result in Reframe](../evidence/2026-08-15/commands-scenario-live-20260815.png)
 
 # Discover commands
 
@@ -7,14 +7,13 @@
 Opens the complete runtime command catalog in the Copilot result surface. The live result exposes the command rows
 through the AX tree rather than presenting a screenshot-only inventory.
 
-Live drive: [full catalog acceptance evidence](../evidence/2026-08-03/verified-command-catalog.md)
+Live drive: [scenario acceptance evidence](../evidence/2026-08-15/commands-scenario-live.md) · [historical full catalog evidence](../evidence/2026-08-03/verified-command-catalog.md)
 
-Scenario: `commands-discover` · [coverage record](../scenarios/coverage.json) · draft; legacy evidence requires a
-new scenario run.
+Scenario: `commands-discover` · [coverage record](../scenarios/coverage.json) · live-accepted.
 
-Behavioral proof: `app.commands.discover`, corpus `reframe-ulysses`; the sanitized evidence records 95 entries,
-92 available, and 3 unavailable. The original window was captured by CoreGraphics window ID after the result state
-was reached.
+Behavioral proof: `app.commands.discover`, three terminal scenario runs in a fresh managed session; the current
+sanitized result exposes 82 available, 5 unavailable, and 3 compatibility-only entries. The acceptance window was
+captured by CoreGraphics window ID after the result state was reached.
 
 ## Individually documented commands
 

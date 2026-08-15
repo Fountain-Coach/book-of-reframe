@@ -1,5 +1,17 @@
 # Publication plan
 
+## 2026-08-15 — `/commands` scenario reconciliation
+
+- Resolved `commands-discover` through the cross-repository status gate; integration, Book coverage, and capability
+  atlas now agree on `live-accepted`.
+- Ran the executable scenario three times in one fresh managed Store. Each run reached `app.commands.discover`
+  `succeeded`; independent AX evidence observed the result and CoreGraphics capture bound the 1920×1050 Reframe
+  window.
+- Published sanitized scenario evidence at `evidence/2026-08-15/commands-scenario-live.md` with its own GUI snapshot;
+  legacy Ulysses catalog evidence remains historical.
+- Local Google Chrome CDP AX/VRT passed home, `/commands/commands/`, and `/scenarios/`; strict prepublication with
+  external canonical-host checking passed with 0 errors and 0 warnings.
+
 ## 2026-08-15 — public reference and maintainer projection
 
 - Keep `book.fountain.coach` as the public human reference for scenario discovery, evidence vocabulary, statuses, and

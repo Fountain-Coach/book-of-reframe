@@ -3,7 +3,7 @@
   "generatedFrom": "Fountain-Coach/midi2-gpu-fabric/apps/modernization-studio/LiveScenarios",
   "policy": "legacy evidence is not new scenario acceptance",
   "commands": [
-    {"command": "/commands", "capability": "app.commands.discover", "scenario": "commands-discover", "status": "draft", "coverage": "legacy-evidence-needs-scenario-run", "page": "commands/commands.md", "legacyEvidence": "evidence/2026-08-03/verified-command-catalog.md"},
+    {"command": "/commands", "capability": "app.commands.discover", "scenario": "commands-discover", "status": "live-accepted", "coverage": "three-run-scenario-ax-store-window-proof", "page": "commands/commands.md", "legacyEvidence": "evidence/2026-08-03/verified-command-catalog.md"},
     {"command": "/pipeline status", "capability": "pipeline.status", "scenario": "pipeline-status", "status": "draft", "coverage": "legacy-evidence-needs-scenario-run", "page": "commands/pipeline-status.md", "legacyEvidence": "evidence/2026-08-03/verified-pipeline-status.md"},
     {"command": "/threads", "capability": "manuscript.reading.inspect", "scenario": "threads", "status": "draft", "coverage": "legacy-evidence-needs-scenario-run", "page": "commands/threads.md", "legacyEvidence": "evidence/2026-08-04/verified-threads.md"},
     {"command": "/ground", "capability": "prep.grounding.propose", "scenario": "ground-after-reading", "status": "draft", "coverage": "legacy-evidence-needs-scenario-run", "page": "commands/ground.md", "legacyEvidence": "evidence/2026-08-09/verified-ground.md"},
