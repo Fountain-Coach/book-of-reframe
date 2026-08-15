@@ -57,6 +57,7 @@ sanitized catalog and screenshot in `evidence/2026-08-03/` are the publication e
   marks `screenplay.source.import` unavailable and its public rights/scope review is not recorded in this snapshot.
 - Next acceptance target: `world.reference.research`, because its registry policy explicitly requires a paid answering
   lane; it is not yet a published or live-accepted command.
+- Publication commit: `Fountain-Coach/book-of-reframe@6c78d8d`.
 - Validation: release validator passed; local strict prepublish scan passed with 0 errors and 1 canonical-host warning
   (external check deferred until the new paths are pushed). The bundled Chrome CDP runner could not obtain a dedicated
   CDP endpoint, so no new browser AX/VRT evidence is claimed.
