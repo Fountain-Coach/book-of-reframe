@@ -23,5 +23,6 @@
       "writerFacingRetrieval": false
     }
   },
+  "developmentEntryPoint": "reframe-scenario-work-session",
   "publicSafety": "sanitized-only"
 }

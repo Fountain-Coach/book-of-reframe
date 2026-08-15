@@ -37,6 +37,11 @@ scenario identity, reports prerequisites and terminal artifacts, authors or repa
 runs the typed capability, invokes independent Live Drive, and updates the public projection only from the resulting
 evidence bundle.
 
+For Codex-driven source development, this is one governed scenario work session: resolve the scenario, bound the source
+slice, implement and focus-test it, run the isolated scenario, independently witness the surface, and report one work
+card with observed versus unestablished results. Deployment and release promotion remain separate, higher-privilege
+operations.
+
 ## Coverage
 
 The current published command pages are pinned in [`scenarios/coverage.json`](scenarios/coverage.json). The first

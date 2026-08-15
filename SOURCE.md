@@ -1,5 +1,14 @@
 # Publication provenance
 
+## Snapshot: scenario work session — 2026-08-15
+
+- Development entry point: `reframe-scenario-work-session`.
+- The public Book explains one bounded Codex/Reframe loop: resolve scenario, bound source slice, implement and test,
+  execute in isolation, independently witness, and report one work card.
+- Runtime source/governance integration commit: `Fountain-Coach/midi2-gpu-fabric@cefee09c`.
+- Governance: Chapter 69 now treats scenario work as core source development/operator work; deployment and release
+  promotion remain separate scopes.
+
 ## Snapshot: public reference and maintainer projection — 2026-08-15
 
 - The public Book remains the canonical human reference at `https://book.fountain.coach/`.

@@ -10,6 +10,8 @@
   specified but not yet runtime-ingested.
 - Validate the public projection with FCIS-AX/VRT and strict prepublication checks; do not claim maintainer ingestion
   until a separate role-boundary and provenance gate exists.
+- The public scenario reference names `reframe-scenario-work-session` as the Codex-facing development entry point;
+  deployment and release promotion remain separate scopes.
 
 ## 2026-08-15 — internal E2E capability publication gate
 
