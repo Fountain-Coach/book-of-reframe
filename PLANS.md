@@ -343,3 +343,8 @@ until each current prerequisite chain and independent witness are rerun.
 - Two paid ChatGPT-plan Storify executions reached `succeeded`, and `/readings` reached both AX and Store terminal
   checks. The sanitized current record is `evidence/2026-08-15/verified-readings-scenario.md`.
 - Public Book commit `3c34b9d` promotes `/readings` to `live-accepted`; release status remains `no-released-build`.
+- Static site commit `12bc941` was deployed to the fixed `book.fountain.coach` publication tuple; HTTPS verification
+  returned 200 for `/`, `/commands/commands/`, `/commands/ground/`, and `/commands/readings/`.
+- Local Chrome CDP acceptance passed for the home and scenarios routes with desktop, mobile, and menu-open captures;
+  the first attempt failed only because the dedicated CDP endpoint was not yet serving, then passed after the existing
+  local preview was confirmed.
