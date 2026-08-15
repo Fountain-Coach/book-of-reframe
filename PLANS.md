@@ -1,5 +1,16 @@
 # Publication plan
 
+## 2026-08-15 — public reference and maintainer projection
+
+- Keep `book.fountain.coach` as the public human reference for scenario discovery, evidence vocabulary, statuses, and
+  the maintainer request loop.
+- Define a future role-gated maintainer snapshot from the same reviewed Book commit and digest; it may add internal
+  procedure references but cannot authorize execution or enter writer-facing retrieval.
+- Link the public explanation to governance Chapter 69 and keep the public registry explicit about the snapshot being
+  specified but not yet runtime-ingested.
+- Validate the public projection with FCIS-AX/VRT and strict prepublication checks; do not claim maintainer ingestion
+  until a separate role-boundary and provenance gate exists.
+
 ## 2026-08-15 — internal E2E capability publication gate
 
 - Local preview: `http://127.0.0.1:4173/`, Google Chrome via the bundled CDP runner.

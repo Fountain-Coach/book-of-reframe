@@ -14,5 +14,14 @@
     "runner": "Reframe Live Drive",
     "responsibilities": ["AX interaction and state", "window-ID capture", "visual evidence"]
   },
+  "projections": {
+    "publicReference": "https://book.fountain.coach/",
+    "maintainerSnapshot": {
+      "audience": "maintainer",
+      "sourceRule": "same-reviewed-book-commit-and-content-digest",
+      "runtimeIngestion": "not-yet-enabled",
+      "writerFacingRetrieval": false
+    }
+  },
   "publicSafety": "sanitized-only"
 }

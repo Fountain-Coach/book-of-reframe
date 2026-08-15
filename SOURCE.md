@@ -1,5 +1,13 @@
 # Publication provenance
 
+## Snapshot: public reference and maintainer projection — 2026-08-15
+
+- The public Book remains the canonical human reference at `https://book.fountain.coach/`.
+- `scenarios/registry.json` documents the future maintainer snapshot boundary: same reviewed Book commit and digest,
+  role `maintainer`, no writer-facing retrieval, and runtime ingestion not yet enabled.
+- Governance: Chapter 68 defines the scenario publication unit; Chapter 69 defines the public/maintainer dual
+  projection and preserves runtime, Store, and independent witness authority.
+
 ## Snapshot: internal E2E capability publication gate — 2026-08-15
 
 - Machine-readable projection: `scenarios/registry.json` declares the maintainer-only

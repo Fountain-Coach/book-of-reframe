@@ -24,6 +24,19 @@ independent Live Drive → AX/window/VRT evidence
 Book → sanitized intersection of both
 ```
 
+## One public reference, one maintainer projection
+
+The Book remains public at [book.fountain.coach](https://book.fountain.coach/) so another human can inspect the
+scenario model, its evidence vocabulary, its statuses, and the request loop. Reframe may later consume a separate,
+role-gated maintainer snapshot generated from the same reviewed Book commit and content digest. That snapshot may add
+internal procedure references, but it is not a manuscript, an execution authorization, or a writer-facing retrieval
+source.
+
+The maintainer request is deliberately simple: “Add the next scenario for `/world`.” Reframe resolves the public
+scenario identity, reports prerequisites and terminal artifacts, authors or repairs the private contract, validates and
+runs the typed capability, invokes independent Live Drive, and updates the public projection only from the resulting
+evidence bundle.
+
 ## Coverage
 
 The current published command pages are pinned in [`scenarios/coverage.json`](scenarios/coverage.json). The first
@@ -38,7 +51,7 @@ re-executed through the new scenario contract yet.
 | `/ground` | `ground-after-reading` | Draft; legacy evidence requires scenario run |
 | `/readings` | `readings-comparison` | Draft; legacy evidence requires scenario run |
 
-The governing method is [Chapter 68 — The Reframe E2E Scenario Is the Publication Unit](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/68-the-reframe-e2e-scenario-is-the-publication-unit.md).
+The governing method is [Chapter 68 — The Reframe E2E Scenario Is the Publication Unit](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/68-the-reframe-e2e-scenario-is-the-publication-unit.md), together with [Chapter 69 — The Book of Reframe Is a Dual Projection](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/69-the-book-of-reframe-is-a-dual-projection.md).
 
 The next scenario target is `world-after-storify`: import a source, complete `/storify! source auto` with explicit
 confirmation, then run `/world`. The paid-default scenario is now live-accepted; `/world` remains unpublished by the

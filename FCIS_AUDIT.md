@@ -23,11 +23,12 @@ individual live-drive evidence is complete for `/commands` and remains pending f
 | FCIS-PLANS-1 | PASS | `PLANS.md` records publication and snapshot-gated phases. | Update before high-risk publication work. |
 | FCIS-SKILLS-1 | PASS | Source repository contains mirrored maintenance skills. | Keep copies byte-identical. |
 | FCIS-LAYERS-1 | PASS | Law, intent, procedure, and publication evidence are separated. | Reject duplicated procedures. |
-| FCIS-AX-01/04/05 | PASS | Pages link AX/result proof; publication does not claim from pixels alone. | Preserve AX identifiers in evidence. |
+| FCIS-AX-01/04/05 | PASS | Pages and `/scenarios/` link AX/result proof; publication does not claim from pixels alone. | Preserve AX identifiers in evidence. |
 | FCIS-VRT-01/04 | PARTIAL | `evidence/` stores versioned window-ID snapshots; gate is manual/opt-in. | Add a snapshot for each command before marking complete. |
 | RELEASE-SURFACE-01 | PASS | Release manifest says `no-released-build` and has an empty allow-list. | Populate only from a named accepted build. |
 | FCIS-PROVENANCE-1 | PASS | `SOURCE.md` links runtime, governance, snapshot, and publication provenance. | Update reciprocal commits/PRs. |
 | FCIS-CONTENT-1 | PASS | Evidence contains no runtime source, private store export, credentials, or secrets. The 2026-08-04 `/threads` image is full fidelity under the recorded publisher ownership/scope review for the Polyxsupershow source. | Repeat the ownership, personal-data, third-party, and secret review for every owned manuscript asset. |
+| FCIS-BOOK-PROJECTION-1 | PASS | Public Book is the human reference; the maintainer snapshot is separately role-gated, source-bound, and not an execution authority. | Keep the public commit/digest and maintainer snapshot identity aligned when ingestion is enabled. |
 
 ## Orthogonality violations
 
@@ -39,6 +40,8 @@ projection and do not define capabilities.
 - A command page could be added without its own live-drive result unless the validator is run.
 - AX, screenshot, and FountainStore evidence can drift if only one is refreshed.
 - The manual VRT gate can be skipped unless publication review runs the page validator.
+- The public `/scenarios/` page and the future maintainer snapshot can drift unless both carry the same reviewed Book
+  commit and content digest.
 
 ## Current evidence boundary
 

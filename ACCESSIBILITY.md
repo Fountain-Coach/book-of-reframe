@@ -11,7 +11,7 @@ Einordnung des Herausgebers und keine Rechtsberatung oder Konformitätsbescheini
 
 FCIS-AX is the semantic authority and FCIS-VRT is the visual authority for this web publication.
 
-- **Surfaces:** home page and `/commands/commands/` command atlas.
+- **Surfaces:** home page, `/commands/commands/` command atlas, and `/scenarios/` public scenario reference.
 - **Custom-drawn views:** none; the site uses semantic HTML, CSS, and ordinary browser controls.
 - **AX identifiers:** stable `id`, `data-*`, and ARIA attributes on the skip link, navigation, menu button, headings,
   breadcrumbs, evidence image, and related records.
@@ -20,5 +20,7 @@ FCIS-AX is the semantic authority and FCIS-VRT is the visual authority for this 
 - **VRT-Render evidence:** `site/evidence/vrt/local-cdp/`, with desktop, mobile, and mobile-menu-open baselines.
 - **Interaction behavior:** keyboard skip navigation, named landmarks, labeled mobile menu state, visible focus,
   reduced-motion support, and a high-contrast override are required.
+- **Maintainer/public split:** the public scenario reference explains the maintainer workflow without exposing the
+  role-gated maintainer snapshot or private runtime procedures.
 - **Known limits:** this declaration is an engineering record, not a legal conformity assessment; production hosting
   and any future paid/e-book service require a fresh scope review.
