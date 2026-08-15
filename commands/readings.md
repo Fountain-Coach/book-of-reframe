@@ -42,7 +42,9 @@ Run a second time, the same comparison ended: *"…the readings agree too closel
 
 ## Evidence authorities
 
-Live drive: [readings live acceptance evidence](../evidence/2026-08-09/verified-readings.md)
+Current scenario acceptance: [repeatable readings scenario evidence](../evidence/2026-08-15/verified-readings-scenario.md)
+
+Historical product drive: [Ulysses readings evidence](../evidence/2026-08-09/verified-readings.md)
 
 - [Live-drive record](../evidence/2026-08-09/verified-readings.md) — AX semantics, CoreGraphics window-ID capture,
   the two source readings, and the persisted round, with the second confirming pass.
@@ -64,5 +66,5 @@ The manuscript shown is James Joyce's *Ulysses* (public domain), assembled by Re
 questions and the comparison narration are Reframe's output. The image is full fidelity under a recorded rights and
 scope review.
 
-Scenario: `readings-comparison` · [coverage record](../scenarios/coverage.json) · executable; typed source and
-two-reading prerequisites are declared, with the independent live witness still pending.
+Scenario: `readings-comparison` · [coverage record](../scenarios/coverage.json) · live-accepted; the bounded fixture
+scenario proved two distinct paid-lane reading executions, AX semantics, Store receipts, and window-ID evidence.
