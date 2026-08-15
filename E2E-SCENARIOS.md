@@ -52,7 +52,7 @@ remains linked as history; current status is promoted only after the scenario co
 | `/commands` | `commands-discover` | Live-accepted; three-run scenario evidence |
 | `/pipeline status` | `pipeline-status` | Draft; legacy evidence requires scenario run |
 | `/threads` | `threads` | Live-accepted; one-run slash-origin AX, Store, and window proof |
-| `/ground` | `ground-after-reading` | Draft; legacy evidence requires scenario run |
+| `/ground` | `ground-after-reading` | Executable; typed prerequisites prepared, live witness pending |
 | `/readings` | `readings-comparison` | Draft; legacy evidence requires scenario run |
 
 The governing method is [Chapter 68 — The Reframe E2E Scenario Is the Publication Unit](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/68-the-reframe-e2e-scenario-is-the-publication-unit.md), together with [Chapter 69 — The Book of Reframe Is a Dual Projection](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/69-the-book-of-reframe-is-a-dual-projection.md).

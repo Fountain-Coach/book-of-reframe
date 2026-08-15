@@ -61,5 +61,5 @@ half unreachable, which is exactly what the command reported.
 The manuscript shown is James Joyce's *Ulysses* (public domain), assembled by Reframe's own corpus API. The Copilot
 text is Reframe's output. The image is full fidelity under a recorded rights and scope review.
 
-Scenario: `ground-after-reading` · [coverage record](../scenarios/coverage.json) · draft; legacy evidence requires a
-new scenario run.
+Scenario: `ground-after-reading` · [coverage record](../scenarios/coverage.json) · executable; typed source
+preparation and Storify prerequisite are declared, with the independent live witness still pending.

@@ -289,6 +289,14 @@ acceptance runner could not obtain a dedicated CDP endpoint, so browser AX/VRT e
 External references to the new GitHub paths remain pending until this commit is pushed; the canonical host remains the
 publication gate.
 
+## 2026-08-15 — reconcile `/ground` after contract enforcement
+
+- Integration `1784e067` now validates typed setup entries for every scenario and provides the reusable managed-Store
+  preparation executor. The `/ground` contract is executable and has been prepared against a fresh Store; no live
+  acceptance claim is made until Storify, `/ground`, AX, window-ID, and Store evidence agree.
+- Governance source `Reframe-Refactoring@9b733c3` adds the explicit rule that the complete scenario is written before
+  implementation and that prose-only setup cannot become executable.
+
 ## 2026-08-15 — governed E2E scenario implementation record
 
 - Governance Chapter 68 is authored in the authoritative Reframe-Refactoring checkout and synchronized into the
