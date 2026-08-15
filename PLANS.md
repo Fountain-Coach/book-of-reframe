@@ -295,7 +295,13 @@ publication gate.
   preparation executor. The `/ground` contract is executable and has been prepared against a fresh Store; no live
   acceptance claim is made until Storify, `/ground`, AX, window-ID, and Store evidence agree.
 - Governance source `Reframe-Refactoring@9b733c3` adds the explicit rule that the complete scenario is written before
-  implementation and that prose-only setup cannot become executable.
+implementation and that prose-only setup cannot become executable.
+
+### Complete existing scenario contracts
+
+- The integration now carries canonical YAML contracts for all six existing scenario identities, with validator-enforced
+  parity against the JSON runtime projections. This is contract authoring only; legacy live evidence remains historical
+  until each current prerequisite chain and independent witness are rerun.
 
 ## 2026-08-15 — governed E2E scenario implementation record
 

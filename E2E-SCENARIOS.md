@@ -4,6 +4,9 @@ The Book publishes a command only through a named, reusable end-to-end scenario.
 journey behind a command page: prerequisites, semantic AX actions, state-based waits, paid-lane consent, terminal
 AX state, FountainStore effects, window-ID visual evidence, provenance, and honest failure states.
 
+The maintainer contract is authored in canonical YAML before implementation; the runtime JSON is a checked projection
+validated for exact parity. The Book publishes the sanitized scenario identity and status, not private runtime records.
+
 The runtime and governance repositories remain authoritative. This directory is a sanitized publication projection.
 It contains no prompts, manuscript text, private Store data, secrets, or deployment details.
 
