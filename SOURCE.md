@@ -15,6 +15,14 @@
 - Publication boundary: the Book contains only sanitized contract and evidence vocabulary; no private runtime or
   Store data is included.
 
+### Deployment
+
+- Published commit: `Fountain-Coach/book-of-reframe@64157a8`.
+- Deployment tuple: `book.fountain.coach` → `65.109.14.71` → `/var/www/book-of-reframe`; DNS and Caddy were not
+  changed.
+- Live verification: `/`, `/scenarios/`, and `/commands/commands/` returned HTTPS 200; `/scenarios/` contained the
+  `reframe.e2e.scenario.run` capability marker.
+
 This book is published from the integration repository:
 
 - Runtime and registry: private `Fountain-Coach/midi2-gpu-fabric` (access required; not a public source link)

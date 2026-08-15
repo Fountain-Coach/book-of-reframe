@@ -12,6 +12,8 @@
 - Generated-data and strict prepublication scan passed with 0 errors and 1 expected canonical-host warning.
 - The public projection adds the maintainer-only `reframe.e2e.scenario.run` registry contract; it publishes no raw
   runtime, Store, manuscript, credential, or deployment data.
+- Deployment completed from Book commit `64157a8`; HTTPS 200 verified for `/`, `/scenarios/`, and
+  `/commands/commands/`, with the new capability marker present on `/scenarios/`.
 
 ## 2026-08-15 — governed E2E scenario infrastructure
 
