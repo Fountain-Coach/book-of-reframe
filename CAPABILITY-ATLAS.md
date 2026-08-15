@@ -1,8 +1,8 @@
 # Copilot Capability Audit
 
-Generated: 2026-08-08
+Generated: 2026-08-15
 
-The v2 registry contains **49** identities: **18** executable, **31** unavailable, **2** live-accepted, and **0** contract-drift findings.
+The v2 registry contains **55** identities: **24** executable, **31** unavailable, **2** live-accepted, and **0** contract-drift findings.
 
 A capability is fully empowered only when its adapter, policy, focused tests, persisted proof, telemetry, AX result, and required live acceptance are recorded.
 
@@ -20,6 +20,7 @@ Prioritize available-but-unaccepted capabilities first, then implement unavailab
 | `continuity.status` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |
 | `fountain.fix` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |
 | `fountain.lint` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |
+| `fountain.project.export` | available | executable-not-live-accepted | `exportFountainProject` | natural language | record live acceptance |
 | `fountainstore.document.read` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |
 | `fountainstore.document.write` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |
 | `launcher.library.open` | available | executable-not-live-accepted | `openLibrary` | natural language | record live acceptance |
@@ -31,7 +32,12 @@ Prioritize available-but-unaccepted capabilities first, then implement unavailab
 | `lora.eval` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |
 | `lora.promote` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |
 | `lora.train` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |
+| `git.library.candidate.create` | available | executable-not-live-accepted | `createLibraryCandidate` | natural language | record live acceptance |
+| `git.library.candidate.promote` | available | executable-not-live-accepted | `promoteLibraryCandidate` | natural language | record live acceptance |
+| `git.project.commit` | available | executable-not-live-accepted | `commitManagedProject` | natural language | record live acceptance |
+| `git.project.provision` | available | executable-not-live-accepted | `provisionProject` | natural language | record live acceptance |
 | `manuscript.reading.inspect` | available | executable-not-live-accepted | `inspectReading` | natural language, /threads | live-drive both origins on a fresh managed store: /threads and a natural-language "what does this reading still doubt?", plus the never-read case, then record AX + FountainStore proof and promote to live-accepted |
+| `maintenance.health.verify` | available | executable-not-live-accepted | `verifyMaintenanceHealth` | natural language, /maintenance health | record live acceptance |
 | `pipeline.readiness` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |
 | `pipeline.rerun` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |
 | `pipeline.sla` | unavailable | unavailable-adapter-proof | `unavailable` | — | build adapter and proof |

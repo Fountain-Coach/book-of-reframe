@@ -2,7 +2,7 @@
 
 Status: **no released App surface recorded**.
 
-The machine-readable source is [`evidence/2026-08-03/reframe-release-surface.json`](evidence/2026-08-03/reframe-release-surface.json).
+The machine-readable source is [`evidence/2026-08-15/reframe-release-surface.json`](evidence/2026-08-15/reframe-release-surface.json).
 It describes the current development snapshot, but its capability allow-list is intentionally empty because no named
 distribution build, release tag, or release acceptance record exists yet.
 

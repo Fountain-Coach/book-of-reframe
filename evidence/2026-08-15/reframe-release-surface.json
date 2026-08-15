@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "product": "Reframe",
+  "releaseId": "main-development-2026-08-15",
+  "status": "no-released-build",
+  "source": {
+    "repository": "Fountain-Coach/midi2-gpu-fabric",
+    "commit": "767f75ec0d969313586c55a75b6b9c10a054af9d",
+    "build": "SPM debug integration build; no distribution artifact"
+  },
+  "acceptedAt": null,
+  "capabilityAllowList": [],
+  "developmentSnapshot": {
+    "commandEntries": 95,
+    "commandEntriesAvailable": 92,
+    "commandEntriesUnavailable": 3,
+    "capabilityIdentities": 55,
+    "capabilitiesExecutable": 24,
+    "capabilitiesLiveAccepted": 2,
+    "capabilitiesUnavailable": 31,
+    "liveAcceptedCapabilityIds": [
+      "app.commands.discover",
+      "pipeline.status"
+    ]
+  },
+  "evidence": [
+    "docs/copilot-capability-audit.md",
+    "docs/copilot-capability-closure.json",
+    "docs/book-of-reframe-command-atlas.md"
+  ],
+  "excludedReason": "No named distribution build, release tag, or release acceptance record exists yet. Development command inventory and live acceptance evidence must not be presented as shipped App capability."
+}

@@ -1,18 +1,18 @@
 {
-  "snapshotDate": "2026-08-03",
-  "releaseId": "main-development-2026-08-03",
+  "snapshotDate": "2026-08-15",
+  "releaseId": "main-development-2026-08-15",
   "releaseStatus": "no-released-build",
-  "releaseSourceCommit": "18ff4c00c28f0a88c31abb7bc8060c33b14d269e",
+  "releaseSourceCommit": "767f75ec0d969313586c55a75b6b9c10a054af9d",
   "commandEntries": 95,
   "commandEntriesAvailable": 92,
   "commandEntriesUnavailable": 3,
-  "capabilityIdentities": 53,
-  "capabilitiesExecutable": 22,
+  "capabilityIdentities": 55,
+  "capabilitiesExecutable": 24,
   "capabilitiesLiveAccepted": 2,
   "capabilitiesUnavailable": 31,
   "liveAcceptedCapabilityIds": [
     "app.commands.discover",
     "pipeline.status"
   ],
-  "sourceEvidence": "../evidence/2026-08-03/reframe-release-surface.json"
+  "sourceEvidence": "../evidence/2026-08-15/reframe-release-surface.json"
 }

@@ -39,6 +39,28 @@ This book is published from the integration repository:
 The local temporary store path is provenance for the generating workspace only; it is not a public dependency. The
 sanitized catalog and screenshot in `evidence/2026-08-03/` are the publication evidence.
 
+## Snapshot: 2026-08-15 — paid-first governance reconciliation
+
+- Source runtime: private `Fountain-Coach/midi2-gpu-fabric`, commit `767f75ec0d969313586c55a75b6b9c10a054af9d`.
+- Governance correction: Chapter 37 now reports the generated 55-identity boundary (24 executable, 31 unavailable)
+  and no longer teaches the retired Manuscript Guide as a current Copilot offer. The scoped runtime guide now records
+  paid availability as the default writer-facing lane election, with explicit local-only override.
+- Release boundary: `evidence/2026-08-15/reframe-release-surface.json` remains `no-released-build` with an empty
+  capability allow-list. The 95/92/3 command inventory remains the last separately verified command-catalog snapshot;
+  it is not promoted to a new live command acceptance claim here.
+- Capability projection: the Book now records 55 identities, 24 executable, 31 unavailable, and 2 live-accepted
+  (`app.commands.discover` and `pipeline.status`). New executable-but-unaccepted rows are listed without claiming
+  completion.
+- Paid-lane policy: [`LANE-POLICY.md`](LANE-POLICY.md) explains paid-first election, bounded on-device delegation,
+  local-only override, and the distinction between policy, executable status, live acceptance, and release.
+- Evidence boundary: the isolated DraCor import drive and its screenshot remain unpromoted because the registry still
+  marks `screenplay.source.import` unavailable and its public rights/scope review is not recorded in this snapshot.
+- Next acceptance target: `world.reference.research`, because its registry policy explicitly requires a paid answering
+  lane; it is not yet a published or live-accepted command.
+- Validation: release validator passed; local strict prepublish scan passed with 0 errors and 1 canonical-host warning
+  (external check deferred until the new paths are pushed). The bundled Chrome CDP runner could not obtain a dedicated
+  CDP endpoint, so no new browser AX/VRT evidence is claimed.
+
 ## Snapshot: 2026-08-04 — `/threads` full-fidelity owned evidence
 
 - Owned source: Thepolyxsupershow 6th Draft Source, publisher-declared copyright/possession of Benedikt Eickhoff.

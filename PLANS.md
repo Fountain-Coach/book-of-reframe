@@ -179,3 +179,35 @@ release gates.
 
 **Deployment:** The isolated Book root and Caddy site block are now installed on the publishing server. HTTPS cannot
 complete until the `book.fountain.coach` DNS record exists; no public release claim is made before that verification.
+
+# Paid-first runtime reconciliation and Book projection — 2026-08-15
+
+**Goal:** update the Book from the current governed runtime snapshot while preserving the explicit no-released-build
+boundary.
+
+**Source:** integration `midi2-gpu-fabric` at `ef756360`; registry, generated audit, release manifest, governance
+Chapter 37/43/51, live evidence, and current command/runtime history.
+
+**Publication target:** refreshed capability and command projections, release surface, site data, paid-lane policy,
+and provenance in `SOURCE.md`.
+
+**Excluded:** no runtime source, private FountainStore data, unowned manuscript material, or unaccepted command is
+published; `world.reference.research` is a next acceptance target, not a completed command; no release allow-list is
+created.
+
+**Governance record:** Chapter 37 is being corrected upstream because its census and guide workflow are stale;
+Chapter 43 keeps the release status at `no-released-build`; Chapter 51 makes paid availability the default election,
+with local-only as the explicit override. The Book will describe policy separately from live acceptance.
+
+**Evidence:** the existing 2026-08-09 Circe evidence remains accurately described as an on-device instruction with no
+paid call recorded. The isolated 2026-08-15 Romeo-and-Juliet DraCor drive is not promoted as Book evidence until the
+registry identity and rights/scope review are reconciled.
+
+**Validation:** regenerate site data, run capability/release/governance/docs-sync checks, run local route and metadata
+checks, run Book AX/VRT acceptance where available, and pass the strict prepublish scan with external checks.
+
+**Validation record:** site data regenerated from `evidence/2026-08-15/reframe-release-surface.json`; release validator
+passed; local route/metadata scan passed with 0 errors using an isolated PyYAML environment. The bundled Chrome CDP
+acceptance runner could not obtain a dedicated CDP endpoint, so browser AX/VRT evidence is not claimed in this phase.
+External references to the new GitHub paths remain pending until this commit is pushed; the canonical host remains the
+publication gate.

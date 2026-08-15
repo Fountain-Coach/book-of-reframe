@@ -16,6 +16,7 @@ may see GitHub's 404. The public explanation of this boundary is
 - [`RELEASE-SURFACE.md`](RELEASE-SURFACE.md) — what a named App build is allowed to promise;
 - [`PUBLICATION-POLICY.md`](PUBLICATION-POLICY.md) — what the public Book may expose and what remains private;
 - [`HISTORICAL-COMMANDS.md`](HISTORICAL-COMMANDS.md) — why the development command inventory is broader than a release;
+- [`LANE-POLICY.md`](LANE-POLICY.md) — the paid-first routing contract and its evidence boundary;
 - [`evidence/2026-08-03/verified-command-catalog.md`](evidence/2026-08-03/verified-command-catalog.md) — the
   machine-shaped catalog projection from the live app.
 
