@@ -5,6 +5,7 @@
 - Machine-readable projection: `scenarios/registry.json` declares the maintainer-only
   `reframe.e2e.scenario.run` contract, fresh-store default, independent-witness requirement, and no-self-approval
   rule.
+- Runtime source commit: `Fountain-Coach/midi2-gpu-fabric@21d89b28`.
 - Human-readable projection: `E2E-SCENARIOS.md` and `/scenarios/` explain the internal behavioral receipt versus the
   independent Live Drive AX/CoreGraphics/VRT witness.
 - Local acceptance: Google Chrome via CDP passed `/`, `/commands/commands/`, and `/scenarios/` at
