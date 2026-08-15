@@ -12,6 +12,16 @@
   Ulysses inventory remains historical evidence, not proof for this scenario.
 - Resolver classification: `consistent`; no Book/runtime/capability status drift remains for this scenario.
 
+## Snapshot: `/threads` scenario reconciliation — 2026-08-15
+
+- Scenario: `threads`; capability: `manuscript.reading.inspect`; status: `live-accepted` for the slash origin only.
+- Runtime source commit: `Fountain-Coach/midi2-gpu-fabric@6ba5e2f1`.
+- One isolated governed run reached terminal `succeeded`; AX exposed `story-uncertainty-band`, FountainStore recorded
+  the capability lifecycle, and the external-display window-ID capture showed the matching terminal result.
+- Public snapshot: `evidence/2026-08-15/threads-live-20260815.png`; sanitized acceptance record:
+  `evidence/2026-08-15/verified-threads.md`.
+- Natural-language origin parity, the never-read case, and a released App build remain unestablished.
+
 ## Snapshot: scenario work session — 2026-08-15
 
 - Development entry point: `reframe-scenario-work-session`.

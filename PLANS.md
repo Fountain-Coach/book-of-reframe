@@ -12,6 +12,16 @@
 - Local Google Chrome CDP AX/VRT passed home, `/commands/commands/`, and `/scenarios/`; strict prepublication with
   external canonical-host checking passed with 0 errors and 0 warnings.
 
+## 2026-08-15 — `/threads` scenario reconciliation
+
+- Resolved the cross-repository drift: the executable `threads` scenario and successful live authorities now promote
+  the public `/threads` projection from draft to `live-accepted` for the slash origin only.
+- Added sanitized evidence with the command's own window-ID capture; raw Store paths, identifiers, and manuscript
+  material remain out of the public projection. The older 2026-08-03/04 records remain historical legacy evidence.
+- Updated the coverage manifest, capability atlas, release snapshot, command page, scenario matrix, and generated site
+  status to three live-accepted capabilities.
+- Pending boundary: natural-language origin parity, never-read acceptance, and deployment of this Book revision.
+
 ## 2026-08-15 — public reference and maintainer projection
 
 - Keep `book.fountain.coach` as the public human reference for scenario discovery, evidence vocabulary, statuses, and

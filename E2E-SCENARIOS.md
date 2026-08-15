@@ -51,7 +51,7 @@ remains linked as history; current status is promoted only after the scenario co
 | --- | --- | --- |
 | `/commands` | `commands-discover` | Live-accepted; three-run scenario evidence |
 | `/pipeline status` | `pipeline-status` | Draft; legacy evidence requires scenario run |
-| `/threads` | `threads` | Draft; legacy evidence requires scenario run |
+| `/threads` | `threads` | Live-accepted; one-run slash-origin AX, Store, and window proof |
 | `/ground` | `ground-after-reading` | Draft; legacy evidence requires scenario run |
 | `/readings` | `readings-comparison` | Draft; legacy evidence requires scenario run |
 

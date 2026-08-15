@@ -5,7 +5,7 @@
   "commands": [
     {"command": "/commands", "capability": "app.commands.discover", "scenario": "commands-discover", "status": "live-accepted", "coverage": "three-run-scenario-ax-store-window-proof", "page": "commands/commands.md", "legacyEvidence": "evidence/2026-08-03/verified-command-catalog.md"},
     {"command": "/pipeline status", "capability": "pipeline.status", "scenario": "pipeline-status", "status": "live-accepted", "coverage": "three-run-scenario-ax-store-window-proof", "page": "commands/pipeline-status.md", "legacyEvidence": "evidence/2026-08-03/verified-pipeline-status.md"},
-    {"command": "/threads", "capability": "manuscript.reading.inspect", "scenario": "threads", "status": "draft", "coverage": "legacy-evidence-needs-scenario-run", "page": "commands/threads.md", "legacyEvidence": "evidence/2026-08-04/verified-threads.md"},
+    {"command": "/threads", "capability": "manuscript.reading.inspect", "scenario": "threads", "status": "live-accepted", "coverage": "one-run-scenario-ax-store-window-proof; slash-origin-only", "page": "commands/threads.md", "legacyEvidence": "evidence/2026-08-04/verified-threads.md"},
     {"command": "/ground", "capability": "prep.grounding.propose", "scenario": "ground-after-reading", "status": "draft", "coverage": "legacy-evidence-needs-scenario-run", "page": "commands/ground.md", "legacyEvidence": "evidence/2026-08-09/verified-ground.md"},
     {"command": "/readings", "capability": "manuscript.reading.compare", "scenario": "readings-comparison", "status": "draft", "coverage": "legacy-evidence-needs-scenario-run", "page": "commands/readings.md", "legacyEvidence": "evidence/2026-08-09/verified-readings.md"}
   ],

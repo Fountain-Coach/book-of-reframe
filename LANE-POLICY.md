@@ -22,7 +22,7 @@ as working now.
 
 ## Evidence boundary
 
-The current development snapshot has 55 capability identities, 24 executable, 31 unavailable, and 2 live-accepted.
+The current development snapshot has 55 capability identities, 24 executable, 31 unavailable, and 3 live-accepted.
 There is no named released build and the release allow-list is empty. Paid-first policy therefore changes routing
 semantics and acceptance requirements; it does not turn an executable or screenshot-mentioned capability into a
 released feature.

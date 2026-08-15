@@ -2,17 +2,18 @@
   "snapshotDate": "2026-08-15",
   "releaseId": "main-development-2026-08-15",
   "releaseStatus": "no-released-build",
-  "releaseSourceCommit": "767f75ec0d969313586c55a75b6b9c10a054af9d",
+  "releaseSourceCommit": "6ba5e2f1",
   "commandEntries": 95,
   "commandEntriesAvailable": 92,
   "commandEntriesUnavailable": 3,
   "capabilityIdentities": 55,
   "capabilitiesExecutable": 24,
-  "capabilitiesLiveAccepted": 2,
+  "capabilitiesLiveAccepted": 3,
   "capabilitiesUnavailable": 31,
   "liveAcceptedCapabilityIds": [
     "app.commands.discover",
-    "pipeline.status"
+    "pipeline.status",
+    "manuscript.reading.inspect"
   ],
   "sourceEvidence": "../evidence/2026-08-15/reframe-release-surface.json"
 }
