@@ -62,6 +62,14 @@ sanitized catalog and screenshot in `evidence/2026-08-03/` are the publication e
   (external check deferred until the new paths are pushed). The bundled Chrome CDP runner could not obtain a dedicated
   CDP endpoint, so no new browser AX/VRT evidence is claimed.
 
+### Deployment: 2026-08-15
+
+- Reviewed `site/` deployed with `secure-publishing/scripts/deploy_book_site.sh --apply --confirm-deploy`.
+- Tuple: `book.fountain.coach` → `65.109.14.71` → `/var/www/book-of-reframe`; DNS and Caddy were not changed.
+- Live verification: `/`, `/commands/commands/`, `/commands/ground/`, and `/commands/readings/` returned HTTPS 200.
+- Content verification: the live homepage reports snapshot `2026-08-15`, 55 capability identities, 24 executable, 31
+  unavailable, 2 live-accepted, and the paid-first routing section. Local-only preview tooling was not deployed.
+
 ## Snapshot: 2026-08-04 — `/threads` full-fidelity owned evidence
 
 - Owned source: Thepolyxsupershow 6th Draft Source, publisher-declared copyright/possession of Benedikt Eickhoff.
