@@ -333,3 +333,13 @@ until each current prerequisite chain and independent witness are rerun.
   2026-08-03 evidence remains historical legacy evidence.
 - Scenario validation passed (6/6); site AX/VRT passed; strict prepublish with external checks passed with 0 errors
   and 0 warnings after the transient GitHub timeout cleared.
+
+### `/readings` scenario reconciliation — 2026-08-15
+
+- The current typed `readings-comparison` contract was executed against the small original fixture corpus so the
+  publication witness is bounded and repeatable; the older Ulysses drive remains historical product evidence.
+- The runner was corrected to require a new lifecycle execution UUID for each repeated reading. The final witness
+  bound PID `69337`, window ID `58927`, the managed Store, executable, and integration source commit `94a7b327`.
+- Two paid ChatGPT-plan Storify executions reached `succeeded`, and `/readings` reached both AX and Store terminal
+  checks. The sanitized current record is `evidence/2026-08-15/verified-readings-scenario.md`.
+- Public Book commit `3c34b9d` promotes `/readings` to `live-accepted`; release status remains `no-released-build`.

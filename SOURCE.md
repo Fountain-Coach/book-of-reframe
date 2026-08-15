@@ -266,3 +266,11 @@ window-ID capture. The command remained read-only and honestly reported the empt
 sanitized record is `evidence/2026-08-15/verified-pipeline-status.md`; no private Store path or raw runtime identifiers
 are published. Scenario validation passed 6/6, site AX/VRT passed, and the strict prepublish scan with external checks
 passed with 0 errors and 0 warnings.
+
+### `/readings` scenario reconciliation — 2026-08-15
+
+The current public status is sourced from the governed `readings-comparison` scenario and its independent witness, not
+from the older Ulysses screenshot alone. The witness used the original fixture corpus, proved two distinct paid-lane
+reading executions by lifecycle UUID, and observed `/readings` through AX and FountainStore. Its sanitized record is
+`evidence/2026-08-15/verified-readings-scenario.md`; the runtime acceptance source was `94a7b327`, and the Book
+projection is `3c34b9d`. No private Store path, raw export, runtime source, or release capability is published.
