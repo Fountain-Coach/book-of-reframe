@@ -64,5 +64,5 @@ The manuscript shown is James Joyce's *Ulysses* (public domain), assembled by Re
 questions and the comparison narration are Reframe's output. The image is full fidelity under a recorded rights and
 scope review.
 
-Scenario: `readings-comparison` · [coverage record](../scenarios/coverage.json) · draft; legacy evidence requires a
-new scenario run.
+Scenario: `readings-comparison` · [coverage record](../scenarios/coverage.json) · executable; typed source and
+two-reading prerequisites are declared, with the independent live witness still pending.

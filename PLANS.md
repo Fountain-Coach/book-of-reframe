@@ -301,7 +301,12 @@ implementation and that prose-only setup cannot become executable.
 
 - The integration now carries canonical YAML contracts for all six existing scenario identities, with validator-enforced
   parity against the JSON runtime projections. This is contract authoring only; legacy live evidence remains historical
-  until each current prerequisite chain and independent witness are rerun.
+until each current prerequisite chain and independent witness are rerun.
+
+### Reconcile `/readings` contract
+
+- `readings-comparison` now declares source preparation and two explicit Storify reading terminal receipts before the
+  comparison. It is executable but remains pending current AX, window-ID, and FountainStore acceptance.
 
 ## 2026-08-15 — governed E2E scenario implementation record
 
