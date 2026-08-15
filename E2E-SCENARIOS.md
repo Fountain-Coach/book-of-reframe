@@ -7,6 +7,23 @@ AX state, FountainStore effects, window-ID visual evidence, provenance, and hone
 The runtime and governance repositories remain authoritative. This directory is a sanitized publication projection.
 It contains no prompts, manuscript text, private Store data, secrets, or deployment details.
 
+## Internal E2E capability
+
+Reframe now owns the reusable scenario semantics through the maintainer-only capability
+`reframe.e2e.scenario.run`. Its machine-readable contract is [`scenarios/registry.json`](scenarios/registry.json).
+The internal capability discovers scenarios, validates prerequisites, executes typed application behavior, and records
+Store receipts. It does not approve itself: Live Drive remains the independent witness for AX state, CoreGraphics
+window-ID capture, and visual regression. A scenario becomes `live-accepted` only where both evidence authorities
+agree.
+
+This division makes the development cycle efficient without making proof circular:
+
+```text
+internal Reframe capability → behavioral receipt
+independent Live Drive → AX/window/VRT evidence
+Book → sanitized intersection of both
+```
+
 ## Coverage
 
 The current published command pages are pinned in [`scenarios/coverage.json`](scenarios/coverage.json). The first

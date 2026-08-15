@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "capabilityId": "reframe.e2e.scenario.run",
+  "audience": "maintainer",
+  "status": "available",
+  "purpose": "Discover, validate, and execute named Reframe scenarios through typed behavior.",
+  "behavioralAuthorities": ["fountainstore", "runtime-receipt"],
+  "independentWitnessAuthorities": ["accessibility-tree", "coregraphics-window-id", "vrt-capture"],
+  "defaultStoreIntent": "fresh",
+  "writerStoreTargeting": "forbidden-by-default",
+  "selfApproval": false,
+  "externalWitness": {
+    "required": true,
+    "runner": "Reframe Live Drive",
+    "responsibilities": ["AX interaction and state", "window-ID capture", "visual evidence"]
+  },
+  "publicSafety": "sanitized-only"
+}

@@ -1,5 +1,18 @@
 # Publication plan
 
+## 2026-08-15 — internal E2E capability publication gate
+
+- Local preview: `http://127.0.0.1:4173/`, Google Chrome via the bundled CDP runner.
+- AX/VRT acceptance passed for `/`, `/commands/commands/`, and `/scenarios/`; the drive asserted landmarks,
+  navigation/menu state, skip-link focus, command metadata, breadcrumb, evidence alt text, related records, and the
+  scenario-page heading and coverage grid.
+- VRT captures: `site/evidence/vrt/local-cdp/home-desktop-light-1440x1000.png`,
+  `home-mobile-light-390x844.png`, `home-mobile-menu-open-light-390x844.png`, and
+  `scenarios-desktop-light-1440x1000.png`.
+- Generated-data and strict prepublication scan passed with 0 errors and 1 expected canonical-host warning.
+- The public projection adds the maintainer-only `reframe.e2e.scenario.run` registry contract; it publishes no raw
+  runtime, Store, manuscript, credential, or deployment data.
+
 ## 2026-08-15 — governed E2E scenario infrastructure
 
 - Make the Book an integral projection of Reframe's reusable E2E live-drive scenarios, with the governing doctrine

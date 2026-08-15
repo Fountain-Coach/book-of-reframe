@@ -1,5 +1,19 @@
 # Publication provenance
 
+## Snapshot: internal E2E capability publication gate — 2026-08-15
+
+- Machine-readable projection: `scenarios/registry.json` declares the maintainer-only
+  `reframe.e2e.scenario.run` contract, fresh-store default, independent-witness requirement, and no-self-approval
+  rule.
+- Human-readable projection: `E2E-SCENARIOS.md` and `/scenarios/` explain the internal behavioral receipt versus the
+  independent Live Drive AX/CoreGraphics/VRT witness.
+- Local acceptance: Google Chrome via CDP passed `/`, `/commands/commands/`, and `/scenarios/` at
+  `http://127.0.0.1:4173/`; screenshots are under `site/evidence/vrt/local-cdp/`.
+- Strict prepublication scan: 0 errors, 1 expected warning that the canonical host was not externally checked in the
+  local gate.
+- Publication boundary: the Book contains only sanitized contract and evidence vocabulary; no private runtime or
+  Store data is included.
+
 This book is published from the integration repository:
 
 - Runtime and registry: private `Fountain-Coach/midi2-gpu-fabric` (access required; not a public source link)
