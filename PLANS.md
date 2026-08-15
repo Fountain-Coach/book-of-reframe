@@ -20,7 +20,9 @@
   material remain out of the public projection. The older 2026-08-03/04 records remain historical legacy evidence.
 - Updated the coverage manifest, capability atlas, release snapshot, command page, scenario matrix, and generated site
   status to three live-accepted capabilities.
-- Pending boundary: natural-language origin parity, never-read acceptance, and deployment of this Book revision.
+- Pending boundary: natural-language origin parity and never-read acceptance.
+- Published as Book commit `d8fb20a` and deployed to `book.fountain.coach` from the dedicated publication root; live
+  HTTP verification returned 200 for the home and command routes.
 
 ## 2026-08-15 — public reference and maintainer projection
 

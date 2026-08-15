@@ -21,6 +21,8 @@
 - Public snapshot: `evidence/2026-08-15/threads-live-20260815.png`; sanitized acceptance record:
   `evidence/2026-08-15/verified-threads.md`.
 - Natural-language origin parity, the never-read case, and a released App build remain unestablished.
+- Publication: Book commit `Fountain-Coach/book-of-reframe@d8fb20a`; deployed to
+  `https://book.fountain.coach/` from the fixed dedicated root after strict external prepublication checks passed.
 
 ## Snapshot: scenario work session — 2026-08-15
 
