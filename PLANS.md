@@ -1,5 +1,30 @@
 # Publication plan
 
+## 2026-08-15 — governed E2E scenario infrastructure
+
+- Make the Book an integral projection of Reframe's reusable E2E live-drive scenarios, with the governing doctrine
+  authored first in Reframe-Refactoring and mirrored into the integration repository.
+- Add a Book site section that explains scenario contracts, AX/window-ID/FountainStore evidence, paid-lane consent,
+  state-based waits, provenance, and the difference between command inventory, capability acceptance, and release.
+- Create a coverage manifest that pins every currently published command page to a scenario identity: `/commands`,
+  `/ground`, `/pipeline status`, `/readings`, and `/threads`.
+- Import existing evidence into the scenario format where possible; mark slash-only, partial, unavailable, or
+  origin-parity gaps explicitly. Do not upgrade claims merely because a page already exists.
+- Require every future command page to link to its scenario and every scenario to link back to the governing chapter
+  and runtime evidence. The first new target is `/storify! source auto` → `/world`, with source import as a mandatory
+  setup step.
+- Keep the public projection sanitized: no manuscript text, private FountainStore data, credentials, deployment
+  details, or raw internal identifiers.
+
+### Planned validation and publication gates
+
+- Governance validator and docs parity check pass for the new chapter and mirrored reading index.
+- Scenario schema/runner tests pass, including missing-prerequisite, confirmation, timeout, failed-terminal, and
+  evidence-binding cases.
+- Every published page has a scenario coverage row and an honest status.
+- Book site local preview, browser AX/VRT acceptance, generated-data checks, strict prepublish scan, and deployment
+  verification pass before publication.
+
 ## 2026-08-03 — public/private publication policy
 
 - Replace misleading public-facing runtime links with an explicit private-runtime access note.
@@ -211,3 +236,18 @@ passed; local route/metadata scan passed with 0 errors using an isolated PyYAML 
 acceptance runner could not obtain a dedicated CDP endpoint, so browser AX/VRT evidence is not claimed in this phase.
 External references to the new GitHub paths remain pending until this commit is pushed; the canonical host remains the
 publication gate.
+
+## 2026-08-15 — governed E2E scenario implementation record
+
+- Governance Chapter 68 is authored in the authoritative Reframe-Refactoring checkout and synchronized into the
+  integration copy; remote parity remains pending the governance publication commit.
+- Added five draft scenario contracts and a coverage manifest for every existing command page. Legacy evidence is
+  explicitly retained as legacy and is not promoted to new scenario acceptance.
+- Added the public `E2E-SCENARIOS.md` projection and `/scenarios/` site route, with links from the site home and every
+  command page.
+- Scenario validation passed: 6 scenarios / 6 command identities, including the upcoming `/world` prerequisite
+  chain. Command-page validation passed for all 5 published pages.
+- Local strict prepublish scan passed with 0 errors and 1 canonical-host warning. Chrome CDP site acceptance passed for
+  the home, commands, and scenarios routes; screenshots were captured under `/tmp/book-e2e-acceptance-final.JZCUJA/`.
+- No scenario has yet been promoted to `live-accepted` by the new runner; the next tranche must execute the inventory
+  and replace each `draft` row only after same-run AX/Store/window-ID proof.

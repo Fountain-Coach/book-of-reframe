@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E2E scenarios — The Book of Reframe</title>
+  <meta name="description" content="The governed end-to-end scenario coverage behind The Book of Reframe command pages.">
+  <link rel="canonical" href="https://book.fountain.coach/scenarios/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Book of Reframe">
+  <meta property="og:title" content="E2E scenarios — The Book of Reframe">
+  <meta property="og:description" content="Reusable AX, FountainStore, window-ID, and provenance contracts behind Reframe command publication.">
+  <meta property="og:url" content="https://book.fountain.coach/scenarios/">
+  <meta property="og:locale" content="en_GB">
+  <link rel="icon" type="image/png" href="../assets/fountain-coach-logo.png">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body data-site-data="../site-data.json">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="nav-shell">
+    <a class="brand" href="../"><img class="brand-logo" src="../assets/fountain-coach-logo.png" alt="Fountain Coach logo"><span>The Book of Reframe<small>Fountain Coach · public technical publication</small></span></a>
+    <button class="menu-button" type="button" data-menu-button aria-controls="site-nav" aria-expanded="false">Menu</button>
+    <nav class="site-nav" id="site-nav" data-site-nav data-open="false" aria-label="Primary navigation"><a href="../#overview">Overview</a><a href="../#scope">Scope</a><a href="../#evidence">Evidence</a><a href="../commands/commands/">Commands</a><a href="./" aria-current="page">E2E scenarios</a><a href="https://github.com/Fountain-Coach/book-of-reframe">GitHub</a></nav>
+  </div></header>
+  <main id="main" class="layout">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../">The Book of Reframe</a><span aria-hidden="true">/</span><span aria-current="page">E2E scenarios</span></nav>
+    <section class="command-hero" aria-labelledby="page-title"><div class="eyebrow">Publication method · Chapter 68</div><h1 id="page-title">The scenario comes first.</h1><p class="lead">A Book command is not published from a prompt or a screenshot. It is published from a named, reusable end-to-end scenario that reaches the result and reads it back from the right authorities.</p><p class="source-line"><a href="https://github.com/Fountain-Coach/book-of-reframe/blob/main/E2E-SCENARIOS.md">Read the source projection →</a> · <a href="https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/68-the-reframe-e2e-scenario-is-the-publication-unit.md">Read Governance Chapter 68 →</a></p></section>
+    <section class="content-section" aria-labelledby="authorities-title"><div class="section-heading"><div class="eyebrow">Three authorities</div><h2 id="authorities-title">One journey, separate proof.</h2><p>AX proves what the writer-facing surface exposed and accepted. FountainStore proves what happened. A CoreGraphics window-ID capture proves what the surface looked like. Telemetry explains the run but cannot replace those authorities.</p></div><div class="evidence-grid"><article><h3>Prerequisites</h3><p>A dependent command cannot start until its source, reading, confirmation, or other declared predecessor has reached its own terminal state.</p></article><article><h3>State-based waits</h3><p>Scenarios wait for semantic AX or Store predicates. Timeouts are recorded as failures or blockers; arbitrary sleeps are not evidence.</p></article><article><h3>One binding</h3><p>Every result is bound to one PID, window ID, managed Store, executable, and source commit.</p></article></div></section>
+    <section class="content-section section-rule" aria-labelledby="coverage-title"><div class="section-heading"><div class="eyebrow">Coverage matrix</div><h2 id="coverage-title">Published pages, named scenarios.</h2><p>Existing screenshots and notes remain linked as legacy evidence until they are re-executed through the new contract.</p></div><div class="evidence-grid"><article><h3><code>/commands</code></h3><p><code>commands-discover</code> · Draft · legacy evidence requires scenario run.</p><a href="../commands/commands/">Open command page →</a></article><article><h3><code>/pipeline status</code></h3><p><code>pipeline-status</code> · Draft · legacy evidence requires scenario run.</p><a href="../commands/pipeline-status/">Open command page →</a></article><article><h3><code>/threads</code></h3><p><code>threads</code> · Draft · legacy evidence requires scenario run.</p><a href="../commands/threads/">Open command page →</a></article><article><h3><code>/ground</code></h3><p><code>ground-after-reading</code> · Draft · legacy evidence requires scenario run.</p><a href="../commands/ground/">Open command page →</a></article><article><h3><code>/readings</code></h3><p><code>readings-comparison</code> · Draft · legacy evidence requires scenario run.</p><a href="../commands/readings/">Open command page →</a></article></div></section>
+    <aside class="related-records" aria-labelledby="related-title"><h2 id="related-title">Related records</h2><a href="../">System overview</a><a href="https://github.com/Fountain-Coach/book-of-reframe/blob/main/scenarios/coverage.json">Scenario coverage manifest</a><a href="https://github.com/Fountain-Coach/book-of-reframe/blob/main/PUBLICATION-POLICY.md">Publication policy</a></aside>
+    <footer class="footer"><p><strong>The Book of Reframe</strong> · <a href="../">publication overview</a> · <a href="https://github.com/Fountain-Coach/book-of-reframe">source on GitHub</a></p><p><a href="../legal/">Legal notices</a> · <a href="../privacy/">Privacy</a> · <a href="../accessibility/">Accessibility</a> · <a href="../copyright/">Copyright</a></p><p>Snapshot: 2026-08-15 · development evidence projection</p></footer>
+  </main>
+  <script src="../assets/site.js" defer></script>
+</body>
+</html>

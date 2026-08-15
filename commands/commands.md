@@ -9,6 +9,9 @@ through the AX tree rather than presenting a screenshot-only inventory.
 
 Live drive: [full catalog acceptance evidence](../evidence/2026-08-03/verified-command-catalog.md)
 
+Scenario: `commands-discover` · [coverage record](../scenarios/coverage.json) · draft; legacy evidence requires a
+new scenario run.
+
 Behavioral proof: `app.commands.discover`, corpus `reframe-ulysses`; the sanitized evidence records 95 entries,
 92 available, and 3 unavailable. The original window was captured by CoreGraphics window ID after the result state
 was reached.

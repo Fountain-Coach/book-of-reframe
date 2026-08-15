@@ -19,6 +19,8 @@ the manuscript was ready for a release surface.
 
 ## Evidence authorities
 
+Live drive: [pipeline-status live acceptance evidence](../evidence/2026-08-03/verified-pipeline-status.md)
+
 - **AX semantics:** the interaction used `studio-chat-input` and `studio-chat-send`; the result exposed the
   `chat-row-message-*` response and `copilot-capability-activity` with description `Show pipeline status. Phase
   succeeded.`
@@ -29,6 +31,9 @@ the manuscript was ready for a release surface.
   was recorded.
 
 Detailed sanitized drive notes: [pipeline-status live acceptance evidence](../evidence/2026-08-03/verified-pipeline-status.md).
+
+Scenario: `pipeline-status` · [coverage record](../scenarios/coverage.json) · draft; legacy evidence requires a new
+scenario run.
 
 ## Boundary
 

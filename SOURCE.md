@@ -11,6 +11,18 @@ This book is published from the integration repository:
   [#9](https://github.com/Fountain-Coach/book-of-reframe/pull/9).
 - Maintenance skill: `midi2-gpu-fabric/.codex/skills/book-of-reframe-maintenance`
 
+## Snapshot: governed E2E scenario projection — 2026-08-15
+
+- Governance: Chapter 68, “The Reframe E2E Scenario Is the Publication Unit”.
+- Runtime scenario source: `Fountain-Coach/midi2-gpu-fabric/apps/modernization-studio/LiveScenarios/`.
+- Coverage: five draft contracts for the published commands plus the upcoming `world-after-storify` prerequisite
+  scenario for `/world`.
+- Validation: 6 scenarios / 6 command identities and all 5 command pages pass deterministic validation; Chrome via CDP passed
+  the home, `/commands/commands/`, and `/scenarios/` routes; strict prepublish passed with 0 errors and 1 canonical-
+  host warning.
+- Boundary: legacy screenshots and records remain linked but are not new scenario acceptance. No private Store data,
+  prompts, manuscript text, secrets, or released App capability is published.
+
 ## Snapshot: 2026-08-03
 
 - Source runtime store: fresh managed integration store; sanitized projection is retained in `evidence/2026-08-03/`

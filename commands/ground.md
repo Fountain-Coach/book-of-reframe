@@ -38,6 +38,8 @@ says the same thing the prose does: `grounding.proposal=false`, `grounding.chang
 
 ## Evidence authorities
 
+Live drive: [ground live acceptance evidence](../evidence/2026-08-09/verified-ground.md)
+
 - [Live-drive record](../evidence/2026-08-09/verified-ground.md) — AX semantics, CoreGraphics window-ID capture, and
   persisted FountainStore proof, with the second confirming pass.
 - Capability aggregate `copilot:capability:reframe-ulysses:41e02fb6-aed9-45f7-a891-67fc9737a60c` —
@@ -58,3 +60,6 @@ half unreachable, which is exactly what the command reported.
 
 The manuscript shown is James Joyce's *Ulysses* (public domain), assembled by Reframe's own corpus API. The Copilot
 text is Reframe's output. The image is full fidelity under a recorded rights and scope review.
+
+Scenario: `ground-after-reading` · [coverage record](../scenarios/coverage.json) · draft; legacy evidence requires a
+new scenario run.

@@ -42,6 +42,8 @@ Run a second time, the same comparison ended: *"…the readings agree too closel
 
 ## Evidence authorities
 
+Live drive: [readings live acceptance evidence](../evidence/2026-08-09/verified-readings.md)
+
 - [Live-drive record](../evidence/2026-08-09/verified-readings.md) — AX semantics, CoreGraphics window-ID capture,
   the two source readings, and the persisted round, with the second confirming pass.
 - Persisted turn `chat:reframe-ulysses:round:20`, computed from `storify:run:reframe-ulysses:stf-9512cc87` and
@@ -61,3 +63,6 @@ empty allow-list; documenting this command does not add anything to it.
 The manuscript shown is James Joyce's *Ulysses* (public domain), assembled by Reframe's own corpus API. The reading
 questions and the comparison narration are Reframe's output. The image is full fidelity under a recorded rights and
 scope review.
+
+Scenario: `readings-comparison` · [coverage record](../scenarios/coverage.json) · draft; legacy evidence requires a
+new scenario run.
