@@ -29,6 +29,14 @@
 - Live Chrome CDP repeated the capability-route AX/menu/footer checks successfully. The release surface remains
   `no-released-build` with an empty allow-list.
 
+## 2026-08-16 — finalized scenario development cycle
+
+- Published the sanitized `scenarioKind` projection and linked Governance Chapter 73 from the E2E page, homepage, and
+  machine-readable coverage manifest.
+- Confirmed the canonical authority split: executable YAML stays in the integration repository; the Book remains a
+  public/maintainer projection; no separate scenario repository is introduced.
+- Source governance: `Reframe-Refactoring@0e42b7d`; synchronized integration: `midi2-gpu-fabric@cb2cf559`.
+
 ## 2026-08-15 — `/commands` scenario reconciliation
 
 - Resolved `commands-discover` through the cross-repository status gate; integration, Book coverage, and capability

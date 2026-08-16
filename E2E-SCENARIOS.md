@@ -58,7 +58,7 @@ remains linked as history; current status is promoted only after the scenario co
 | `/ground` | `ground-after-reading` | Executable; typed prerequisites prepared, live witness pending |
 | `/readings` | `readings-comparison` | Live-accepted; two distinct paid reading executions, AX, Store, and window-ID proof |
 
-The governing method is [Chapter 68 — The Reframe E2E Scenario Is the Publication Unit](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/68-the-reframe-e2e-scenario-is-the-publication-unit.md), together with [Chapter 69 — The Book of Reframe Is a Dual Projection](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/69-the-book-of-reframe-is-a-dual-projection.md).
+The governing method is [Chapter 68 — The Reframe E2E Scenario Is the Publication Unit](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/68-the-reframe-e2e-scenario-is-the-publication-unit.md), [Chapter 69 — The Book of Reframe Is a Dual Projection](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/69-the-book-of-reframe-is-a-dual-projection.md), and [Chapter 73 — The Reframe Scenario Development Cycle](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/73-reframe-scenario-development-cycle.md).
 
 The next scenario target is `world-after-storify`: import a source, complete `/storify! source auto` with explicit
 confirmation, then run `/world`. The paid-default scenario is now live-accepted; `/world` remains unpublished by the
@@ -78,3 +78,11 @@ capacity remain unestablished.
 An isolated run is never presented as the writer's current UI. A command becomes `live-accepted` only when one run
 binds its AX observations, CoreGraphics window-ID capture, FountainStore read-back, executable, Store, PID, and
 source commit, and reaches the declared terminal result.
+
+## Scenario kinds and the canonical store
+
+The machine-readable coverage manifest records each scenario's `scenarioKind`: `command`, `capability`,
+`system-boundary`, `projection`, or `failure-recovery`. The executable YAML contracts remain canonical beside the
+Reframe implementation in `midi2-gpu-fabric`; the Book publishes a sanitized projection and never becomes a second
+runtime contract. A separate scenario repository is not part of the current architecture. It would require a new
+cross-product conformance authority, versioning policy, and synchronization contract before it could become valid.

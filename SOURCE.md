@@ -298,3 +298,14 @@ capacity is claimed. The release surface remains `no-released-build` with an emp
 - Live Chrome CDP: the capability route exposed its heading, `Primary navigation`, six named menu links, `Menu` →
   `Close` with `aria-expanded`, evidence alt text, an eight-link footer, and no horizontal overflow.
 - Prepublication: `--check-external --strict` passed with 0 errors and 0 warnings before deployment.
+
+### Scenario development cycle — 2026-08-16
+
+Governance Chapter 73 now defines the scenario as Reframe's reusable development unit across commands, capabilities,
+system boundaries, projections, and failure/recovery paths. The Book coverage manifest records `scenarioKind` for
+each entry. Executable YAML remains canonical beside the implementation; this public repository contains only the
+sanitized projection. No separate scenario repository is introduced.
+
+The governance source commit is `Fountain-Coach/Reframe-Refactoring@0e42b7d`; the synchronized integration/runtime
+commit is `Fountain-Coach/midi2-gpu-fabric@cb2cf559`. Scenario validation passed all 8 contracts, governance parity
+reported 76 identical chapters, and Codex/Claude skill parity passed.
