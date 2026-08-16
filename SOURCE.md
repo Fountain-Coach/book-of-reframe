@@ -309,3 +309,6 @@ sanitized projection. No separate scenario repository is introduced.
 The governance source commit is `Fountain-Coach/Reframe-Refactoring@0e42b7d`; the synchronized integration/runtime
 commit is `Fountain-Coach/midi2-gpu-fabric@cb2cf559`. Scenario validation passed all 8 contracts, governance parity
 reported 76 identical chapters, and Codex/Claude skill parity passed.
+
+The final Book projection, including the Chapter 73 links and `scenarioKind` manifest, is
+`Fountain-Coach/book-of-reframe@84bff9f` and is the revision deployed to `book.fountain.coach`.

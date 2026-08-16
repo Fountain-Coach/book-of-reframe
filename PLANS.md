@@ -36,6 +36,7 @@
 - Confirmed the canonical authority split: executable YAML stays in the integration repository; the Book remains a
   public/maintainer projection; no separate scenario repository is introduced.
 - Source governance: `Reframe-Refactoring@0e42b7d`; synchronized integration: `midi2-gpu-fabric@cb2cf559`.
+- Final Book projection and deployed site revision: `book-of-reframe@84bff9f`.
 
 ## 2026-08-15 — `/commands` scenario reconciliation
 
