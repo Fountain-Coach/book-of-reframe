@@ -64,6 +64,17 @@ The next scenario target is `world-after-storify`: import a source, complete `/s
 confirmation, then run `/world`. The paid-default scenario is now live-accepted; `/world` remains unpublished by the
 manifest until a command page is authored.
 
+## System capability coverage
+
+Not every important scenario is a writer command. `reframe-to-reframe-peer-projection` covers the system boundary in
+which one Reframe process drives another through MIDI2. It exercises the existing `storify.source.start` operation;
+it does not add a `/midi2` command to the writer catalog. The target owns mediation, consent, execution, and Store
+truth; the peer receives a typed lifecycle projection; the `MIDI2 peers` surface makes the relationship visible.
+
+The public capability record is [`capabilities/reframe-to-reframe-peer-projection.md`](capabilities/reframe-to-reframe-peer-projection.md).
+Its status is limited to software-peer acceptance. Physical MIDI2 hardware interoperability and unrestricted remote
+capacity remain unestablished.
+
 An isolated run is never presented as the writer's current UI. A command becomes `live-accepted` only when one run
 binds its AX observations, CoreGraphics window-ID capture, FountainStore read-back, executable, Store, PID, and
 source commit, and reaches the declared terminal result.

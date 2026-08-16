@@ -274,3 +274,15 @@ from the older Ulysses screenshot alone. The witness used the original fixture c
 reading executions by lifecycle UUID, and observed `/readings` through AX and FountainStore. Its sanitized record is
 `evidence/2026-08-15/verified-readings-scenario.md`; the runtime acceptance source was `94a7b327`, and the Book
 projection is `3c34b9d`. No private Store path, raw export, runtime source, or release capability is published.
+
+### Reframe-to-Reframe MIDI2 peer projection — 2026-08-16
+
+The Book now publishes the first system-capability projection that is not a writer command. The scenario
+`reframe-to-reframe-peer-projection` exercised the existing `storify.source.start` operation between two separate
+Reframe processes over MIDI2. The target retained mediation, consent, execution, and Store authority; the peer
+received the correlated terminal lifecycle; and the target's `MIDI2 peers` projection exposed the completed relationship.
+
+The sanitized record is [`evidence/2026-08-16/reframe-peer-terminal.md`](evidence/2026-08-16/reframe-peer-terminal.md),
+with the matching window-ID capture. Runtime source revision: `Fountain-Coach/midi2-gpu-fabric@cbf31bdb`.
+This is software-peer acceptance only; no physical hardware interoperability, Bluetooth behavior, or unbounded peer
+capacity is claimed. The release surface remains `no-released-build` with an empty allow-list.

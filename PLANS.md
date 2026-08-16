@@ -1,5 +1,25 @@
 # Publication plan
 
+## 2026-08-16 — Reframe-to-Reframe MIDI2 peer capability projection
+
+- Add the first non-command system-capability page: `reframe.midi2.software_peer_projection`.
+- Link the typed runtime scenario, sanitized evidence record, three governing MIDI2 chapters, and the visible `MIDI2 peers` projection.
+- Keep the command atlas unchanged: `storify.source.start` is the exercised existing operation, not a new `/midi2` command.
+- Preserve the boundary between software-peer acceptance and physical hardware interoperability; do not change the release allow-list.
+- Validate all routes, internal links, navigation/menu semantics, footer consistency, mobile menu state, and desktop/mobile VRT before deployment.
+
+### Acceptance record
+
+- Local preview: `http://127.0.0.1:4173/`; Google Chrome via CDP, with capability-route AX and VRT checks.
+- Deterministic prepublish: `--check-external --strict` passed with 0 errors and 0 warnings.
+- AX: capability page exposed a unique `h1`, `Breadcrumb`, `Primary navigation`, six named navigation links, a
+  `Menu` → `Close` state transition with `aria-expanded`, evidence alt text, and an eight-link consistent footer.
+- VRT: desktop 1440×1000 and mobile menu-open 390×844 captures are under
+  `site/evidence/vrt/local-cdp-20260816/`; the desktop capture was visually reviewed.
+- Route and interlink checks passed for the homepage, E2E coverage page, capability page, evidence image, governance
+  links, related records, and release boundary. The command atlas remains unchanged.
+- Publication source evidence: `Fountain-Coach/midi2-gpu-fabric@cbf31bdb`; no release allow-list change.
+
 ## 2026-08-15 — `/commands` scenario reconciliation
 
 - Resolved `commands-discover` through the cross-repository status gate; integration, Book coverage, and capability

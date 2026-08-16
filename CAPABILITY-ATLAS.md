@@ -6,6 +6,15 @@ The v2 registry contains **55** identities: **24** executable, **31** unavailabl
 
 A capability is fully empowered only when its adapter, policy, focused tests, persisted proof, telemetry, AX result, and required live acceptance are recorded.
 
+## System capability projections
+
+These records are not additional Copilot registry identities or writer-facing commands. They describe governed runtime
+boundaries that are evidenced through their own scenario contracts.
+
+| System capability | Scenario | Status | Boundary |
+| --- | --- | --- | --- |
+| [`reframe.midi2.software_peer_projection`](capabilities/reframe-to-reframe-peer-projection.md) | `reframe-to-reframe-peer-projection` | live-accepted | software-peer acceptance only; no physical hardware interoperability claim |
+
 ## Next implementation batch
 
 Prioritize available-but-unaccepted capabilities first, then implement unavailable rows in dependency order. The ledger is the durable progress record.

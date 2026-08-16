@@ -3,6 +3,11 @@
 The Book of Reframe is the public, human-readable guide to what Reframe can do: its commands, capabilities,
 preconditions, costs, evidence, and the reasoning behind its writer-facing surfaces.
 
+The Book also records system-capability projections that are not writer commands. The first is
+[Reframe-to-Reframe MIDI2 software-peer projection](capabilities/reframe-to-reframe-peer-projection.md): an
+evidence-backed software-peer acceptance in which the target Reframe retains mediation, consent, execution, and Store
+authority.
+
 This repository is a public, sanitized publication, not the runtime contract or a source mirror. The application and
 governed capability registry live in the private `Fountain-Coach/midi2-gpu-fabric` repository; readers without access
 may see GitHub's 404. The public explanation of this boundary is
