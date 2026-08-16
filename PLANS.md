@@ -20,6 +20,15 @@
   links, related records, and release boundary. The command atlas remains unchanged.
 - Publication source evidence: `Fountain-Coach/midi2-gpu-fabric@cbf31bdb`; no release allow-list change.
 
+### Deployment record
+
+- Book commit `c9c022c` was pushed to `Fountain-Coach/book-of-reframe@main` and deployed through the fixed
+  `book.fountain.coach` publication tuple.
+- Live HTTPS returned 200 for `/`, `/scenarios/`, `/capabilities/reframe-to-reframe-peer-projection/`, and the peer
+  evidence image.
+- Live Chrome CDP repeated the capability-route AX/menu/footer checks successfully. The release surface remains
+  `no-released-build` with an empty allow-list.
+
 ## 2026-08-15 — `/commands` scenario reconciliation
 
 - Resolved `commands-discover` through the cross-repository status gate; integration, Book coverage, and capability

@@ -286,3 +286,15 @@ The sanitized record is [`evidence/2026-08-16/reframe-peer-terminal.md`](evidenc
 with the matching window-ID capture. Runtime source revision: `Fountain-Coach/midi2-gpu-fabric@cbf31bdb`.
 This is software-peer acceptance only; no physical hardware interoperability, Bluetooth behavior, or unbounded peer
 capacity is claimed. The release surface remains `no-released-build` with an empty allow-list.
+
+### Publication and deployment — MIDI2 peer capability
+
+- Book commit: `c9c022c`, pushed to `Fountain-Coach/book-of-reframe@main`.
+- Deployment: the reviewed `site/` projection was synchronized to the fixed `book.fountain.coach` publication root;
+  local preview tooling and repository Markdown were excluded by the scoped deploy helper. DNS, Caddy, ownership, and
+  permissions were not changed.
+- Live HTTP: `/`, `/scenarios/`, `/capabilities/reframe-to-reframe-peer-projection/`, and the peer evidence image
+  returned HTTP 200 from the canonical host.
+- Live Chrome CDP: the capability route exposed its heading, `Primary navigation`, six named menu links, `Menu` →
+  `Close` with `aria-expanded`, evidence alt text, an eight-link footer, and no horizontal overflow.
+- Prepublication: `--check-external --strict` passed with 0 errors and 0 warnings before deployment.
