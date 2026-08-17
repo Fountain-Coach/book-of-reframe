@@ -2,9 +2,9 @@
 
 ## Snapshot: public Scenario-Driven Development method — 2026-08-17
 
-- Runtime and scenario infrastructure source: private `Fountain-Coach/midi2-gpu-fabric@9fef1e66`.
-- Governance source: public `Fountain-Coach/Reframe-Refactoring@a33eb3c`, Chapter 78 and its reading-index entry.
-- Public reusable kit: `Fountain-Coach/FountainScenarioKit@76e46ac`; `v0.1.1` remains the Reframe consumer dependency,
+- Runtime and scenario infrastructure source: private `Fountain-Coach/midi2-gpu-fabric@add3acec`.
+- Governance source: public `Fountain-Coach/Reframe-Refactoring@e3068dc`, Chapter 78 and its reading-index entry.
+- Public reusable kit: `Fountain-Coach/FountainScenarioKit@ec3a06c`; `v0.1.1` remains the Reframe consumer dependency,
   while this newer main commit updates public README/compliance presentation.
 - Projection: `SCENARIO-DRIVEN-DEVELOPMENT.md`, `E2E-SCENARIOS.md`, and `/scenario-driven-development/`.
 - Claim boundary: public method and package explanation only. No private runtime source, Store data, manuscript,
@@ -13,7 +13,7 @@
   checks passed for the homepage, scenarios index, new method route, and linked capability page. The external scan
   reached all content checks but one GitHub URL timed out; deployment and live-host verification remain separate.
 - Publication: `Fountain-Coach/book-of-reframe@9946725`.
-- Deployment: the reviewed `site/` projection from `book-of-reframe@f7770c2` was synchronized to the fixed
+- Deployment: the reviewed `site/` projection from `book-of-reframe@19d7735` was synchronized to the fixed
   `book.fountain.coach` publication root. Live HTTPS returned 200 for `/`, `/commands/commands/`, `/commands/ground/`,
   `/commands/readings/`, `/scenario-driven-development/`, `/scenarios/`, and the MIDI2 capability page.
 
