@@ -13,6 +13,9 @@
   checks passed for the homepage, scenarios index, new method route, and linked capability page. The external scan
   reached all content checks but one GitHub URL timed out; deployment and live-host verification remain separate.
 - Publication: `Fountain-Coach/book-of-reframe@9946725`.
+- Deployment: the reviewed `site/` projection from `book-of-reframe@9f98115` was synchronized to the fixed
+  `book.fountain.coach` publication root. Live HTTPS returned 200 for `/`, `/commands/commands/`, `/commands/ground/`,
+  `/commands/readings/`, `/scenario-driven-development/`, `/scenarios/`, and the MIDI2 capability page.
 
 ## Snapshot: `/commands` scenario reconciliation — 2026-08-15
 
