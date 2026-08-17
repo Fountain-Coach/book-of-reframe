@@ -13,6 +13,7 @@
     {"command": "/world", "capability": "world.report", "scenario": "world-after-storify", "scenarioKind": "command", "status": "live-accepted", "coverage": "paid-default-draCor-storify-terminal-world-run", "page": null, "legacyEvidence": null}
   ],
   "systemCapabilities": [
-    {"capability": "reframe.midi2.software_peer_projection", "scenario": "reframe-to-reframe-peer-projection", "scenarioKind": "system-boundary", "status": "live-accepted", "coverage": "two-process-midi2-peer-consent-terminal-ax-store-window-proof", "page": "capabilities/reframe-to-reframe-peer-projection.md", "evidence": "evidence/2026-08-16/reframe-peer-terminal.md", "claimBoundary": "software-peer-acceptance-only"}
+    {"capability": "reframe.midi2.software_peer_projection", "scenario": "reframe-to-reframe-peer-projection", "scenarioKind": "system-boundary", "status": "live-accepted", "coverage": "two-process-midi2-peer-consent-terminal-ax-store-window-proof", "page": "capabilities/reframe-to-reframe-peer-projection.md", "evidence": "evidence/2026-08-16/reframe-peer-terminal.md", "claimBoundary": "software-peer-acceptance-only"},
+    {"capability": "reframe.e2e.scenario.run", "scenario": "scenario-runtime-midi2", "scenarioKind": "system-boundary", "status": "executable", "coverage": "swift-midi2-runtime-contract-awaiting-independent-ax-store-window-proof", "page": "capabilities/scenario-runtime-midi2.md", "claimBoundary": "scenario-runtime-and-software-peer-evidence-only"}
   ]
 }

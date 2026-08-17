@@ -84,6 +84,10 @@ An isolated run is never presented as the writer's current UI. A command becomes
 binds its AX observations, CoreGraphics window-ID capture, FountainStore read-back, executable, Store, PID, and
 source commit, and reaches the declared terminal result.
 
+The internal `scenario-runtime-midi2` capability is the next acceptance target. Its public projection remains
+`executable` until the Swift actor, target Store, AX surface, window-ID capture, MIDI2 lifecycle, and provenance tuple
+agree in one isolated run.
+
 ## Scenario kinds and the canonical store
 
 The machine-readable coverage manifest records each scenario's `scenarioKind`: `command`, `capability`,
