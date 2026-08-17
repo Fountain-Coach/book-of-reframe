@@ -53,15 +53,17 @@ FountainStore state, generated capability facts, and independent Live Drive rema
 
 ## Historical perspective and future
 
-Scenario-Driven Development is the next layer above CI: the scenario itself becomes a protocol-bound development
-participant with durable evidence and a public explanation. MIDI-CI discovery and Property Exchange can extend this
-from one product to negotiated software peers. Future Fountain Coach kits can share lifecycle, transport, fixture,
-and evidence seams while each product keeps authority over its own behavior and UI.
+Scenario-Driven Development complements CI: the scenario itself becomes a protocol-bound development participant with
+durable evidence and a public explanation. It extends familiar BDD/ATDD practice into a governed loop for stateful,
+GUI-visible, agent-operated systems; it does not replace TDD, acceptance testing, contract testing, or CI. In Reframe,
+MIDI-CI discovery and Property Exchange are future extensions toward negotiated software peers. Future Fountain Coach
+kits can share lifecycle, transport, fixture, and evidence seams while each product keeps authority over its own
+behavior and UI.
 
-The longer-term direction is a network of cooperating development peers: a Reframe instance, a stage, a service, or a
-future physical MIDI2 device can advertise typed roles, negotiate capabilities, exchange correlated lifecycle events,
-and retain independent witnesses. Software-peer acceptance is already meaningful; physical hardware interoperability
-remains a separate claim that requires a hardware witness.
+The longer-term direction is an ecosystem of cooperating development peers: a Reframe instance, a stage, a service, or
+a future physical MIDI2 device could advertise typed roles, negotiate capabilities, exchange correlated lifecycle
+events, and retain independent witnesses. Software-peer acceptance is already meaningful; physical hardware
+interoperability remains a separate claim that requires a hardware witness.
 
 ## Governing references
 
