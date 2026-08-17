@@ -21,7 +21,7 @@
   MIDI2 capability page. The external scan reached all content checks but one GitHub URL timed out; deployment remains
   a separate handoff.
 - Publication commit: `Fountain-Coach/book-of-reframe@9946725`.
-- Deployment: `book-of-reframe@9f98115` deployed through the fixed `book.fountain.coach` tuple; live HTTPS and the
+- Deployment: `book-of-reframe@f7770c2` deployed through the fixed `book.fountain.coach` tuple; live HTTPS and the
   new route returned 200.
 
 ## 2026-08-16 — Reframe-to-Reframe MIDI2 peer capability projection
