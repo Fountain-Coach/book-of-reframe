@@ -23,6 +23,7 @@ may see GitHub's 404. The public explanation of this boundary is
 - [`HISTORICAL-COMMANDS.md`](HISTORICAL-COMMANDS.md) — why the development command inventory is broader than a release;
 - [`LANE-POLICY.md`](LANE-POLICY.md) — the paid-first routing contract and its evidence boundary;
 - [`SCENARIO-DRIVEN-DEVELOPMENT.md`](SCENARIO-DRIVEN-DEVELOPMENT.md) — how versioned scenarios and MIDI2 relieve the development cycle;
+- [`GOVERNANCE-79.md`](GOVERNANCE-79.md) — the public projection of the default semantic manuscript workspace;
 - [`E2E-SCENARIOS.md`](E2E-SCENARIOS.md) — the machine-linked scenario publication boundary;
 - [`evidence/2026-08-03/verified-command-catalog.md`](evidence/2026-08-03/verified-command-catalog.md) — the
   machine-shaped catalog projection from the live app.

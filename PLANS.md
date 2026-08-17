@@ -1,5 +1,25 @@
 # Publication plan
 
+## 2026-08-17 — publish Governance Chapter 79 and the default semantic manuscript projection
+
+- Publish a sanitized public projection of Governance Chapter 79: Reframe's continuous Courier/Fountain manuscript,
+  semantic Questions/Movements/Read coverage navigation, right Copilot, bottom MIDI2 peer projection, and the explicit
+  exclusion of A4 cards, horizontal timelines, and Slugline application chrome.
+- Add the approved signature illustration to the Book site and public source projection. It is design evidence only,
+  not runtime, AX, FountainStore, visual-regression, or release proof.
+- Add the stable site route `/governance/default-semantic-manuscript-projection/`, interlink it from the home and
+  Scenario-Driven Development pages, and preserve the existing navigation/footer semantics.
+- Source governance: `Fountain-Coach/Reframe-Refactoring@1cbe5f2`; integration source:
+  `Fountain-Coach/midi2-gpu-fabric@03302ce2`.
+- No command, capability, release, live-acceptance, or runtime claim is promoted by this publication.
+
+### Planned gates
+
+- deterministic site-data, route, asset, metadata, link, and private-source scan;
+- local browser AX/VRT acceptance for home, method, and new governance route;
+- strict Book prepublication scan;
+- commit and push the Book projection, then deploy the reviewed site and verify HTTPS routes/assets.
+
 ## 2026-08-17 — public Scenario-Driven Development method and FountainScenarioKit
 
 - Publish a human-readable explanation of Scenario-Driven Development, its historical relationship to E2E/CI/contract

@@ -1,5 +1,20 @@
 # Publication provenance
 
+## Snapshot: Governance Chapter 79 — default semantic manuscript projection — 2026-08-17
+
+- Governance source: `Fountain-Coach/Reframe-Refactoring@1cbe5f2`.
+- Integration source: private `Fountain-Coach/midi2-gpu-fabric@03302ce2`.
+- Public projection: `GOVERNANCE-79.md` and `/governance/default-semantic-manuscript-projection/`.
+- Signature illustration: `site/assets/reframe-default-semantic-workspace.jpg`; design reference only, with no runtime,
+  AX, FountainStore, visual-regression, live-acceptance, or release claim.
+- Claim boundary: public governance explanation only; Questions, Movements, Read coverage, Copilot, and MIDI2 peer
+  presentation are described without promoting an implementation or released App surface.
+- Deterministic prepublication: strict scan passed with 0 errors and 0 warnings, including external canonical-host
+  checks. Local route and image asset returned successfully.
+- Browser acceptance: the bundled Chrome CDP runner could not start because no dedicated CDP browser was available;
+  AX/VRT acceptance remains explicitly unestablished and is not claimed here.
+- Publication commit: pending.
+
 ## Snapshot: public Scenario-Driven Development method — 2026-08-17
 
 - Runtime and scenario infrastructure source: private `Fountain-Coach/midi2-gpu-fabric@add3acec`.
