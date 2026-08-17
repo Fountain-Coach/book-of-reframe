@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scenario-Driven Development — The Book of Reframe</title>
+  <meta name="description" content="How Reframe uses versioned scenarios and MIDI2-native lifecycle infrastructure to make development repeatable and evidence-backed.">
+  <link rel="canonical" href="https://book.fountain.coach/scenario-driven-development/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Book of Reframe">
+  <meta property="og:title" content="Scenario-Driven Development — The Book of Reframe">
+  <meta property="og:description" content="Versioned scenarios, MIDI2 lifecycle events, and independent evidence for an inspectable development cycle.">
+  <meta property="og:url" content="https://book.fountain.coach/scenario-driven-development/">
+  <meta property="og:locale" content="en_GB">
+  <link rel="icon" type="image/png" href="../assets/fountain-coach-logo.png">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body data-site-data="../site-data.json">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="nav-shell">
+    <a class="brand" href="../"><img class="brand-logo" src="../assets/fountain-coach-logo.png" alt="Fountain Coach logo"><span>The Book of Reframe<small>Fountain Coach · public technical publication</small></span></a>
+    <button class="menu-button" type="button" data-menu-button aria-controls="site-nav" aria-expanded="false">Menu</button>
+    <nav class="site-nav" id="site-nav" data-site-nav data-open="false" role="navigation" aria-label="Primary navigation"><a href="../#overview">Overview</a><a href="../#scope">Scope</a><a href="../#evidence">Evidence</a><a href="../commands/commands/">Commands</a><a href="../scenarios/">E2E scenarios</a><a href="./" aria-current="page">Development method</a><a href="https://github.com/Fountain-Coach/book-of-reframe">GitHub</a></nav>
+  </div></header>
+  <main id="main" class="layout">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../">The Book of Reframe</a><span aria-hidden="true">/</span><span aria-current="page">Scenario-Driven Development</span></nav>
+    <section class="command-hero" aria-labelledby="page-title"><div class="eyebrow">Development infrastructure · Chapter 78</div><h1 id="page-title">Scenario-Driven Development makes the cycle inspectable.</h1><p class="lead">Reframe treats an end-to-end scenario as a versioned contract, not a loose test script or screenshot checklist.</p><p class="source-line"><a href="https://github.com/Fountain-Coach/book-of-reframe/blob/main/SCENARIO-DRIVEN-DEVELOPMENT.md">Read the source projection →</a> · <a href="https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/78-scenario-driven-development-as-org-infrastructure.md">Read Chapter 78</a></p></section>
+    <section class="content-section" aria-labelledby="cycle-title"><div class="section-heading"><div class="eyebrow">The cycle</div><h2 id="cycle-title">Contract first, evidence last.</h2><p>A scenario names prerequisites, actors, typed actions, lifecycle events, terminal predicates, failure states, cleanup, and the boundary of its claim before implementation begins.</p></div><ol class="model-steps"><li><strong>01 · Contract</strong><span>Write the complete journey and expected authorities.</span></li><li><strong>02 · Source slice</strong><span>Implement only the bounded behavior the scenario exercises.</span></li><li><strong>03 · Typed execution</strong><span>Enter through the same operation boundary as a production software peer.</span></li><li><strong>04 · Independent proof</strong><span>Read AX, visual, Store, telemetry, and provenance evidence separately.</span></li><li><strong>05 · Projection</strong><span>Publish only the sanitized intersection of what the product proved.</span></li></ol></section>
+    <section class="content-section section-rule" aria-labelledby="midi-title"><div class="section-heading"><div class="eyebrow">Why MIDI2 matters</div><h2 id="midi-title">Development communication becomes a protocol surface.</h2><p>Older end-to-end automation often relied on sleeps, polling, private harness commands, and log interpretation. MIDI 2.0 lets a scenario actor participate as a software peer: it invokes typed operations and receives correlated lifecycle events over Universal MIDI Packets.</p></div><div class="evidence-grid"><article><h3>Explicit lifecycle</h3><p>Admission, running, terminal success, failure, refusal, reconnect, duplicate, resume, and capacity outcomes are messages, not timing guesses.</p></article><article><h3>Independent witnesses</h3><p>AX proves operability, CoreGraphics/VRT proves appearance, FountainStore proves durable behavior, and telemetry explains conditions.</p></article><article><h3>Bounded claim</h3><p>MIDI2-native execution proves owned software interoperability. Physical hardware interoperability still requires a hardware witness.</p></article></div></section>
+    <section class="content-section section-rule" aria-labelledby="kit-title"><div class="section-heading"><div class="eyebrow">Org infrastructure</div><h2 id="kit-title">A reusable seam, product-local truth.</h2><p><a href="https://github.com/Fountain-Coach/FountainScenarioKit">FountainScenarioKit</a> is the public Swift/MIDI2 kit for generic lifecycle, UMP encoding, idempotent replay, transport boundaries, and deterministic fixtures. Reframe retains its operation namespace, Store adapter, UI witnesses, scenario corpus, and acceptance evidence.</p></div><p class="source-line"><a href="https://github.com/Fountain-Coach/.github/blob/main/docs/FCIS-KIT-Standard.md">FCIS-KIT standard</a> · <a href="../scenarios/">Scenario coverage</a> · <a href="https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/77-swift-midi2-scenario-runtime.md">Chapter 77</a></p></section>
+    <aside class="related-records" aria-labelledby="related-title"><h2 id="related-title">Related records</h2><a href="../scenarios/">E2E scenario coverage</a><a href="../capabilities/reframe-to-reframe-peer-projection/">MIDI2 software-peer capability</a><a href="https://github.com/Fountain-Coach/FountainScenarioKit">FountainScenarioKit on GitHub</a><a href="https://github.com/Fountain-Coach/Reframe-Refactoring">Governance repository</a></aside>
+    <footer class="footer"><p><strong>The Book of Reframe</strong> · <a href="../">publication overview</a> · <a href="https://github.com/Fountain-Coach/book-of-reframe">source on GitHub</a></p><p><a href="../legal/">Legal notices</a> · <a href="../privacy/">Privacy</a> · <a href="../accessibility/">Accessibility</a> · <a href="../copyright/">Copyright</a> · <a href="../compliance/">EU compliance scope</a> · <a href="../sticker/">Fountain Coach sticker</a></p><p>Snapshot: 2026-08-17 · public development-method projection · no released App surface recorded</p></footer>
+  </main>
+  <script src="../assets/site.js" defer></script>
+</body>
+</html>

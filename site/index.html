@@ -31,12 +31,13 @@
     <div class="nav-shell">
       <a class="brand" href="./"><img class="brand-logo" src="assets/fountain-coach-logo.png" alt="Fountain Coach logo"><span>The Book of Reframe<small>Fountain Coach · public technical publication</small></span></a>
       <button class="menu-button" type="button" data-menu-button aria-controls="site-nav" aria-expanded="false">Menu</button>
-      <nav class="site-nav" id="site-nav" data-site-nav data-open="false" aria-label="Primary navigation">
+      <nav class="site-nav" id="site-nav" data-site-nav data-open="false" role="navigation" aria-label="Primary navigation">
         <a href="#overview">Overview</a>
         <a href="#scope">Scope</a>
         <a href="#evidence">Evidence</a>
         <a href="commands/commands/">Commands</a>
         <a href="scenarios/">E2E scenarios</a>
+        <a href="scenario-driven-development/">Development method</a>
         <a href="https://github.com/Fountain-Coach/book-of-reframe">GitHub</a>
       </nav>
     </div>
@@ -56,6 +57,19 @@
         <span>2026-08-15 · no released App surface recorded</span>
         <a href="https://github.com/Fountain-Coach/book-of-reframe/blob/main/RELEASE-SURFACE.md">Read the release boundary →</a>
       </aside>
+    </section>
+
+    <section id="scenario-method" class="section section-rule" aria-labelledby="scenario-method-title">
+      <div class="section-heading">
+        <div class="eyebrow">Development infrastructure</div>
+        <h2 id="scenario-method-title">Scenarios make the cycle inspectable.</h2>
+        <p>Reframe turns each end-to-end journey into a versioned contract, then drives it through the same typed MIDI2 boundary as a software peer. That replaces timing guesses and improvised handoffs with correlated lifecycle events and independent proof.</p>
+      </div>
+      <div class="evidence-grid">
+        <article><h3>Contract first</h3><p>Prerequisites, actors, terminal predicates, evidence, failure states, and claim boundaries are written before implementation.</p><a href="scenario-driven-development/">Read Scenario-Driven Development →</a></article>
+        <article><h3>MIDI2-native</h3><p>The public <a href="https://github.com/Fountain-Coach/FountainScenarioKit">FountainScenarioKit</a> carries the generic Swift lifecycle and UMP transport seam.</p></article>
+        <article><h3>Proof stays plural</h3><p>AX, visual capture, FountainStore, telemetry, and provenance remain independent witnesses. MIDI2 never self-approves a result.</p></article>
+      </div>
     </section>
 
     <section id="overview" class="section intro-section" aria-labelledby="overview-title">

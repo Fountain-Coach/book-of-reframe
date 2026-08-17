@@ -10,6 +10,11 @@ validated for exact parity. The Book publishes the sanitized scenario identity a
 The runtime and governance repositories remain authoritative. This directory is a sanitized publication projection.
 It contains no prompts, manuscript text, private Store data, secrets, or deployment details.
 
+The reusable infrastructure behind this cycle is documented in
+[Scenario-Driven Development](SCENARIO-DRIVEN-DEVELOPMENT.md) and released as the public
+[FountainScenarioKit](https://github.com/Fountain-Coach/FountainScenarioKit). The kit owns the generic Swift/MIDI2
+lifecycle seam; Reframe owns product meaning and independent evidence.
+
 ## Internal E2E capability
 
 Reframe now owns the reusable scenario semantics through the maintainer-only capability
@@ -58,7 +63,7 @@ remains linked as history; current status is promoted only after the scenario co
 | `/ground` | `ground-after-reading` | Executable; typed prerequisites prepared, live witness pending |
 | `/readings` | `readings-comparison` | Live-accepted; two distinct paid reading executions, AX, Store, and window-ID proof |
 
-The governing method is [Chapter 68 — The Reframe E2E Scenario Is the Publication Unit](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/68-the-reframe-e2e-scenario-is-the-publication-unit.md), [Chapter 69 — The Book of Reframe Is a Dual Projection](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/69-the-book-of-reframe-is-a-dual-projection.md), and [Chapter 73 — The Reframe Scenario Development Cycle](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/73-reframe-scenario-development-cycle.md).
+The governing method is [Chapter 68 — The Reframe E2E Scenario Is the Publication Unit](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/68-the-reframe-e2e-scenario-is-the-publication-unit.md), [Chapter 69 — The Book of Reframe Is a Dual Projection](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/69-the-book-of-reframe-is-a-dual-projection.md), [Chapter 73 — The Reframe Scenario Development Cycle](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/73-reframe-scenario-development-cycle.md), and [Chapter 78 — Scenario-Driven Development Is Org Infrastructure](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/78-scenario-driven-development-as-org-infrastructure.md).
 
 The next scenario target is `world-after-storify`: import a source, complete `/storify! source auto` with explicit
 confirmation, then run `/world`. The paid-default scenario is now live-accepted; `/world` remains unpublished by the

@@ -22,6 +22,8 @@ may see GitHub's 404. The public explanation of this boundary is
 - [`PUBLICATION-POLICY.md`](PUBLICATION-POLICY.md) — what the public Book may expose and what remains private;
 - [`HISTORICAL-COMMANDS.md`](HISTORICAL-COMMANDS.md) — why the development command inventory is broader than a release;
 - [`LANE-POLICY.md`](LANE-POLICY.md) — the paid-first routing contract and its evidence boundary;
+- [`SCENARIO-DRIVEN-DEVELOPMENT.md`](SCENARIO-DRIVEN-DEVELOPMENT.md) — how versioned scenarios and MIDI2 relieve the development cycle;
+- [`E2E-SCENARIOS.md`](E2E-SCENARIOS.md) — the machine-linked scenario publication boundary;
 - [`evidence/2026-08-03/verified-command-catalog.md`](evidence/2026-08-03/verified-command-catalog.md) — the
   machine-shaped catalog projection from the live app.
 
@@ -32,6 +34,11 @@ not new powers; “available” is not the same as live-accepted; and a feature 
 because a prompt or UI title mentions it.
 
 The integration repository's `book-of-reframe-maintenance` skill defines the maintenance workflow.
+
+The generic scenario lifecycle and MIDI2 transport seam is publicly released as
+[FountainScenarioKit](https://github.com/Fountain-Coach/FountainScenarioKit). The kit is reusable infrastructure,
+not a public mirror of Reframe's private runtime; its product-specific Store, AX, window-ID, and acceptance evidence
+remain in the integration and Book projections.
 
 Each completed command page begins with the GUI snapshot of that command executing and showing its result. The
 snapshot is paired with AX evidence and persisted FountainStore proof; commands not yet driven remain explicitly

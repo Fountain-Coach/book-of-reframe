@@ -1,5 +1,24 @@
 # Publication plan
 
+## 2026-08-17 — public Scenario-Driven Development method and FountainScenarioKit
+
+- Publish a human-readable explanation of Scenario-Driven Development, its historical relationship to E2E/CI/contract
+  testing, and the role of MIDI2 as an event-driven software-peer substrate.
+- Link the public FountainScenarioKit, Chapter 78, Chapter 77, the E2E coverage projection, and the public/maintainer
+  boundary.
+- Add the stable site route `/scenario-driven-development/`, with semantic navigation, breadcrumbs, related records,
+  canonical/Open Graph metadata, and the same footer shell as the existing method and capability pages.
+- Preserve the claim boundary: the kit is reusable public infrastructure; Reframe runtime, Store, AX, visual, and
+  hardware claims remain separately governed and the release surface remains unchanged.
+
+### Provenance and acceptance
+
+- Runtime integration: `Fountain-Coach/midi2-gpu-fabric@9fef1e66`.
+- Governance: `Fountain-Coach/Reframe-Refactoring@a33eb3c`.
+- Public kit: `Fountain-Coach/FountainScenarioKit@76e46ac` (public visibility decision and README/compliance update).
+- Local checks: strict prepublication, internal-link/metadata scan, Chrome CDP AX/VRT for `/`, `/scenarios/`,
+  `/scenario-driven-development/`, and the MIDI2 capability page; deployment remains a separate handoff.
+
 ## 2026-08-16 — Reframe-to-Reframe MIDI2 peer capability projection
 
 - Add the first non-command system-capability page: `reframe.midi2.software_peer_projection`.

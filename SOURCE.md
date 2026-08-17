@@ -1,5 +1,16 @@
 # Publication provenance
 
+## Snapshot: public Scenario-Driven Development method — 2026-08-17
+
+- Runtime and scenario infrastructure source: private `Fountain-Coach/midi2-gpu-fabric@9fef1e66`.
+- Governance source: public `Fountain-Coach/Reframe-Refactoring@a33eb3c`, Chapter 78 and its reading-index entry.
+- Public reusable kit: `Fountain-Coach/FountainScenarioKit@76e46ac`; `v0.1.1` remains the Reframe consumer dependency,
+  while this newer main commit updates public README/compliance presentation.
+- Projection: `SCENARIO-DRIVEN-DEVELOPMENT.md`, `E2E-SCENARIOS.md`, and `/scenario-driven-development/`.
+- Claim boundary: public method and package explanation only. No private runtime source, Store data, manuscript,
+  credentials, deployment details, or hardware-interoperability claim is published.
+- Acceptance: pending this publication commit and its site AX/VRT/prepublish record.
+
 ## Snapshot: `/commands` scenario reconciliation — 2026-08-15
 
 - Scenario: `commands-discover`; capability: `app.commands.discover`; status: `live-accepted`.
