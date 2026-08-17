@@ -13,7 +13,9 @@
   checks. Local route and image asset returned successfully.
 - Browser acceptance: the bundled Chrome CDP runner could not start because no dedicated CDP browser was available;
   AX/VRT acceptance remains explicitly unestablished and is not claimed here.
-- Publication commit: pending.
+- Publication commits: `Fountain-Coach/book-of-reframe@498fd6f` and template-fit correction
+  `Fountain-Coach/book-of-reframe@a8b01a6`.
+- Deployment: pending final HTTPS verification.
 
 ## Snapshot: public Scenario-Driven Development method — 2026-08-17
 

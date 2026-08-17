@@ -19,6 +19,7 @@
 - local browser AX/VRT acceptance for home, method, and new governance route;
 - strict Book prepublication scan;
 - commit and push the Book projection, then deploy the reviewed site and verify HTTPS routes/assets.
+- Publication commits: `498fd6f` (initial projection), `a8b01a6` (template-fit correction); deployment pending.
 
 ## 2026-08-17 — public Scenario-Driven Development method and FountainScenarioKit
 
