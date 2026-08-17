@@ -9,7 +9,10 @@
 - Projection: `SCENARIO-DRIVEN-DEVELOPMENT.md`, `E2E-SCENARIOS.md`, and `/scenario-driven-development/`.
 - Claim boundary: public method and package explanation only. No private runtime source, Store data, manuscript,
   credentials, deployment details, or hardware-interoperability claim is published.
-- Acceptance: pending this publication commit and its site AX/VRT/prepublish record.
+- Acceptance: local deterministic prepublish passed with 0 errors and 1 canonical-host warning; Chrome CDP AX/VRT
+  checks passed for the homepage, scenarios index, new method route, and linked capability page. The external scan
+  reached all content checks but one GitHub URL timed out; deployment and live-host verification remain separate.
+- Publication: `Fountain-Coach/book-of-reframe@9946725`.
 
 ## Snapshot: `/commands` scenario reconciliation — 2026-08-15
 

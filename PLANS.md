@@ -16,8 +16,11 @@
 - Runtime integration: `Fountain-Coach/midi2-gpu-fabric@9fef1e66`.
 - Governance: `Fountain-Coach/Reframe-Refactoring@a33eb3c`.
 - Public kit: `Fountain-Coach/FountainScenarioKit@76e46ac` (public visibility decision and README/compliance update).
-- Local checks: strict prepublication, internal-link/metadata scan, Chrome CDP AX/VRT for `/`, `/scenarios/`,
-  `/scenario-driven-development/`, and the MIDI2 capability page; deployment remains a separate handoff.
+- Local checks: strict prepublication passed with 0 errors and 1 expected canonical-host warning; internal-link/
+  metadata scan passed; Chrome CDP AX/VRT passed for `/`, `/scenarios/`, `/scenario-driven-development/`, and the
+  MIDI2 capability page. The external scan reached all content checks but one GitHub URL timed out; deployment remains
+  a separate handoff.
+- Publication commit: `Fountain-Coach/book-of-reframe@9946725`.
 
 ## 2026-08-16 — Reframe-to-Reframe MIDI2 peer capability projection
 
