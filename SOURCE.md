@@ -15,7 +15,8 @@
   AX/VRT acceptance remains explicitly unestablished and is not claimed here.
 - Publication commits: `Fountain-Coach/book-of-reframe@498fd6f` and template-fit correction
   `Fountain-Coach/book-of-reframe@a8b01a6`.
-- Deployment: pending final HTTPS verification.
+- Deployment: `Fountain-Coach/book-of-reframe@c061674` synchronized to `book.fountain.coach` →
+  `65.109.14.71` → `/var/www/book-of-reframe`; HTTPS 200 verified for the governance route and signature image.
 
 ## Snapshot: public Scenario-Driven Development method — 2026-08-17
 

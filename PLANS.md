@@ -20,6 +20,9 @@
 - strict Book prepublication scan;
 - commit and push the Book projection, then deploy the reviewed site and verify HTTPS routes/assets.
 - Publication commits: `498fd6f` (initial projection), `a8b01a6` (template-fit correction); deployment pending.
+- Deployment completed from Book source commit `c061674` to the fixed `book.fountain.coach` tuple
+  (`65.109.14.71` → `/var/www/book-of-reframe`). HTTPS returned 200 for the governance route and signature image
+  after correcting the deployed root to directories `755` and files `644`.
 
 ## 2026-08-17 — public Scenario-Driven Development method and FountainScenarioKit
 
