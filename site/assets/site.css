@@ -82,8 +82,9 @@ h3 { font-size: 1.05rem; }
 .related-records h2 { width: 100%; font-size: 1.05rem; }
 .related-records a { font-size: .9rem; }
 .evidence-figure { margin: 2rem 0 0; }
-.evidence-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: .4rem; }
+.evidence-figure img, .content-section figure img { display: block; width: 100%; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: .4rem; }
 .evidence-figure figcaption { color: var(--muted); font-size: .85rem; margin-top: .6rem; }
+.content-section figure { min-width: 0; max-width: 100%; margin-left: 0; margin-right: 0; }
 .footer { border-top: 1px solid var(--line); padding: 2rem 0 4rem; color: var(--muted); font-size: .85rem; }
 
 @media (max-width: 48rem) {
