@@ -71,3 +71,23 @@ interoperability remains a separate claim that requires a hardware witness.
 - [Chapter 78 — Scenario-Driven Development Is Org Infrastructure](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/78-scenario-driven-development-as-org-infrastructure.md)
 - [E2E scenario coverage](E2E-SCENARIOS.md)
 - [FountainScenarioKit](https://github.com/Fountain-Coach/FountainScenarioKit)
+
+## Related methods and research
+
+This method uses established terms carefully. BDD and ATDD describe neighboring practices for expressing behavior,
+examples, and acceptance before or alongside implementation; Scenario-Driven Development adds Reframe's protocol,
+evidence, provenance, and publication boundary. Cucumber is an implementation tool for executable BDD specifications,
+not evidence that BDD or this method is scientifically effective.
+
+- [Behaviour driven development: A systematic mapping study](https://doi.org/10.1016/j.jss.2023.111749), *Journal of
+  Systems and Software* (2023) — maps 166 BDD papers and identifies limited industry evidence and a shortage of
+  process and artifact metrics.
+- [Behavior Driven Development: A Systematic Literature Review](https://doi.org/10.1109/ACCESS.2023.3302356), *IEEE
+  Access* (2023) — reviews BDD research and its use of structured behavioral examples.
+- [Impact of test-driven development on productivity, code and tests](https://doi.org/10.1016/j.infsof.2011.02.002),
+  *Information and Software Technology* (2011) — reports small and non-significant differences across the studied
+  TDD/test-last outcomes; this Book makes no unsupported productivity claim.
+- [Specification by Example and Agile Acceptance Testing](https://agilealliance.org/resources/books/bridging-the-communication-gap-specification-by-example-and-agile-acceptance-testing/) — practitioner reference for the
+  collaborative ATDD/specification-by-example tradition.
+- [Cucumber documentation](https://cucumber.io/docs/bdd/) — tool documentation for BDD, cited as implementation
+  context rather than scientific evidence.
