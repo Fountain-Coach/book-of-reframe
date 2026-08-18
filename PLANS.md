@@ -5,6 +5,8 @@
 - Change: Book social-publish packages now record and enforce the full HTTPS Book page as `publicUrl`; the page's own
   `og:image` remains the post image. Asset URLs, image-only routes, and raw GitHub file URLs fail closed.
 - Claim boundary: packaging/template behavior only; no external Facebook post is claimed.
+- Book publication commits: `Fountain-Coach/book-of-reframe@c84e293` (skill/template) and
+  `Fountain-Coach/book-of-reframe@6dc6637` (generated-bytecode cleanup).
 - Validation: command package generated for `/commands` with `https://book.fountain.coach/commands/commands/`, the live
   page returns HTTPS 200 with matching `og:url` and `og:image`, and an image URL is rejected.
 
