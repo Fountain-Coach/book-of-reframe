@@ -1,5 +1,13 @@
 # Publication plan
 
+## Current gate — Facebook packages link to Book pages (2026-08-18)
+
+- Change: Book social-publish packages now record and enforce the full HTTPS Book page as `publicUrl`; the page's own
+  `og:image` remains the post image. Asset URLs, image-only routes, and raw GitHub file URLs fail closed.
+- Claim boundary: packaging/template behavior only; no external Facebook post is claimed.
+- Validation: command package generated for `/commands` with `https://book.fountain.coach/commands/commands/`, the live
+  page returns HTTPS 200 with matching `og:url` and `og:image`, and an image URL is rejected.
+
 ## 2026-08-17 — publish Governance Chapter 79 and the default semantic manuscript projection
 
 - Publish a sanitized public projection of Governance Chapter 79: Reframe's continuous Courier/Fountain manuscript,

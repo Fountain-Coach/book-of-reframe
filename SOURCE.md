@@ -1,5 +1,16 @@
 # Publication provenance
 
+## Snapshot: Facebook packages use the full Book page (2026-08-18)
+
+- The Book social-publish skill now makes the full HTTPS page the Facebook `publicUrl`; its page-level Open Graph image
+  is the preview image. It rejects `/assets/`, `/social/`, raw image, and raw GitHub file URLs.
+- A `/commands` package was generated with `https://book.fountain.coach/commands/commands/`; the live route returned
+  HTTPS 200 with `og:url` set to the page and `og:image` set to the command snapshot.
+- Validation note: the strict prepublication scan found no URL/template defect; it remains blocked in this environment
+  by the existing missing-PyYAML requirement for `compliance/register.yaml` and retains the expected canonical-host
+  warning.
+- Claim boundary: local packaging only; no external Facebook post was created.
+
 ## Snapshot: Governance Chapter 79 — default semantic manuscript projection — 2026-08-17
 
 - Governance source: `Fountain-Coach/Reframe-Refactoring@1cbe5f2`.
