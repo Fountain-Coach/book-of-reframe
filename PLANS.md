@@ -1,5 +1,18 @@
 # Publication plan
 
+## Planned landing — Chapter 83 maintainer scenario authoring (2026-08-18)
+
+- Target: publish the sanitized human-readable contract and evidence-backed projection for the Reframe maintainer
+  scenario-authoring command after integration implementation and independent acceptance.
+- Scenario: `teatro-score-myth-illustrations`; kind `projection`; current integration coverage `executable`, not
+  live-accepted. The Book currently has no coverage entry or capability page for this scenario.
+- Publication shape: add a system-capability/projection page and `scenarios/coverage.json` entry; keep it out of the
+  writer command atlas unless a separate writer-facing command is explicitly governed.
+- Gates: exact integration YAML/JSON contract, fresh managed Store run, AX/window-ID/VRT evidence, sanitized
+  provenance, release-status truth, local Book AX/VRT, strict prepublication scan, then publication/deployment.
+- Exclusions: no private prompts, manuscript text, Store documents, credentials, internal execution IDs, or claim of a
+  released writer capability before the integration and independent evidence gates pass.
+
 ## Current gate — Facebook packages link to Book pages (2026-08-18)
 
 - Change: Book social-publish packages now record and enforce the full HTTPS Book page as `publicUrl`; the page's own

@@ -1,5 +1,13 @@
 # Publication provenance
 
+## Planned projection — Chapter 83 maintainer scenario authoring (2026-08-18)
+
+- The Book landing target is a sanitized system-capability/projection page for
+  `teatro-score-myth-illustrations`, linked to its scenario coverage and evidence after integration implementation.
+- The current Book has no record for this scenario; no capability or live-acceptance claim is being added yet.
+- The eventual projection must preserve the distinction between the human-readable prompt-contract, compiled YAML/JSON,
+  runtime Store truth, independent AX/window-ID/VRT evidence, and release status.
+
 ## Snapshot: Facebook packages use the full Book page (2026-08-18)
 
 - The Book social-publish skill now makes the full HTTPS page the Facebook `publicUrl`; its page-level Open Graph image
