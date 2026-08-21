@@ -1,5 +1,16 @@
 # Publication provenance
 
+## Snapshot: scenario-success publication semantics — 2026-08-21
+
+- The public projection now compiles `scenarios/coverage.json` into `site/publication-manifest.json`.
+- A command page is eligible only when its named scenario is independently `live-accepted` and the reviewed page
+  exists. `/command` inventory changes and legacy evidence do not publish a route.
+- Accepted scenarios without pages remain explicit `accepted-no-page`; system-boundary capabilities remain outside the
+  writer command projection.
+- Scenario acceptance remains separate from the named release surface. This snapshot records `no-released-build`.
+- Local AX/VRT acceptance passed. Strict prepublication passed with 0 errors and 1 canonical-host warning after
+  running with the required PyYAML dependency in an isolated validation environment.
+
 ## Planned projection — Chapter 83 maintainer scenario authoring (2026-08-18)
 
 - The Book landing target is a sanitized system-capability/projection page for

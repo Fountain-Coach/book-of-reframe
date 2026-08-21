@@ -27,7 +27,7 @@
 </head>
 <body data-site-data="site-data.json">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="nav-shell">
       <a class="brand" href="./"><img class="brand-logo" src="assets/fountain-coach-logo.png" alt="Fountain Coach logo"><span>The Book of Reframe<small>Fountain Coach · public technical publication</small></span></a>
       <button class="menu-button" type="button" data-menu-button aria-controls="site-nav" aria-expanded="false">Menu</button>
@@ -106,12 +106,12 @@
       <div class="section-heading">
         <div class="eyebrow">At a glance</div>
         <h2 id="scope-title">Four projections, four questions.</h2>
-        <p>The command inventory, capability registry, live-accepted evidence, and named-build release surface answer different questions. This site keeps those questions distinct.</p>
+        <p>The command inventory, named scenario results, live-accepted page eligibility, and named-build release surface answer different questions. This site keeps those questions distinct.</p>
       </div>
       <div class="stat-grid">
         <article class="stat"><strong data-site-value="commandEntries">95</strong><span>command entries in the verified development catalog · <b data-site-value="commandEntriesAvailable">92</b> available / <b data-site-value="commandEntriesUnavailable">3</b> unavailable</span><a href="https://github.com/Fountain-Coach/book-of-reframe/blob/main/COMMAND-ATLAS.md">Command atlas →</a></article>
         <article class="stat"><strong data-site-value="capabilityIdentities">55</strong><span>governed capability identities · <b data-site-value="capabilitiesExecutable">24</b> executable / <b data-site-value="capabilitiesUnavailable">31</b> unavailable</span><a href="https://github.com/Fountain-Coach/book-of-reframe/blob/main/CAPABILITY-ATLAS.md">Capability atlas →</a></article>
-        <article class="stat"><strong data-site-value="capabilitiesLiveAccepted">3</strong><span>capabilities with live-accepted evidence · snapshot <b data-site-date>2026-08-15</b></span><a href="https://github.com/Fountain-Coach/book-of-reframe/tree/main/evidence/2026-08-15">Evidence snapshot →</a></article>
+        <article class="stat"><strong data-site-value="scenarioLiveAccepted">6</strong><span>named scenarios live-accepted · <b data-site-value="commandPagesLiveAccepted">4</b> command pages eligible</span><a href="scenarios/">Scenario coverage →</a></article>
       </div>
       <p class="provenance-line">Values are generated from the checked release projection for <span data-site-status>no-released-build</span>, not from runtime UI text.</p>
     </section>
@@ -132,7 +132,8 @@
         <p>Available is not the same as live-accepted. A command entry is not an independent capability. Live-accepted is not automatically released. The source files record those distinctions.</p>
       </div>
       <div class="evidence-grid">
-        <article><h3>Start with commands</h3><p>The runtime catalog is the broad development inventory. It includes aliases, compatibility routes, conditional entries, and maintainer tools.</p><a href="commands/commands/">Open the command atlas →</a></article>
+        <article><h3>Start with scenarios</h3><p>A named scenario must reach terminal success through AX, FountainStore, and window-ID proof before its command page is eligible.</p><a href="scenarios/">Open scenario coverage →</a></article>
+        <article><h3>Commands are projections</h3><p>The command catalog is a development inventory. Adding or changing <code>/command</code> text never promotes a page by itself.</p><a href="commands/commands/">Open the command atlas →</a></article>
         <article><h3>Check capabilities</h3><p>The governed registry is narrower. It records adapters, policy, proof, telemetry, AX, and live-acceptance status.</p><a href="https://github.com/Fountain-Coach/book-of-reframe/blob/main/CAPABILITY-ATLAS.md">Open the capability atlas →</a></article>
         <article><h3>Check release status</h3><p>No named distribution build is recorded in this snapshot. The release allow-list is therefore empty.</p><a href="https://github.com/Fountain-Coach/book-of-reframe/blob/main/RELEASE-SURFACE.md">Open the release surface →</a></article>
       </div>
@@ -151,7 +152,7 @@
     <footer class="footer">
       <p><strong>The Book of Reframe</strong> · publication projection · <a href="https://github.com/Fountain-Coach/book-of-reframe">source on GitHub</a></p>
       <p><a href="legal/">Legal notices</a> · <a href="privacy/">Privacy</a> · <a href="accessibility/">Accessibility</a> · <a href="copyright/">Copyright</a> · <a href="compliance/">EU compliance scope</a> · <a href="sticker/">Fountain Coach sticker</a></p>
-      <p>Snapshot: 2026-08-15 · <a href="https://github.com/Fountain-Coach/book-of-reframe/blob/main/SOURCE.md">provenance</a> · no released App surface recorded</p>
+      <p>Snapshot: <span data-site-date>2026-08-15</span> · <a href="https://github.com/Fountain-Coach/book-of-reframe/blob/main/SOURCE.md">provenance</a> · no released App surface recorded</p>
     </footer>
   </main>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","name":"The Book of Reframe","url":"https://book.fountain.coach/","publisher":{"@type":"Organization","name":"Fountain Coach","url":"https://github.com/Fountain-Coach","logo":"https://book.fountain.coach/assets/fountain-coach-logo.png"}}</script>

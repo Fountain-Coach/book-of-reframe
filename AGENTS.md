@@ -26,6 +26,14 @@ This repository contains reviewed documentation projections from Reframe's integ
 - The canonical web site is a static publication projection. Stable command URLs MUST carry Open Graph metadata whose
   `og:image` is that command's own live-drive GUI snapshot; GitHub remains source and provenance authority.
 - The runtime repository is authoritative for implementation; this repository is authoritative only for publication text.
+- Publication law: `scenarios/coverage.json` is the reviewed scenario input and `site/publication-manifest.json` is its
+  deterministic projection. A command route is eligible only when its named scenario has an independent terminal
+  `live-accepted` result and the reviewed page exists. `/command` inventory or legacy evidence alone never publishes
+  or promotes a page. Accepted scenarios without pages remain `accepted-no-page`; system-boundary capabilities never
+  become writer command routes. Scenario acceptance and named release status are separate axes: live-accepted is not
+  released, and release claims require the named release surface and allow-list.
+- Before local GO, run `python3 scripts/build-publication-manifest.py --check` and `python3 site/build-site-data.py`,
+  then run the site AX/VRT and strict prepublication gates. Do not deploy or push while the local GO is pending.
 - This public repository is a reviewed projection. It must not publish runtime source, private store data, secrets,
   unowned manuscript material, deployment details, or an unaudited claim. Publisher-owned manuscript evidence may be
   published only under the recorded rights-review gate. The private runtime is named with an access note; public

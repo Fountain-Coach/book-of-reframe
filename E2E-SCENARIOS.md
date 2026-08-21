@@ -52,13 +52,15 @@ operations.
 
 ## Coverage
 
-The current published command pages are pinned in [`scenarios/coverage.json`](scenarios/coverage.json). Older evidence
-remains linked as history; current status is promoted only after the scenario contract and independent witness agree.
+The scenario projection is compiled into [`site/publication-manifest.json`](site/publication-manifest.json). Older
+evidence remains linked as history; a command page is eligible only after its named scenario is independently
+live-accepted. `/command` inventory edits are never a publication trigger. The named release surface is separate:
+live-accepted proves development behavior, while a named build and allow-list are required to claim a release.
 
 | Command | Scenario | Current status |
 | --- | --- | --- |
 | `/commands` | `commands-discover` | Live-accepted; three-run scenario evidence |
-| `/pipeline status` | `pipeline-status` | Draft; legacy evidence requires scenario run |
+| `/pipeline status` | `pipeline-status` | Live-accepted; page eligible |
 | `/threads` | `threads` | Live-accepted; one-run slash-origin AX, Store, and window proof |
 | `/ground` | `ground-after-reading` | Executable; typed prerequisites prepared, live witness pending |
 | `/readings` | `readings-comparison` | Live-accepted; two distinct paid reading executions, AX, Store, and window-ID proof |
@@ -66,8 +68,8 @@ remains linked as history; current status is promoted only after the scenario co
 The governing method is [Chapter 68 — The Reframe E2E Scenario Is the Publication Unit](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/68-the-reframe-e2e-scenario-is-the-publication-unit.md), [Chapter 69 — The Book of Reframe Is a Dual Projection](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/69-the-book-of-reframe-is-a-dual-projection.md), [Chapter 73 — The Reframe Scenario Development Cycle](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/73-reframe-scenario-development-cycle.md), and [Chapter 78 — Scenario-Driven Development Is Org Infrastructure](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/78-scenario-driven-development-as-org-infrastructure.md).
 
 The next scenario target is `world-after-storify`: import a source, complete `/storify! source auto` with explicit
-confirmation, then run `/world`. The paid-default scenario is now live-accepted; `/world` remains unpublished by the
-manifest until a command page is authored.
+confirmation, then run `/world`. The scenario is live-accepted; `/world` remains unpublished by the manifest until a
+command page is authored.
 
 ## System capability coverage
 

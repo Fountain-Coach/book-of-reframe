@@ -38,7 +38,15 @@ focus, the skip link, and the Menu/Close navigation. Edit HTML, CSS, JavaScript,
 preview reloads itself within roughly one second. The existing `/commands/commands/` route must remain reachable.
 The reload script is injected only by `dev-server.py`; it is not part of the published HTML.
 
-Before publication, regenerate the numeric/status projection from the checked release evidence:
+Before publication, compile scenario acceptance first, then regenerate the numeric/status projection:
+
+```sh
+python3 scripts/build-publication-manifest.py
+python3 scripts/build-publication-manifest.py --check
+```
+
+The manifest is the route gate: a command page is eligible only for a named `live-accepted` scenario. An accepted
+scenario without a page is retained as `accepted-no-page`; the named release surface remains independent.
 
 ```sh
 python3 build-site-data.py

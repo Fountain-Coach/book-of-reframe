@@ -2,6 +2,7 @@
 """Generate the site's numeric/status projection from the checked release evidence."""
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 
@@ -11,8 +12,11 @@ def main():
     parser.add_argument("--evidence", type=Path, default=Path("../evidence/2026-08-15/reframe-release-surface.json"))
     parser.add_argument("--output", type=Path, default=Path("site-data.json"))
     args = parser.parse_args()
-    source = json.loads(args.evidence.read_text())
+    evidence_path = args.evidence.resolve()
+    source = json.loads(evidence_path.read_text())
     snapshot = source["developmentSnapshot"]
+    manifest_path = Path(__file__).resolve().parent / "publication-manifest.json"
+    manifest = json.loads(manifest_path.read_text())
     result = {
         "snapshotDate": source["releaseId"].removeprefix("main-development-"),
         "releaseId": source["releaseId"],
@@ -26,10 +30,20 @@ def main():
         "capabilitiesLiveAccepted": snapshot["capabilitiesLiveAccepted"],
         "capabilitiesUnavailable": snapshot["capabilitiesUnavailable"],
         "liveAcceptedCapabilityIds": snapshot["liveAcceptedCapabilityIds"],
+        "scenarioRecords": manifest["counts"]["scenarioRecords"],
+        "scenarioLiveAccepted": manifest["counts"]["scenarioLiveAccepted"],
+        "commandPagesLiveAccepted": manifest["counts"]["commandPagesLiveAccepted"],
+        "commandPagesPending": manifest["counts"]["commandPagesPending"],
+        "acceptedCommandScenariosWithoutPage": manifest["counts"]["acceptedCommandScenariosWithoutPage"],
+        "systemCapabilitiesLiveAccepted": manifest["counts"]["systemCapabilitiesLiveAccepted"],
+        "releaseLiveAccepted": manifest["counts"]["releaseLiveAccepted"],
+        "publicationManifest": "publication-manifest.json",
+        "publicationManifestDigest": hashlib.sha256(manifest_path.read_bytes()).hexdigest(),
         "sourceEvidence": f"../evidence/{source['releaseId'].removeprefix('main-development-')}/reframe-release-surface.json",
     }
-    args.output.write_text(json.dumps(result, indent=2) + "\n")
-    print(f"wrote {args.output} from {args.evidence}")
+    output_path = args.output.resolve()
+    output_path.write_text(json.dumps(result, indent=2) + "\n")
+    print(f"wrote {output_path} from {evidence_path}")
 
 
 if __name__ == "__main__":

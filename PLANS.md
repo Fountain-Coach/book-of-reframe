@@ -1,5 +1,17 @@
 # Publication plan
 
+## Current gate — scenario-success publication semantics (2026-08-21)
+
+- Refactor the public projection so `/command` inventory changes never publish a command page by themselves.
+- Compile `scenarios/coverage.json` into `site/publication-manifest.json`; a command route is eligible only when its
+  named scenario is `live-accepted` and the reviewed page exists. Accepted scenarios without pages remain visible as
+  `accepted-no-page`, and system-boundary capabilities never become command routes.
+- Keep the named release surface separate: scenario success proves development behavior; `releaseStatus` and its
+  allow-list decide whether a named App release exists. `live-accepted` must not be rendered as “released.”
+- Local gates: manifest regeneration/check, generated site data, local AX/VRT acceptance, and strict prepublication
+  scan. Deployment is now explicitly authorized by the maintainer GO; use only the fixed Book publication tuple and
+  preserve the separate named-release boundary.
+
 ## Planned landing — Chapter 83 maintainer scenario authoring (2026-08-18)
 
 - Target: publish the sanitized human-readable contract and evidence-backed projection for the Reframe maintainer

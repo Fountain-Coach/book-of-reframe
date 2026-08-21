@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": [
+    "scenarios/coverage.json",
+    "evidence/2026-08-15/reframe-release-surface.json"
+  ],
+  "policy": {
+    "commandInventoryIsNotPublicationTrigger": true,
+    "commandPageRequiresLiveAcceptedScenario": true,
+    "liveAcceptedDoesNotImplyReleased": true,
+    "systemBoundaryNeverBecomesCommand": true
+  },
+  "release": {
+    "id": "main-development-2026-08-15",
+    "status": "no-released-build",
+    "sourceCommit": "6ba5e2f1",
+    "capabilityAllowList": [],
+    "developmentSnapshot": {
+      "commandEntries": 95,
+      "commandEntriesAvailable": 92,
+      "commandEntriesUnavailable": 3,
+      "capabilityIdentities": 55,
+      "capabilitiesExecutable": 24,
+      "capabilitiesLiveAccepted": 3,
+      "capabilitiesUnavailable": 31,
+      "liveAcceptedCapabilityIds": [
+        "app.commands.discover",
+        "pipeline.status",
+        "manuscript.reading.inspect"
+      ]
+    }
+  },
+  "counts": {
+    "scenarioRecords": 8,
+    "scenarioLiveAccepted": 6,
+    "commandPagesLiveAccepted": 4,
+    "commandPagesPending": 1,
+    "acceptedCommandScenariosWithoutPage": 1,
+    "systemCapabilitiesLiveAccepted": 1,
+    "releaseLiveAccepted": 3
+  },
+  "routes": [
+    {
+      "command": "/commands",
+      "capability": "app.commands.discover",
+      "scenario": "commands-discover",
+      "scenarioKind": "command",
+      "scenarioStatus": "live-accepted",
+      "page": "commands/commands.md",
+      "route": "/commands/commands/",
+      "publicationStatus": "published-live-accepted",
+      "coverage": "three-run-scenario-ax-store-window-proof",
+      "evidence": null,
+      "currentEvidence": null,
+      "legacyEvidence": "evidence/2026-08-03/verified-command-catalog.md"
+    },
+    {
+      "command": "/pipeline status",
+      "capability": "pipeline.status",
+      "scenario": "pipeline-status",
+      "scenarioKind": "command",
+      "scenarioStatus": "live-accepted",
+      "page": "commands/pipeline-status.md",
+      "route": "/commands/pipeline-status/",
+      "publicationStatus": "published-live-accepted",
+      "coverage": "three-run-scenario-ax-store-window-proof",
+      "evidence": null,
+      "currentEvidence": null,
+      "legacyEvidence": "evidence/2026-08-03/verified-pipeline-status.md"
+    },
+    {
+      "command": "/threads",
+      "capability": "manuscript.reading.inspect",
+      "scenario": "threads",
+      "scenarioKind": "command",
+      "scenarioStatus": "live-accepted",
+      "page": "commands/threads.md",
+      "route": "/commands/threads/",
+      "publicationStatus": "published-live-accepted",
+      "coverage": "one-run-scenario-ax-store-window-proof; slash-origin-only",
+      "evidence": null,
+      "currentEvidence": null,
+      "legacyEvidence": "evidence/2026-08-04/verified-threads.md"
+    },
+    {
+      "command": "/ground",
+      "capability": "prep.grounding.propose",
+      "scenario": "ground-after-reading",
+      "scenarioKind": "command",
+      "scenarioStatus": "executable",
+      "page": "commands/ground.md",
+      "route": "/commands/ground/",
+      "publicationStatus": "pending-scenario",
+      "coverage": "typed-prerequisites-and-preparation-proof; live-witness-pending",
+      "evidence": null,
+      "currentEvidence": null,
+      "legacyEvidence": "evidence/2026-08-09/verified-ground.md"
+    },
+    {
+      "command": "/readings",
+      "capability": "manuscript.reading.compare",
+      "scenario": "readings-comparison",
+      "scenarioKind": "command",
+      "scenarioStatus": "live-accepted",
+      "page": "commands/readings.md",
+      "route": "/commands/readings/",
+      "publicationStatus": "published-live-accepted",
+      "coverage": "fixture-scenario-two-distinct-paid-reading-executions-plus-ax-store-window-proof",
+      "evidence": null,
+      "currentEvidence": "evidence/2026-08-15/verified-readings-scenario.md",
+      "legacyEvidence": "evidence/2026-08-09/verified-readings.md"
+    },
+    {
+      "command": "/world",
+      "capability": "world.report",
+      "scenario": "world-after-storify",
+      "scenarioKind": "command",
+      "scenarioStatus": "live-accepted",
+      "page": null,
+      "route": null,
+      "publicationStatus": "accepted-no-page",
+      "coverage": "paid-default-draCor-storify-terminal-world-run",
+      "evidence": null,
+      "currentEvidence": null,
+      "legacyEvidence": null
+    }
+  ],
+  "systemCapabilities": [
+    {
+      "capability": "reframe.midi2.software_peer_projection",
+      "scenario": "reframe-to-reframe-peer-projection",
+      "scenarioKind": "system-boundary",
+      "scenarioStatus": "live-accepted",
+      "page": "capabilities/reframe-to-reframe-peer-projection.md",
+      "route": "/capabilities/reframe-to-reframe-peer-projection/",
+      "capabilityStatus": "live-accepted",
+      "coverage": "two-process-midi2-peer-consent-terminal-ax-store-window-proof",
+      "evidence": "evidence/2026-08-16/reframe-peer-terminal.md",
+      "claimBoundary": "software-peer-acceptance-only"
+    },
+    {
+      "capability": "reframe.e2e.scenario.run",
+      "scenario": "scenario-runtime-midi2",
+      "scenarioKind": "system-boundary",
+      "scenarioStatus": "executable",
+      "page": "capabilities/scenario-runtime-midi2.md",
+      "route": "/capabilities/scenario-runtime-midi2/",
+      "capabilityStatus": "not-live-accepted",
+      "coverage": "swift-midi2-runtime-contract-awaiting-independent-ax-store-window-proof",
+      "evidence": null,
+      "claimBoundary": "scenario-runtime-and-software-peer-evidence-only"
+    }
+  ]
+}

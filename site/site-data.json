@@ -15,5 +15,14 @@
     "pipeline.status",
     "manuscript.reading.inspect"
   ],
+  "scenarioRecords": 8,
+  "scenarioLiveAccepted": 6,
+  "commandPagesLiveAccepted": 4,
+  "commandPagesPending": 1,
+  "acceptedCommandScenariosWithoutPage": 1,
+  "systemCapabilitiesLiveAccepted": 1,
+  "releaseLiveAccepted": 3,
+  "publicationManifest": "publication-manifest.json",
+  "publicationManifestDigest": "b2352e3e97fd9b19ec0c088be8cecf7483248df89f7d9a60ec3a082d535d7532",
   "sourceEvidence": "../evidence/2026-08-15/reframe-release-surface.json"
 }
