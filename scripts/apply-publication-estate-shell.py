@@ -87,6 +87,7 @@ def footer(path: Path) -> str:
 
 def apply(path: Path) -> None:
     source = path.read_text(encoding="utf-8")
+    source = source.replace('href="../../GOVERNANCE-79.md"', 'href="https://github.com/Fountain-Coach/book-of-reframe/blob/main/GOVERNANCE-79.md"')
     label = page_label(source, path)
     source = re.sub(r'<meta name="theme-color"[^>]*>\s*', '', source)
     additions = (
@@ -96,6 +97,27 @@ def apply(path: Path) -> None:
     )
     if 'fountain:publication-role' not in source:
         source = re.sub(r'(<link[^>]+rel=["\']canonical["\'][^>]*>)', additions + r'\1', source, count=1)
+    canonical_match = re.search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)', source)
+    canonical_url = canonical_match.group(1) if canonical_match else 'https://book.fountain.coach/'
+    description_match = re.search(r'<meta name=["\']description["\'] content=["\']([^"\']*)', source)
+    description = description_match.group(1) if description_match else f'{label}: published Book of Reframe human reference and evidence projection.'
+    metadata = (
+        f'  <meta property="og:title" content="{html.escape(label)} — The Book of Reframe">\n'
+        f'  <meta property="og:description" content="{html.escape(description)}">\n'
+        f'  <meta property="og:url" content="{html.escape(canonical_url)}">\n'
+        f'  <meta name="twitter:title" content="{html.escape(label)} — The Book of Reframe">\n'
+        f'  <meta name="twitter:description" content="{html.escape(description)}">\n'
+    )
+    if 'property="og:title"' not in source:
+        source = source.replace('</head>', metadata + '</head>', 1)
+    if 'property="og:description"' not in source:
+        source = source.replace('</head>', f'  <meta property="og:description" content="{html.escape(description)}">\n</head>', 1)
+    if 'property="og:url"' not in source:
+        source = source.replace('</head>', f'  <meta property="og:url" content="{html.escape(canonical_url)}">\n</head>', 1)
+    if 'name="twitter:title"' not in source:
+        source = source.replace('</head>', f'  <meta name="twitter:title" content="{html.escape(label)} — The Book of Reframe">\n</head>', 1)
+    if 'name="twitter:description"' not in source:
+        source = source.replace('</head>', f'  <meta name="twitter:description" content="{html.escape(description)}">\n</head>', 1)
     if 'property="og:image"' not in source:
         source = source.replace('</head>', f'''  <meta property="og:image" content="{FALLBACK_IMAGE}">
   <meta property="og:image:alt" content="Fountain Coach publication estate illustration for {html.escape(label)}">
@@ -118,7 +140,12 @@ def apply(path: Path) -> None:
         source = source.replace('</head>', structured + '</head>', 1)
     if 'data-theme-toggle' not in source:
         source = source.replace('data-theme-button', 'data-theme-toggle')
-    source = re.sub(r'<nav class="estate-nav"[^>]*>.*?</nav><button class="theme-button".*?</button>', estate_nav(path).replace('data-theme-button', 'data-theme-toggle'), source, count=1, flags=re.S)
+    estate = estate_nav(path).replace('data-theme-button', 'data-theme-toggle')
+    source = re.sub(
+        r'(<div class="nav-shell">.*?)(</div>)<nav class="estate-nav"[^>]*>.*?</nav><button class="theme-button".*?</button></header>',
+        lambda match: match.group(1) + estate + match.group(2) + '</header>',
+        source, count=1, flags=re.S)
+    source = re.sub(r'<nav class="estate-nav"[^>]*>.*?</nav><button class="theme-button".*?</button>', estate, source, count=1, flags=re.S)
     if 'data-theme-toggle' not in source:
         source = source.replace('</header>', f'{estate_nav(path).replace("data-theme-button", "data-theme-toggle")}</header>', 1)
     source = re.sub(r'<(?:nav|div) class="breadcrumbs"[^>]*>.*?</(?:nav|div)>', breadcrumbs(source, path), source, count=1, flags=re.S)
