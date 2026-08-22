@@ -14,6 +14,9 @@ may see GitHub's 404. The public explanation of this boundary is
 [`PUBLICATION-POLICY.md`](PUBLICATION-POLICY.md) and
 [`Fountain-Coach/Reframe-Refactoring` governance Chapter 44](https://github.com/Fountain-Coach/Reframe-Refactoring/blob/main/docs/44-publication-and-source-policy.md).
 
+The reviewed public projection is published at [`book.fountain.coach`](https://book.fountain.coach/). GitHub remains
+the source and provenance mirror; the hosted site is the human-readable publication surface.
+
 ## Start here
 
 - [`COMMAND-ATLAS.md`](COMMAND-ATLAS.md) — the first verified numbered command atlas, with writer-facing explanations;
