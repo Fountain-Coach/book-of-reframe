@@ -11,6 +11,9 @@ question **this reading** happened to raise.
 
 ## Live result
 
+Live drive: the Ulysses Circe comparison was driven through the governed Reframe acceptance path and its AX, Store,
+and window-ID evidence is linked below.
+
 Driven on the Ulysses Circe chapter (episode 15), where the store held two readings of lines 20051–25573 — one with
 45 open questions, one with 17 — the report opened by disqualifying its own most attractive conclusion:
 
