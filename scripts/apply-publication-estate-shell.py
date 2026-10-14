@@ -66,7 +66,6 @@ def estate_nav(path: Path) -> str:
         ("Book", prefix(path) or "./", True),
         ("Governance", "https://governance.fountain.coach/", False),
         ("Instruments", "https://instruments.fountain.coach/", False),
-        ("Status", "https://status.fountain.coach/", False),
     ]
     items = "".join(
         f'<a href="{href}"' + (' aria-current="page"' if active else '') + f'>{label}</a>'
@@ -79,8 +78,8 @@ def footer(path: Path) -> str:
     root = prefix(path)
     return '''<footer class="footer">
       <p><strong>The Book of Reframe</strong> · human reference and evidence interpretation · <a href="https://fountain.coach/">Fountain Coach estate</a></p>
-      <nav class="footer-estate" aria-label="Fountain Coach publications"><a href="https://fountain.coach/">Estate · identity</a><a href="''' + (root or './') + '''">Book · human reference</a><a href="https://governance.fountain.coach/">Governance · rules and authority</a><a href="https://instruments.fountain.coach/">Instruments · MIDI2 catalog</a><a href="https://status.fountain.coach/">Status · company and legal context</a></nav>
-      <nav class="footer-legal" aria-label="Publication policy"><a href="''' + root + '''legal/">Book legal notices</a><a href="''' + root + '''privacy/">Book privacy</a><a href="''' + root + '''accessibility/">Accessibility</a><a href="''' + root + '''copyright/">Copyright</a><a href="''' + root + '''compliance/">EU compliance scope</a><a href="https://status.fountain.coach/unternehmen/">Official company context</a></nav>
+      <nav class="footer-estate" aria-label="Fountain Coach publications"><a href="https://fountain.coach/">Estate · identity</a><a href="''' + (root or './') + '''">Book · human reference</a><a href="https://governance.fountain.coach/">Governance · rules and authority</a><a href="https://instruments.fountain.coach/">Instruments · MIDI2 catalog</a></nav>
+      <nav class="footer-legal" aria-label="Publication policy"><a href="''' + root + '''legal/">Book legal notices</a><a href="''' + root + '''privacy/">Book privacy</a><a href="''' + root + '''accessibility/">Accessibility</a><a href="''' + root + '''copyright/">Copyright</a><a href="''' + root + '''compliance/">EU compliance scope</a><a href="https://status.fountain.coach/" data-legal-role="company-status" aria-label="Company status and transparency">Company status &amp; transparency</a></nav>
       <p>Published public projection · Reframe runtime remains private · acceptance is not release.</p>
     </footer>'''
 
