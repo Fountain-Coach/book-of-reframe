@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Csound Teatro — Speaking Sound in Space — The Book of Reframe</title>
+  <meta name="description" content="A ten-step guide to Csound Teatro: canonical entities, relations, events, mappings, Ear observation, Scenario admission, and provider-independent model collaboration.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f3efe7">
+  <meta name="fountain:publication-role" content="Human reference and evidence interpretation">
+  <meta name="fountain:publication-state" content="Reviewed local projection · not yet published">
+  <link rel="canonical" href="https://book.fountain.coach/csound-teatro/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Book of Reframe">
+  <meta property="og:title" content="Csound Teatro — Speaking Sound in Space">
+  <meta property="og:description" content="One semantic grammar connects human intention, Scenario admission, physics, Csound, WebGL, Ear, MIDI2 and evidence.">
+  <meta property="og:url" content="https://book.fountain.coach/csound-teatro/">
+  <meta property="og:image" content="https://book.fountain.coach/assets/csound-teatro-speaking-sound-in-space.svg">
+  <meta property="og:image:type" content="image/svg+xml">
+  <meta property="og:image:alt" content="Diagram showing one canonical Csound Teatro grammar connecting a human request, Scenario, physics, Csound, WebGL, Ear, MIDI2 and FountainStore evidence">
+  <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Csound Teatro — Speaking Sound in Space">
+  <meta name="twitter:description" content="The Book's teaching surface for the governed sound-and-space grammar.">
+  <meta name="twitter:image" content="https://book.fountain.coach/assets/csound-teatro-speaking-sound-in-space.svg">
+  <link rel="icon" type="image/png" href="../assets/fountain-coach-logo-transparent.png">
+  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="stylesheet" href="/assets/estate-core.css">
+  <script src="/assets/estate-core.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner"><div class="nav-shell">
+    <a class="brand" href="../"><img class="brand-logo" src="../assets/fountain-coach-logo-transparent.png" alt="Fountain Coach logo"><span>The Book of Reframe<small>Fountain Coach · public technical publication</small></span></a>
+    <nav class="estate-nav" aria-label="Fountain Coach publication estate">
+      <a class="estate-icon" data-estate-id="estate" href="https://fountain.coach/" aria-label="Estate"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5v8.5h-5v-5H9v5H4z"/></svg><span>Estate</span></a>
+      <a class="estate-icon" data-estate-id="book" aria-current="page" href="https://book.fountain.coach/" aria-label="Book"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M5 4.5h11a3 3 0 0 1 3 3V20H8a3 3 0 0 1-3-3V4.5Zm0 0v12a3 3 0 0 0 3 3"/></svg><span>Book</span></a>
+      <a class="estate-icon" data-estate-id="governance" href="https://governance.fountain.coach/" aria-label="Governance"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M12 3 4.5 6v5c0 5 3 8 7.5 10 4.5-2 7.5-5 7.5-10V6L12 3Z"/></svg><span>Governance</span></a>
+      <a class="estate-icon" data-estate-id="midi2" href="https://midi2.fountain.coach/" aria-label="MIDI2"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16M7 4v4m5 2v4m5 2v4"/></svg><span>MIDI2</span></a>
+      <a class="estate-icon" data-estate-id="instruments" href="https://instruments.fountain.coach/" aria-label="Instruments"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M8 4v10m0 0a3 3 0 1 0 2 2.8M8 7h8m0 0v8a3 3 0 1 0 2 2.8M16 7V4"/></svg><span>Instruments</span></a>
+      <a class="estate-icon" data-estate-id="status" href="https://status.fountain.coach/" aria-label="Status"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M4 17h3v3H4zM10.5 12h3v8h-3zM17 5h3v15h-3z"/></svg><span>Status</span></a>
+        <a class="estate-icon" data-estate-id="teatro" href="https://teatro.fountain.coach/" aria-label="Teatro"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M4 5h16M6 5v14m12-14v14M4 19h16M8 5c0 4 2 6 4 7 2-1 4-3 4-7"/></svg><span>Teatro</span></a>
+      <a class="estate-icon" data-estate-id="pointer" href="https://benedikt-eickhoff.de/" aria-label="Pointer"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="m5 4 14 7-6 2-3 7L5 4Z"/></svg><span>Pointer</span></a>
+      <a class="estate-icon" data-estate-id="solstice" href="https://works.benedikt-eickhoff.de/solstice/" aria-label="Solstice — writing source"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M4 12h16M12 4v16M6.5 6.5l11 11m0-11-11 11"/><circle cx="12" cy="12" r="4"/></svg><span>Solstice</span></a><button type="button" class="estate-icon estate-info" aria-label="Info" title="Info" onclick="document.getElementById('footer').scrollIntoView({behavior:'smooth', block:'start'});"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Zm0 5v.1m0 2.4v5"/></svg><span>Info</span></button>
+    </nav>
+  </div></header>
+  <main id="main" class="layout">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="https://fountain.coach/">Fountain Coach</a></li><li><a href="../">Book</a></li><li aria-current="page">Csound Teatro</li></ol></nav>
+    <section class="command-hero" aria-labelledby="page-title">
+      <div class="eyebrow">Teaching surface · canonical grammar v0.1</div>
+      <h1 id="page-title">Csound Teatro — Speaking Sound in Space</h1>
+      <p class="lead">Csound Teatro gives humans and machines one inspectable language for saying what exists, how things relate, when relations apply, how values map, what Ear observes, and what a Scenario is allowed to execute.</p>
+      <p class="source-line"><a href="https://governance.fountain.coach/chapters/151-csound-teatro-speaking-sound-in-space/">Governance Chapter 151 →</a> · <a href="https://teatro.fountain.coach/">Open Teatro →</a></p>
+    </section>
+    <section class="content-section" aria-labelledby="overview-title">
+      <div class="section-heading"><div class="eyebrow">One contract</div><h2 id="overview-title">Meaning first, engines second.</h2>
+      <p>The canonical Scenario is semantic authority. Physics supplies events, Csound realizes sound, WebGL projects state, Ear measures, MIDI2 carries governed lifecycle, and FountainStore keeps evidence. None of those adapters may silently invent semantic meaning.</p></div>
+      <figure class="evidence-figure"><img src="../assets/csound-teatro-speaking-sound-in-space.svg" alt="Canonical Csound Teatro grammar flowing from human request through Scenario to physics, Csound, WebGL, Ear, MIDI2 and Store evidence"><figcaption>Governance projection of the architecture. It is not live runtime evidence.</figcaption></figure>
+    </section>
+    <section class="content-section section-rule" aria-labelledby="steps-title">
+      <div class="section-heading"><div class="eyebrow">Ten steps</div><h2 id="steps-title">Learn the same grammar the runtime validates.</h2></div>
+      <ol class="model-steps">
+        <li><strong>01 · Things</strong><span>Identify canonical entities such as Ball.01, Plate.01 and Ear.01.</span></li>
+        <li><strong>02 · Properties</strong><span>Inspect typed values and units, for example Ball.01.velocity in m/s.</span></li>
+        <li><strong>03 · Relations</strong><span>State admitted predicates such as EXCITES and LISTENS_TO.</span></li>
+        <li><strong>04 · Events</strong><span>Say when a relation applies: collision(Ball.01, Plate.01).</span></li>
+        <li><strong>05 · Mappings</strong><span>Map a declared input domain to a declared target port with explicit policy.</span></li>
+        <li><strong>06 · Space</strong><span>Project canonical state without turning geometry into semantic authority.</span></li>
+        <li><strong>07 · Ear</strong><span>Attach a typed observing instrument and a measurable assertion.</span></li>
+        <li><strong>08 · Scenario</strong><span>Collect GIVEN, TRANSFORM, CONSTRAINTS, EXPECT and VERIFY into one executable contract.</span></li>
+        <li><strong>09 · Model collaboration</strong><span>Use local or remote models only as optional interpreters; the guaranteed path remains provider-independent.</span></li>
+        <li><strong>10 · Implementation inspection</strong><span>Follow the admitted Scenario into physics, Csound, WebGL, MIDI2, Store and verification.</span></li>
+      </ol>
+    </section>
+    <section class="content-section section-rule" aria-labelledby="grammar-title">
+      <div class="section-heading"><div class="eyebrow">Grammar reference</div><h2 id="grammar-title">Finite vocabulary, explicit mapping.</h2>
+      <p>Grammar v0.1 admits the predicates below. Unknown predicates are rejected before execution.</p></div>
+      <p><code>PRODUCES · RECEIVES · EXCITES · CONTROLS · MODULATES · MAPS_TO · TRIGGERS · FOLLOWS · CONTAINS · OBSERVES · LISTENS_TO · AFFECTS · ABOVE · BELOW · NEAR · INSIDE · OUTSIDE · TOUCHING · MOVING_TOWARD · MOVING_AWAY</code></p>
+      <div class="evidence-grid">
+        <article><h3>Entity kinds</h3><p><code>BODY</code>, <code>INSTRUMENT</code>, <code>EAR</code>, <code>FIELD</code>.</p></article>
+        <article><h3>Scenario schema</h3><p><code>GIVEN</code>, <code>TRANSFORM</code>, <code>CONSTRAINTS</code>, <code>EXPECT</code>, <code>VERIFY</code>, plus grammar and schema version.</p></article>
+        <article><h3>Mapping policy</h3><p>Source property, target port, domains, units, transfer, clamp, interpolation and update mode are explicit.</p></article>
+      </div>
+    </section>
+    <section class="content-section section-rule" aria-labelledby="example-title">
+      <div class="section-heading"><div class="eyebrow">Example Scenario</div><h2 id="example-title">Ball excites Plate when they collide.</h2></div>
+      <pre role="region" aria-label="Csound Teatro Ball Plate Ear grammar example"><code>WHEN collision(Ball.01, Plate.01)
+    Ball.01 EXCITES Plate.01
+
+Ball.01.velocity 0..7 m/s
+    MAPS_TO
+Plate.01.excitation 0..1 normalized
+
+Ear.01 LISTENS_TO Plate.01
+
+AFTER collision(Ball.01, Plate.01)
+EXPECT Ear.01.onset == true WITHIN 50 ms</code></pre>
+      <p>The 50 ms value belongs to this admitted fixture. A different Scenario must declare and justify its own assertion boundary.</p>
+    </section>
+    <section class="content-section section-rule" aria-labelledby="authority-title">
+      <div class="section-heading"><div class="eyebrow">Provider independence</div><h2 id="authority-title">A model may interpret. It may not own the system.</h2>
+      <p>The built-in path works without network inference, API keys or provider credits. Supported human requests resolve through authoritative selection and discovered capabilities. Unsupported language is refused rather than guessed. Apple on-device models, Linux-local models, Codex or other providers can collaborate behind the same narrow intent contract.</p></div>
+    </section>
+    <section class="content-section section-rule" aria-labelledby="claim-title">
+      <div class="section-heading"><div class="eyebrow">Evidence boundary</div><h2 id="claim-title">What the initial fixture establishes.</h2>
+      <p>The accepted Ball/Plate/Ear fixture establishes provider-independent interpretation, native pre-effect admission, physics collision, declared mapping, Csound-backed excitation, measured Ear onset, native verification, Store evidence and terminal MIDI2 lifecycle for that fixture. It does not establish universal grammar coverage, human hearing, arbitrary natural-language understanding or public release.</p></div>
+    </section>
+    <aside class="related-records" aria-labelledby="related-title"><h2 id="related-title">Related records</h2>
+      <a href="https://governance.fountain.coach/chapters/151-csound-teatro-speaking-sound-in-space/">Governance Chapter 151</a>
+      <a href="https://governance.fountain.coach/chapters/107-creating-the-canonical-teatro-stage-composition-layer/">Chapter 107 · canonical Teatro composition</a>
+      <a href="https://governance.fountain.coach/chapters/122-governed-semantic-transformation-instrument/">Chapter 122 · semantic transformation</a>
+      <a href="https://teatro.fountain.coach/">Teatro interactive projection</a>
+      <a href="https://midi2.fountain.coach/">MIDI2 contract estate</a>
+    </aside>
+    <footer id="footer" role="contentinfo" class="footer" data-footer-style="scientific-footnote">
+      <div class="footer-footnotes"><p class="footer-footnote"><span class="footer-footnote-number">01</span><span><strong>Fountain Coach</strong> · Csound Teatro teaching projection</span></p>
+      <p class="footer-footnote"><span class="footer-footnote-number">02</span><span><a href="https://fountain.coach/">Estate</a> · <a href="https://book.fountain.coach/">Book</a> · <a href="https://governance.fountain.coach/">Governance</a> · <a href="https://midi2.fountain.coach/">MIDI2</a> · <a href="https://instruments.fountain.coach/">Instruments</a> · <a href="https://status.fountain.coach/">Status</a> · <a href="https://teatro.fountain.coach/">Teatro</a></span></p>
+      <p class="footer-footnote"><span class="footer-footnote-number">03</span><span>Human reference and evidence interpretation · runtime, admission and release authority remain separate.</span></p></div>
+      <a class="footer-mark" href="../" aria-label="Book home"><img src="../assets/fountain-coach-logo-transparent.png" alt="Fountain Coach logo"></a>
+    </footer>
+  </main>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","name":"Csound Teatro — Speaking Sound in Space","url":"https://book.fountain.coach/csound-teatro/","publisher":{"@type":"Organization","name":"Fountain Coach","url":"https://fountain.coach/"}}</script>
+  <script src="../assets/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "capturedDate": "2026-10-15",
+  "containsPrivateRuntimeState": false,
+  "disposition": "historical recovery byte evidence; not an automatic publication or an authored source replacement",
+  "documents": [
+    {
+      "artifactIdentity": "public HTML captured from HTTPS; NOT generated from current owner source",
+      "bytes": 11586,
+      "publicUrl": "https://book.fountain.coach/capabilities/csound-auv3-instrument-boundary/",
+      "publishedPath": "capabilities/csound-auv3-instrument-boundary/index.html",
+      "recoveryPath": "publication-recovery/2026-10-15/public-html/capabilities/csound-auv3-instrument-boundary/index.html",
+      "sha256": "482d37b5e9cc21e77684e2f739989f1b0ed0bc10c99c488f5526e9a398f8196a",
+      "sourceEvidence": "Fountain-Coach/estate/recovery/public-byte-provenance.json"
+    },
+    {
+      "artifactIdentity": "public HTML captured from HTTPS; NOT generated from current owner source",
+      "bytes": 14953,
+      "publicUrl": "https://book.fountain.coach/csound-teatro/",
+      "publishedPath": "csound-teatro/index.html",
+      "recoveryPath": "publication-recovery/2026-10-15/public-html/csound-teatro/index.html",
+      "sha256": "07b7595c3061ac2e96a0eb27874d524e3e7943519f34f3e86aaf2f4d47d03f38",
+      "sourceEvidence": "Fountain-Coach/estate/recovery/public-byte-provenance.json"
+    }
+  ],
+  "gitRestoreAllowed": "Only with separate approved public release manifest and full asset proof",
+  "ownerRepository": "Fountain-Coach/book-of-reframe",
+  "publishedHost": "book.fountain.coach",
+  "schema": "fountain.publication.owner-site-readback.v1",
+  "sourceAuthority": "This repository remains the canonical domain owner. These are public readbacks, not source manuscript."
+}

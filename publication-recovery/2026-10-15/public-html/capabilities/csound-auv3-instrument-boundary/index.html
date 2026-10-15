@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Csound AUv3 Instrument Boundary — The Book of Reframe</title>
+  <meta name="description" content="The Book's semantic record for the Csound AUv3 instrument boundary: MIDI2 admission, audio rendering, and evidence limits.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f3efe7">
+  <meta name="fountain:publication-role" content="Human reference and evidence interpretation">
+  <meta name="fountain:publication-state" content="Development design projection">
+  <link rel="canonical" href="https://book.fountain.coach/capabilities/csound-auv3-instrument-boundary/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Book of Reframe">
+  <meta property="og:title" content="Csound AUv3 Instrument Boundary — The Book of Reframe">
+  <meta property="og:description" content="How the Csound instrument fits the Fountain Coach MIDI2 and Reframe host boundary.">
+  <meta property="og:url" content="https://book.fountain.coach/capabilities/csound-auv3-instrument-boundary/">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:section" content="MIDI2 instrument capabilities">
+  <meta property="og:image" content="https://book.fountain.coach/assets/csound-auv3-instrument-boundary-social.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="MIDI2 admission enters an iPad AUv3 host, becomes a Csound waveform, and ends at an evidence boundary">
+  <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Csound AUv3 Instrument Boundary — The Book of Reframe">
+  <meta name="twitter:description" content="How the Csound instrument fits the Fountain Coach MIDI2 and Reframe host boundary.">
+  <meta name="twitter:image" content="https://book.fountain.coach/assets/csound-auv3-instrument-boundary-social.png">
+  <meta name="twitter:image:alt" content="MIDI2 admission enters an iPad AUv3 host, becomes a Csound waveform, and ends at an evidence boundary">
+  <link rel="icon" type="image/png" href="../../assets/fountain-coach-logo-transparent.png">
+  <link rel="stylesheet" href="../../assets/site.css">
+  <link rel="stylesheet" href="/assets/estate-core.css">
+  <script src="/assets/estate-core.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner"><div class="nav-shell">
+    <a class="brand" href="../../"><img class="brand-logo" src="../../assets/fountain-coach-logo-transparent.png" alt="Fountain Coach logo"><span>The Book of Reframe<small>Fountain Coach · public technical publication</small></span></a>
+    <nav class="estate-nav" aria-label="Fountain Coach publication estate">
+      <a class="estate-icon" data-estate-id="estate" href="https://fountain.coach/" aria-label="Estate"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5v8.5h-5v-5H9v5H4z"/></svg><span>Estate</span></a>
+      <a class="estate-icon" data-estate-id="book" aria-current="page" href="https://book.fountain.coach/" aria-label="Book"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M5 4.5h11a3 3 0 0 1 3 3V20H8a3 3 0 0 1-3-3V4.5Zm0 0v12a3 3 0 0 0 3 3"/></svg><span>Book</span></a>
+      <a class="estate-icon" data-estate-id="governance" href="https://governance.fountain.coach/" aria-label="Governance"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M12 3 4.5 6v5c0 5 3 8 7.5 10 4.5-2 7.5-5 7.5-10V6L12 3Z"/></svg><span>Governance</span></a>
+      <a class="estate-icon" data-estate-id="midi2" href="https://midi2.fountain.coach/" aria-label="MIDI2"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16M7 4v4m5 2v4m5 2v4"/></svg><span>MIDI2</span></a>
+      <a class="estate-icon" data-estate-id="instruments" href="https://instruments.fountain.coach/" aria-label="Instruments"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M8 4v10m0 0a3 3 0 1 0 2 2.8M8 7h8m0 0v8a3 3 0 1 0 2 2.8M16 7V4"/></svg><span>Instruments</span></a>
+      <a class="estate-icon" data-estate-id="status" href="https://status.fountain.coach/" aria-label="Status"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M4 17h3v3H4zM10.5 12h3v8h-3zM17 5h3v15h-3z"/></svg><span>Status</span></a>
+        <a class="estate-icon" data-estate-id="teatro" href="https://teatro.fountain.coach/" aria-label="Teatro"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M4 5h16M6 5v14m12-14v14M4 19h16M8 5c0 4 2 6 4 7 2-1 4-3 4-7"/></svg><span>Teatro</span></a>
+      <a class="estate-icon" data-estate-id="pointer" href="https://benedikt-eickhoff.de/" aria-label="Pointer"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="m5 4 14 7-6 2-3 7L5 4Z"/></svg><span>Pointer</span></a>
+      <a class="estate-icon" data-estate-id="solstice" href="https://works.benedikt-eickhoff.de/solstice/" aria-label="Solstice — writing source"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M4 12h16M12 4v16M6.5 6.5l11 11m0-11-11 11"/><circle cx="12" cy="12" r="4"/></svg><span>Solstice</span></a><button type="button" class="estate-icon estate-info" aria-label="Info" title="Info" onclick="document.getElementById('footer').scrollIntoView({behavior:'smooth', block:'start'});"><svg viewBox="0 0 24 24" class="estate-symbol" data-icon-variant="outline-regular-medium" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Zm0 5v.1m0 2.4v5"/></svg><span>Info</span></button>
+    </nav>
+  </div></header>
+  <main id="main" class="layout">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="https://fountain.coach/">Fountain Coach</a></li><li><a href="../../">Book</a></li><li aria-current="page">Csound AUv3 Instrument Boundary</li></ol></nav>
+    <section class="command-hero" aria-labelledby="page-title"><div class="eyebrow">Capability record · system boundary</div><h1 id="page-title">Csound AUv3 Instrument Boundary</h1><p class="lead">The Book explains how a Csound Audio Unit fits into the Fountain Coach host story: Reframe remains the MIDI2 peer and mediator, the iPad hosts the AUv3, and Csound produces the audio.</p><p class="source-line"><a href="https://instruments.fountain.coach/instruments/csound-auv3/">Open the Csound instrument record →</a> · <a href="https://governance.fountain.coach/chapters/133-csound-auv3-instrument-boundary/">Read authoritative Governance Chapter 133 →</a></p></section>
+    <section class="content-section" aria-labelledby="illustration-title"><div class="section-heading"><div class="eyebrow">Signature illustration</div><h2 id="illustration-title">One boundary, four distinct authorities.</h2><p>The picture explains the relationship. It does not turn a design projection into an acceptance or release claim.</p></div><figure class="evidence-figure"><img src="../../assets/122-midi2-scenario-audible-evidence.svg" alt="MIDI2 admission enters an iPad AUv3 host, becomes a Csound waveform, is recorded, and ends at a FountainStore evidence boundary"><figcaption>Semantic design projection of the Csound host boundary.</figcaption></figure></section>
+    <section class="content-section section-rule" aria-labelledby="story-title"><div class="section-heading"><div class="eyebrow">The story</div><h2 id="story-title">MIDI2 carries the intention; Csound makes the sound.</h2><p>Reframe and the iPad host are separate instruments. MIDI-CI establishes the peer relationship. The AUv3 adapter owns the explicit host event mapping. Csound owns DSP. Reframe's Store and the independent witness answer whether the declared scenario actually completed.</p></div><div class="evidence-grid"><article><h3>Protocol</h3><p><code>csound-auv3-instrument-boundary</code> names the governed scenario and its lifecycle.</p></article><article><h3>Host</h3><p><code>reframe/audiounit.lifecycle</code> is the instrument operation exposed at the boundary.</p></article><article><h3>Evidence</h3><p>A non-silent render, recording, Store receipt, AX result, and window identity must remain correlated.</p></article></div></section>
+    <section class="content-section section-rule" aria-labelledby="status-title"><div class="section-heading"><div class="eyebrow">Current catalog state</div><h2 id="status-title">Designed, not released.</h2><p>The Instruments catalog currently records this boundary as designed, not yet admitted or live-accepted. The Book therefore documents the semantic relationship and its proof obligations; it does not claim a released AUv3, AUM interoperability, certification, or universal hardware support.</p></div></section>
+    <aside class="related-records" aria-labelledby="related-title"><h2 id="related-title">Related records</h2><a href="https://instruments.fountain.coach/instruments/csound-auv3/">Csound AUv3 Instrument · Instruments</a><a href="../../scenarios/">Scenario coverage · Book</a><a href="https://governance.fountain.coach/chapters/133-csound-auv3-instrument-boundary/">Governance Chapter 133</a><a href="https://midi2.fountain.coach/">MIDI2 contract estate</a></aside>
+    <footer id="footer" role="contentinfo" class="footer" data-footer-style="scientific-footnote"><div class="footer-footnotes"><p class="footer-footnote"><span class="footer-footnote-number">01</span><span><strong>Fountain Coach</strong> · founded by Benedikt Eickhoff · Berlin · <a href="https://benedikt-eickhoff.de/">personal pointer</a></span></p><p class="footer-footnote"><span class="footer-footnote-number">02</span><span><a href="https://fountain.coach/">Estate</a> · <a href="https://book.fountain.coach/">Book</a> · <a href="https://governance.fountain.coach/">Governance</a> · <a href="https://midi2.fountain.coach/">MIDI2</a> · <a href="https://instruments.fountain.coach/">Instruments</a> · <a href="https://status.fountain.coach/">Status</a> · <a href="https://teatro.fountain.coach/">Teatro</a></span></p><p class="footer-footnote"><span class="footer-footnote-number">03</span><span><a href="https://governance.fountain.coach/legal/">Legal notices</a> · <a href="https://governance.fountain.coach/privacy/">Privacy</a> · <a href="https://governance.fountain.coach/accessibility/">Accessibility</a> · <a href="https://governance.fountain.coach/copyright/">Copyright</a> · <a href="https://governance.fountain.coach/compliance/">EU compliance</a></span></p><p class="footer-footnote"><span class="footer-footnote-number">04</span><span>Human reference and evidence interpretation · runtime and release authority remain separate.</span></p></div><a class="footer-mark" href="../../" aria-label="Fountain Coach home"><img src="../../assets/fountain-coach-logo-transparent.png" alt="Fountain Coach logo"></a></footer>
+  </main>
+  <script src="../../assets/site.js" defer></script>
+</body>
+</html>
