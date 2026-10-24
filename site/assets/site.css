@@ -256,3 +256,11 @@ html[data-theme="dark"] .book-identity img {filter:invert(.7)}
 .history-status p {margin:.4rem 0 0}
 @media(max-width:800px){.reading-display {grid-template-columns:1fr}.reading-record {min-height:20rem}.publish-witness-grid {grid-template-columns:1fr}.case-facts>div {grid-template-columns:1fr;gap:.4rem}}
 @media(max-width:480px){.publishing-book .breadcrumbs {margin-bottom:2rem}.publish-opening h1 {font-size:clamp(3.7rem,14vw,5rem)}.reading-record {min-height:18rem}.publish-contents {flex-direction:column}.publish-process li {grid-template-columns:2.4rem minmax(0,1fr);gap:.65rem}.history-status {padding:1rem}}
+
+/* Works-owned authored books, presented by Book without manuscript duplication. */
+.publishing-books-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.4rem;margin:2.6rem 0}
+.publishing-books-grid article{display:flex;flex-direction:column;min-height:15rem;padding:1.65rem;border:1px solid var(--line)}
+.publishing-books-grid h3{font:400 clamp(1.5rem,2.7vw,2.25rem)/1.15 Georgia,serif;letter-spacing:-.035em;margin:1.1rem 0}
+.publishing-books-grid p{color:var(--muted);line-height:1.6;font-size:.93rem}
+.publishing-books-grid a{margin-top:auto;padding-top:1.1rem}
+@media(max-width:650px){.publishing-books-grid{grid-template-columns:1fr}.publishing-books-grid article{min-height:12rem}}

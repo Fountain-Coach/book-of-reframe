@@ -48,3 +48,7 @@ Original outcome: replace obsolete development reading-on links with a truthful 
 Observed failure: v22 opens an apparently current Book but directs readers into August 2026 technical scenarios.
 Existing mechanism: full direct-static pages, actual published reading and WLAN staging already work.
 Smallest intervention: source-owned new publishing entrance and case note, separate historical route, preserve all old deep pages. No additional execution system required.
+
+## Extension: already published Works become books (24 October 2026)
+
+The author further directed that the originally professional-acquisition-facing Works publications become discoverable **as books**. Fountain-Coach/works-benedikt-eickhoff revision 3c31eea2fa1493c47903c8d648438c5665332b41 owns the four bilingual book entry identities and source/PDF hashes. Book may present these works as a publishing programme, but must keep the actual reader, authorship, credits, original form and newly staged URLs under the Works owner. The two earlier Linotype documentary editions remain existing readable facsimiles; Between Gardens retains its score reader; Above the Line remains its original English essay source. Private Reframe Bookshelf admission is not implied. Production cannot refer to these new URLs until the Works pages are themselves publicly published. The single WLAN staging environment may bind them locally at /works/books/ before that public release.

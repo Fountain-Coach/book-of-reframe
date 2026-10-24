@@ -19,6 +19,7 @@ HOME_MAIN = '''<main class="layout publishing-book" id="main">
       <p class="publish-intro">A book is not simply a file, a series of pages, or a software feature. It is a work carried into a readable edition—and a relationship whose authorship, composition and public release can be examined.</p>
       <nav class="publish-contents" aria-label="This publication">
         <a href="#reading">01 · Encounter a work</a>
+        <a href="#books">Books from Works</a>
         <a href="#making">02 · Follow its making</a>
         <a href="#witness">03 · Examine the witness</a>
       </nav>
@@ -44,6 +45,18 @@ HOME_MAIN = '''<main class="layout publishing-book" id="main">
         </aside>
       </div>
       <p class="publish-afterword">Continue with its <a href="publication/first-reading/">publication case and source witness <span aria-hidden="true">→</span></a>.</p>
+    </section>
+    <section id="books" class="publish-section publish-works-books" aria-labelledby="works-books-title">
+      <div class="eyebrow">A publishing programme</div>
+      <h2 id="works-books-title">The works become books.</h2>
+      <p class="publish-section-lead">These already public artistic works have different readable forms. Their new source-owned book entrances are staged separately at Works, not copied into this domain or automatically admitted to Reframe.</p>
+      <div class="publishing-books-grid">
+        <article><span class="eyebrow">Production score</span><h3>Between Gardens</h3><p>A scored work with its existing paginated reader.</p><a href="https://works.benedikt-eickhoff.de/books/between-gardens/">View the book edition →</a></article>
+        <article><span class="eyebrow">Dramatic treatment</span><h3>Ballern Gehen</h3><p>FCKFRG &amp; MI · source-preserving Linotype documentary facsimile.</p><a href="https://works.benedikt-eickhoff.de/books/ballern-gehen/">View the book edition →</a></article>
+        <article><span class="eyebrow">Parallel dramatic text</span><h3>A Midsummer Night’s Dream</h3><p>FCKFRG &amp; MI · 110-page documentary facsimile, not a new translation.</p><a href="https://works.benedikt-eickhoff.de/books/midsummer-nights-dream/">View the book edition →</a></article>
+        <article><span class="eyebrow">Essay · source original</span><h3>Above the Line</h3><p>An English five-page essay, not yet separately Linotype-composed.</p><a href="https://works.benedikt-eickhoff.de/books/above-the-line/">View the book edition →</a></article>
+      </div>
+      <p class="publish-fine">Book identities, sources and genre are owned by Works. The new catalogue URLs are staging candidates; current public works and their original PDFs remain separately accessible until publication approval.</p>
     </section>
     <section id="making" class="publish-section" aria-labelledby="making-title">
       <div class="eyebrow">02 · The making</div>
