@@ -1,0 +1,178 @@
+{
+  "files" : [
+    {
+      "path" : "\/accessibility\/index.html",
+      "sha256" : "aec482e76b7e9f944b4c17e8545ca3f8388f30f3797e633a62e74e801b15b1fd"
+    },
+    {
+      "path" : "\/assets\/book-open.svg",
+      "sha256" : "3e3379d4470415ee6a159c9c3a266a18922a722b4dfac9b9e7240d4a8628d86c"
+    },
+    {
+      "path" : "\/assets\/book-publishing-social.png",
+      "sha256" : "63967dd2ed58318efe7535a2c65d229d9baa8af271b0234156fce85845d83c15"
+    },
+    {
+      "path" : "\/assets\/book-publishing-social.svg",
+      "sha256" : "10df378ca29c86156ac5aaa73632095d7fd1d8a3196e7ee5f91c509bbd5ca895"
+    },
+    {
+      "path" : "\/assets\/book-reframe-social.png",
+      "sha256" : "d2aacae876b59a9af6ba0ec362d2186811afbd87f1d21d2f7c662e051f5b64b4"
+    },
+    {
+      "path" : "\/assets\/book-reframe-social.svg",
+      "sha256" : "960d655541c0b200cbc0f9e9ce2c1410b1c406287b91072d35bdb0a447bea38c"
+    },
+    {
+      "path" : "\/assets\/estate-core.css",
+      "sha256" : "31baf2864046acf1885c49ccff40869d0dfbc9da63a2af674aecf218b8f8dbfe"
+    },
+    {
+      "path" : "\/assets\/estate-core.js",
+      "sha256" : "1c1a47002fa18c66c7ce328ac07db8457bf71aea2e5b878c8f7a3c80e53046a4"
+    },
+    {
+      "path" : "\/assets\/estate-shell-d9a170d82a21d19b.css",
+      "sha256" : "d9a170d82a21d19be5d155c19f3591e670bf8988c230e8c7737493937c40bb8b"
+    },
+    {
+      "path" : "\/assets\/estate-shell-logo-8c5fad1c3db56138.png",
+      "sha256" : "8c5fad1c3db56138d5959da75991dc8034a0be537ce46da6ffcc0d9655e7f729"
+    },
+    {
+      "path" : "\/assets\/estate-shell-logo.png",
+      "sha256" : "8c5fad1c3db56138d5959da75991dc8034a0be537ce46da6ffcc0d9655e7f729"
+    },
+    {
+      "path" : "\/assets\/estate-shell-state-4139f6eec4e0f8d7.js",
+      "sha256" : "4139f6eec4e0f8d737c768d1e4f5572c91430598f6ecf2523d3ea2437d6e1d5b"
+    },
+    {
+      "path" : "\/assets\/estate-shell-state.js",
+      "sha256" : "4139f6eec4e0f8d737c768d1e4f5572c91430598f6ecf2523d3ea2437d6e1d5b"
+    },
+    {
+      "path" : "\/assets\/fountain-coach-logo-transparent.png",
+      "sha256" : "8c5fad1c3db56138d5959da75991dc8034a0be537ce46da6ffcc0d9655e7f729"
+    },
+    {
+      "path" : "\/assets\/site.css",
+      "sha256" : "8af1b527ff56cf2f6da9b60e699f64495ba3e40c917a525d70f0d4c7353f06e0"
+    },
+    {
+      "path" : "\/assets\/site.js",
+      "sha256" : "75c9629c1e186b55cde0d384b70c596c4a0ebb45cf3540134c8e26ef949b8570"
+    },
+    {
+      "path" : "\/capabilities\/csound-auv3-instrument-boundary\/index.html",
+      "sha256" : "482d37b5e9cc21e77684e2f739989f1b0ed0bc10c99c488f5526e9a398f8196a"
+    },
+    {
+      "path" : "\/capabilities\/reframe-to-reframe-peer-projection\/index.html",
+      "sha256" : "4522e7395d343f62adc7d19fe780ef3d3e0dc4d52c88a6140b99de638faca1aa"
+    },
+    {
+      "path" : "\/capabilities\/scenario-runtime-midi2\/index.html",
+      "sha256" : "ff5dcc3cf69e9a0eaf2bd879f4f96caccf6e50b19b4a9c46c5162f15988639e0"
+    },
+    {
+      "path" : "\/commands\/commands\/index.html",
+      "sha256" : "a2b790b2b5a13414b1fabce4e465c464a4de8d3abd73ff2904ea04a9bf02deab"
+    },
+    {
+      "path" : "\/commands\/ground\/index.html",
+      "sha256" : "aec0cc6260b11e9436fda5355f09ccec1e7310bd8fe1584a4fb22c120db039d2"
+    },
+    {
+      "path" : "\/commands\/pipeline-status\/index.html",
+      "sha256" : "47c4c5944d8d41ce61c911e3d57f2ef85099462bd59932ac3a6513966b867a4c"
+    },
+    {
+      "path" : "\/commands\/readings\/index.html",
+      "sha256" : "0015589824fb8754321f5fc374bd7e4b5e81952341af9b9ab66bbc6a4bf793e9"
+    },
+    {
+      "path" : "\/commands\/threads\/index.html",
+      "sha256" : "5500a957033489d2a987805ad25b887997476b1c7e95c1b9e9ef75dfc1418eb8"
+    },
+    {
+      "path" : "\/compliance\/index.html",
+      "sha256" : "b42a5341fcdb8c3603909f61c82292266c8ecde5091ba26205d50173da0c09ef"
+    },
+    {
+      "path" : "\/copyright\/index.html",
+      "sha256" : "0808098e70d4f8b406548685d6b49086d63422cf572538fe2c93ae3fbaeacd08"
+    },
+    {
+      "path" : "\/csound-teatro\/index.html",
+      "sha256" : "07b7595c3061ac2e96a0eb27874d524e3e7943519f34f3e86aaf2f4d47d03f38"
+    },
+    {
+      "path" : "\/governance\/default-semantic-manuscript-projection\/index.html",
+      "sha256" : "8791a0557eb1a2713479252cee38e5bc2544ee3f5d30bd25cb177694bc14f5da"
+    },
+    {
+      "path" : "\/governance\/dynamic-midi2-instrument-factory\/index.html",
+      "sha256" : "54db0f6d03992ae1e20cb2a9372a88f8b3f6fa209ca2d01fbcc0b6ce3f285102"
+    },
+    {
+      "path" : "\/governance\/evidence-cohorts-as-publication-units\/index.html",
+      "sha256" : "712898aa9c7d1c08783c61f6c54beedecd0d729dccdbd17ed01d7d15e750d6ce"
+    },
+    {
+      "path" : "\/governance\/scenario-pipeline-factory\/index.html",
+      "sha256" : "66c832200f946924ef09c39ae675554d25aaeb5844c8cadefc54544f2f98cdb3"
+    },
+    {
+      "path" : "\/history\/reframe-development\/index.html",
+      "sha256" : "98663c8e3a6c9d363ecc051cef00d627e6b56cc3f66b3efec9a68fc6aacae913"
+    },
+    {
+      "path" : "\/index.html",
+      "sha256" : "85330584e7cf19457a736f50416aeb1a3169a4c053a30f0e059b790bd24373f5"
+    },
+    {
+      "path" : "\/legal\/index.html",
+      "sha256" : "80beea1c47de1964aa08e3dde0d87848264f45c800b786364ad55c06a1a135a4"
+    },
+    {
+      "path" : "\/privacy\/index.html",
+      "sha256" : "5d0a2c8b9124e5c99016c3e4cf78b341de1fef35fc482662ec3f26265a4edd05"
+    },
+    {
+      "path" : "\/publication\/first-reading\/index.html",
+      "sha256" : "3aaaa023ae8f8e9e991e52738725d0cd58f97f8aa5e9b923d74af5ebdd60ceae"
+    },
+    {
+      "path" : "\/repair-manifest.json",
+      "sha256" : "8f224f12cf4d20be94ff3fb027cf459fe03a7b46aaf69067f97b5e4213c27025"
+    },
+    {
+      "path" : "\/scenario-driven-development\/index.html",
+      "sha256" : "0c6fda07b70e83ec5c9d8ea9727ec3b8180800c12f8bd3e5986dd23be5cdd72c"
+    },
+    {
+      "path" : "\/scenarios\/index.html",
+      "sha256" : "ee997481dbf5562645c2a5038e279ac56d9b837191f352c9868c77870abd7dd6"
+    },
+    {
+      "path" : "\/sticker\/index.html",
+      "sha256" : "a17c5f40d2ffe9edde9be3271ae1cc5515a6666061c62dad1023bd55180bea5d"
+    }
+  ],
+  "previousReleaseID" : "estate-20261024-v14-satzfunk-reel-book",
+  "publicHost" : "book.fountain.coach",
+  "publicWitnessPaths" : [
+    "\/index.html",
+    "\/assets\/site.css",
+    "\/assets\/book-publishing-social.png",
+    "\/assets\/book-open.svg",
+    "\/publication\/first-reading\/index.html",
+    "\/history\/reframe-development\/index.html",
+    "\/commands\/commands\/index.html",
+    "\/csound-teatro\/index.html"
+  ],
+  "releaseID" : "estate-20261024-v15-publishing-books-1b7d887",
+  "sourceRevision" : "1b7d887174e65a83159f7834f9bd7b91fb41f4bb"
+}
