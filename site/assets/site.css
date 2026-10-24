@@ -197,3 +197,62 @@ html[data-theme="dark"] .book-identity img {filter:invert(.7)}
 .book-colophon {font-size:.83rem;margin-top:2rem;color:var(--muted)}
 @media(max-width:900px) {.book-opening {grid-template-columns:1fr}.book-marginalia {max-width:38rem}.book-act-list {grid-template-columns:repeat(2,minmax(0,1fr))}.book-act-list li {padding-bottom:1.2rem}}
 @media(max-width:640px) {.book-opening h1 {font-size:clamp(3.4rem,15vw,5rem)}.book-term-grid {grid-template-columns:1fr}.book-toc-list a {grid-template-columns:2rem minmax(0,1fr) auto;gap:.65rem}.book-marginalia {padding-left:1rem}}
+
+/* Book publication front door (2026-10-24): a real edition, not a software atlas. */
+.publishing-book {max-width:76rem}
+.publishing-book .breadcrumbs {margin:0 0 3.4rem}
+.publishing-book a {text-underline-offset:.2em}
+.publishing-book .publish-opening {padding:0 0 clamp(4rem,8vw,7rem)}
+.publishing-book .book-identity {margin-bottom:clamp(2.2rem,5vw,4rem)}
+.publish-opening h1,.publish-case-head h1 {font:400 clamp(4.1rem,9.5vw,9rem)/.97 Georgia,"Times New Roman",serif;letter-spacing:-.065em;max-width:11ch;margin:1.1rem 0 2.2rem}
+.publish-opening h1 em,.publish-case-head h1 em {font-weight:400;font-style:italic}
+.publish-lead {font:400 clamp(1.4rem,2.9vw,2.1rem)/1.4 Georgia,"Times New Roman",serif;max-width:53rem;color:var(--ink)}
+.publish-intro {font-size:1.05rem;line-height:1.7;max-width:48rem;color:var(--muted)}
+.publish-contents {display:flex;gap:.8rem 2rem;flex-wrap:wrap;margin:3.5rem 0 0;padding-top:1.2rem;border-top:1px solid var(--line)}
+.publish-contents a {font-size:.91rem;color:var(--ink);font-weight:550;text-decoration:none}
+.publish-contents a:hover,.publish-contents a:focus-visible {text-decoration:underline}
+.publish-section {padding:clamp(3rem,7vw,6rem) 0;border-top:1px solid var(--line);scroll-margin-top:6rem}
+.publish-section h2,.publish-historical h2 {font:400 clamp(2.3rem,5vw,4.1rem)/1.13 Georgia,"Times New Roman",serif;letter-spacing:-.045em;margin:.85rem 0 1.8rem}
+.publish-section-lead {max-width:43rem;color:var(--muted);line-height:1.7}
+.reading-display {display:grid;grid-template-columns:minmax(0,1.3fr) minmax(16rem,.73fr);gap:clamp(2rem,6vw,6rem);align-items:center}
+.reading-explanation p {max-width:42rem;line-height:1.72}
+.reading-explanation h2 {font-size:clamp(2.8rem,6.2vw,5.8rem)}
+.reading-explanation h2 i {font-weight:400;font-size:.85em}
+.publish-kicker {font-size:.85rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted)}
+.publish-primary-action {margin:2rem 0 1rem}
+.publish-primary-action a {display:inline-block;border-bottom:1.5px solid var(--ink);padding-bottom:.48rem;font-size:1.07rem;font-weight:650;color:var(--ink);text-decoration:none}
+.publish-primary-action a:hover {border-bottom-width:3px}
+.publish-fine {font-size:.8rem;line-height:1.5;color:var(--muted)}
+.reading-record {display:flex;flex-direction:column;justify-content:space-between;min-height:28rem;gap:2rem;padding:clamp(1.5rem,3.4vw,2.5rem);border:1px solid var(--line);background:var(--surface,#f7f7f4);color:var(--ink)}
+.reading-record-index {font:.68rem/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.16em}
+.reading-record strong {font:400 clamp(2.5rem,5vw,4.6rem)/1.05 Georgia,"Times New Roman",serif;letter-spacing:-.055em}
+.reading-record-origin {font:italic 1.3rem Georgia,"Times New Roman",serif}
+.reading-record-rule {width:100%;height:1px;background:var(--line)}
+.reading-record-note {font-size:.86rem;line-height:1.5}
+.reading-record small {font-size:.73rem;color:var(--muted);line-height:1.55}
+.publish-afterword {margin:2.25rem 0 0;font-size:1rem}
+.publish-process {list-style:none;margin:2.7rem 0 0;padding:0;border-top:1px solid var(--line)}
+.publish-process li {display:grid;grid-template-columns:4rem minmax(0,1fr);gap:1.5rem;padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.publish-number {font:400 1.65rem Georgia,"Times New Roman",serif;color:var(--muted)}
+.publish-process h3 {margin:0 0 .4rem;font-size:1.18rem;color:var(--ink)}
+.publish-process p {margin:0;max-width:46rem;line-height:1.68;color:var(--muted)}
+.publish-witness-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1rem,3vw,2.5rem);margin:2.8rem 0 0}
+.publish-witness-grid>div {border-top:2px solid var(--ink);padding-top:1.1rem}
+.publish-witness-grid>div>span {font:.71rem ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.025em;color:var(--muted)}
+.publish-witness-grid h3 {font-size:1.24rem;margin:1.2rem 0 .6rem}
+.publish-witness-grid p {font-size:.94rem;line-height:1.67;color:var(--muted)}
+.publish-witness-grid a {font-size:.9rem}
+.publish-historical {border-top:1px solid var(--line);padding:3rem 0 5rem}
+.publish-historical h2 {font-size:clamp(1.7rem,3vw,2.55rem)}
+.publish-historical p {color:var(--muted);max-width:48rem;line-height:1.7}
+.publish-case-head {padding-bottom:4rem}
+.publish-case-head h1 {font-size:clamp(3.4rem,7vw,6.6rem);max-width:18ch}
+.case-facts {margin-top:2.4rem}
+.case-facts>div {display:grid;grid-template-columns:minmax(8rem,.6fr) minmax(0,1.4fr);gap:2rem;padding:1.15rem 0;border-top:1px solid var(--line)}
+.case-facts dt {font-size:.85rem;font-weight:600}
+.case-facts dd {margin:0;line-height:1.65;color:var(--muted)}
+.publish-case-return {margin:3rem 0 4rem;border-top:1px solid var(--line);padding-top:2rem}
+.history-status {padding:1.2rem 3rem;background:var(--surface,#f6f6f2);border-block:1px solid var(--line);font-size:.86rem}
+.history-status p {margin:.4rem 0 0}
+@media(max-width:800px){.reading-display {grid-template-columns:1fr}.reading-record {min-height:20rem}.publish-witness-grid {grid-template-columns:1fr}.case-facts>div {grid-template-columns:1fr;gap:.4rem}}
+@media(max-width:480px){.publishing-book .breadcrumbs {margin-bottom:2rem}.publish-opening h1 {font-size:clamp(3.7rem,14vw,5rem)}.reading-record {min-height:18rem}.publish-contents {flex-direction:column}.publish-process li {grid-template-columns:2.4rem minmax(0,1fr);gap:.65rem}.history-status {padding:1rem}}

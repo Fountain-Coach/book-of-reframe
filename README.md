@@ -1,4 +1,15 @@
-# The Book of Reframe
+# Book — publishing an authored work
+
+**Editorial revision staged on 24 October 2026.** The canonical book.fountain.coach entrance is being refactored from the historical Book of Reframe development manual to a demonstration of **publishing source-bound, readable editions**. Its governing proposition: *Publishing makes an authored work independently encounterable without losing the identity of its source.*
+
+The new staged entrance refers to the actual public [First Reading — Solstice](https://works.benedikt-eickhoff.de/solstice/editions/first-reading/), with a [publication case](site/publication/first-reading/index.html), explicit witness limits, and a [preserved historical reference](site/history/reframe-development/index.html). Existing technical deep routes remain controlled by this repository. Nothing in this entrance grants Reframe Bookshelf admission or public deployment rights.
+
+See [the editorial decision and bounded staging contract](docs/decisions/2026-10-24-book-publishing-purpose.md). This Git revision is not proof of a public production update.
+
+---
+
+## Historical Book of Reframe development reference (retained)
+
 
 The Book of Reframe is the public, human-readable guide to what Reframe can do: its commands, capabilities,
 preconditions, costs, evidence, and the reasoning behind its writer-facing surfaces.

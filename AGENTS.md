@@ -1,3 +1,11 @@
+# Publishing-focused entrance (author-directed revision, 24 October 2026)
+
+The Book domain's staged editorial purpose is explaining and demonstrating **publishing source-bound readable editions**, rather than making the command/scenario inventory its present-day chapters. Inherit FCIS Goal Fidelity and Non-Invention from Fountain-Coach/.github. The public First Reading is the bounded example; use its original route. Do not claim unverified Store membership, rights/title, public publisher receipts or App release status. The earlier Book of Reframe technical material remains a separate dated historical reference; existing command-page verification rules continue to apply to it.
+
+Use the single existing registered Ubuntu WLAN staging environment for review. Public production requires separate owner authorization. A writer-admitted Bookshelf is distinct from a public edition.
+
+---
+
 # Book of Reframe publication guide
 
 This repository contains reviewed documentation projections from Reframe's integration repository.
