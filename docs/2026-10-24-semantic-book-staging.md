@@ -1,0 +1,11 @@
+# The Book of Reframe — semantic entrance, staging candidate
+
+User-directed estate semantic revision (24 October 2026): the Book domain needs a truthful reading entrance, not another row of capability badges or a bookshelf simulation. Use an established open-book Lucide glyph, the title and an understated typographic social poster rather than inventing artwork.
+
+Source owner: Fountain-Coach/book-of-reframe. This is the reviewed public account of Reframe development, not the writer's admitted Reframe Bookshelf, not a manuscript, and not Fountain Press's measured reader. The source owner controls its text; the current published Book route inventory is production source evidence; Reframe controls the writer's reading/admission; Fountain Press Linotype handles folio composition; EstatePublisher controls public promotion.
+
+This entry presents a frontispiece, reading contents with existing four public routes (method, scenarios, command catalog, Csound Teatro), an explicit book/manuscript/Bookshelf distinction, five method stages and a dated August 2026 evidence appendix. Quantitative command and acceptance figures are retained unaltered in the appendix and expressly identified as historical, not current. The public Book source still documents no named App release; this edit does not invent one.
+
+A discovered seam: the owner repository's current homepage has an evolved writer-path introduction while the public and WLAN staging homepages use a different earlier five-act introduction; published main text matches staging, but not Git. The authorized candidate composes the exact current Git reviewed reference sections with a new semantic entrance, on top of the current live staging shell. Existing deep pages from the pinned public production release are preserved independently in the stage because the previous WLAN projection omitted them. In particular, public Csound Teatro has a published route absent from the current owner Git site tree; the published deployed bytes are retained, not secretly invented.
+
+Only the homepage's authored meaning and new image assets change. Public production, publication credits, nine-member reel, footer, release counts, approvals and private manuscripts are not modified. Native Safari/iPad proofreading and an explicit public production authorization remain separate.

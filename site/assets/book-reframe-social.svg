@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">The Book of Reframe — a public account</title>
+<desc id="desc">A standard open-book symbol and the title The Book of Reframe. No invented book cover or product screenshot.</desc>
+<rect width="1200" height="630" fill="#f8f8f6"/>
+<path d="M80 68H1120" stroke="#dadada" stroke-width="2"/>
+<g transform="translate(82 120) scale(3.7)" fill="none" stroke="#626262" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14" />
+  <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" /></g>
+<text x="80" y="315" font-size="82" font-family="Georgia,serif" fill="#242424" letter-spacing="-3">The Book</text>
+<text x="80" y="408" font-size="82" font-family="Georgia,serif" fill="#242424" letter-spacing="-3">of Reframe</text>
+<text x="82" y="462" font-size="24" font-family="Arial,Helvetica,sans-serif" fill="#555">Source · Reading · Action · Evidence</text>
+<path d="M80 536H1120" stroke="#dadada" stroke-width="2"/>
+<text x="82" y="590" font-size="19" font-family="Arial,Helvetica,sans-serif" fill="#555">Fountain Coach</text>
+<text x="1118" y="590" font-size="19" text-anchor="end" font-family="Arial,Helvetica,sans-serif" fill="#777">Public development account</text>
+</svg>
