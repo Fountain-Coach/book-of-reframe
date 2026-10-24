@@ -1,4 +1,6 @@
-# Book publication v15 — preflight ready, **not promoted**
+# Book publication v15 — historical preflight hold (resolved)
+
+**RESOLVED 24 October 2026:** Book-specific Caddy route corrected, publisher exact-host release `estate-20261024-v15-publishing-books-1b7d887` ACTIVE with eight HTTPS hash witnesses, independent desktop/mobile browser readback passed. See [the final publication acceptance](2026-10-24-book-v15-publication-acceptance.md) and [typed active receipt](2026-10-24-book-v15-public-receipt.json). The section below preserves the pre-correction observation.
 
 **24 October 2026.** The author asked whether `book.fountain.coach` could be promoted following the successful Instruments release. This note distinguishes the independently completed Works dependency from Book's production state.
 
